@@ -5,7 +5,7 @@
 body{
 	margin:0;
 	padding:0;
-    background:#282E33;
+    background:#181b1e;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     color:#8597A4;
@@ -13,14 +13,10 @@ body{
 
 /* Globals type styling */
 
-h1,h2,h3,h4,h5,h6,p,label,.btn{
-	font-family:"Helvetica";
-}
-
 h1,h2,h3,h4,h5,h6{
     color:#FFF;
     display:inline-block; 
-    font-family: 'Montserrat', sans-serif;   
+    font-family: 'Montserrat', sans-serif !important; 
 }
 
 a{font-family: 'Montserrat', sans-serif;color:#8597A4;font-size:14px;}
@@ -41,7 +37,7 @@ pre{
 h1{
     font-size:24px; 
     padding-bottom: 5px;
-    border-bottom:2px solid #43A6E9;
+    border-bottom:2px solid #035299;
 }
 h2{
     font-size:18px; 
@@ -80,9 +76,17 @@ h2{
     border-radius: 3px;
     padding:3px 6px;
 }
+
 .spacer{
     width:40px;
     height:2px;
     background:rgba(255,255,255,.8);
+    margin:20px 0;
+}
+
+.spacer-light{
+    width:40px;
+    height:2px;
+    background:rgba(255,255,255,.3);
     margin:20px 0;
 }

@@ -1,116 +1,80 @@
 <html>
     <head>
+        
+    <!-- meta -->
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicons/favicon.ico" />
+    <title>NHS Docs</title>
+        
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="docs/style.css">
+        
+    <!-- icons -->
+    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
+    <link rel='stylesheet' href='./css/linecons.min.css'/>
+    <link rel='stylesheet' href='./css/ionicons.min.css'/>
+        
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://use.typekit.net/c/774e41/1w;proxima-nova,2,2clzCK:W:n1,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/d" media="all">
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style>
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style_info.css">
-	<link rel="stylesheet" href="./css/animate.min.css" /> <link rel="stylesheet" type="text/css" href="./css/hover-animation.css"><link rel='stylesheet' href='./css/font-awesome.min.css'/><link rel='stylesheet' href='./css/linecons.min.css'/><link rel='stylesheet' href='./css/ionicons.min.css'/><link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style><link rel="stylesheet" href="https://use.typekit.net/c/774e41/1w;proxima-nova,2,2clzCK:W:n1,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/d" media="all"><script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script><script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>Home</title>
-<link rel="stylesheet" type="text/css" href="/scripts/hs/style/addtohomescreen.css">
-    <script src="/scripts/hs/src/addtohomescreen.js"></script>
-    <script>
-addToHomescreen();
-</script>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- js -->
+    <script src="js/jquery-2.1.0.min.js"></script><style type="text/css"></style>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="docs/blocs.js"></script>
+        
+    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/favicons/manifest.json">
-<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/favicons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-<meta name="msapplication-config" content="/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
     
 <!-- Main container -->
 <div class="container">
     
-    <!-- nevada -->
-<div id="nevada" class="bloc sticky-nav bgc-white l-bloc nav-bloc-top fadeInDown animDelay1 animated sticky" style="visibility: visible">
-	<div class="container">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand wolfe" href="index.html"><img src="img/pwnhs%20copy.png" height="44" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="navbar-collapse navbar-1 collapse">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">HOME</a>
-					</li>
-					<li>
-						<a href="team.html">TEAM</a>
-					</li>
-					<li>
-						<a href="docs.html">DOCS</a>
-					</li>
-					<li>
-						<a href="contact.html">CONTACT</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- nevada END -->
-    
      <div class="row">
         <div id="side-bar" class="col-xs-3 hidden-xs">
             <ul id="sideNav" class="affix-top">
-                <li class="active"><a href="#intro">INTRODUCTION</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#blocs">BLOCS</a></li>
-                <li><a href="#brics">BRICS</a></li>
-                <li><a href="#drop-mode">DROP MODE</a></li>
-                <li><a href="#view-mode">VIEW MODE</a></li>
-                <li><a href="#options-sidebar">OPTIONS SIDEBAR</a></li>
-                <li><a href="#site-options">SITE OPTIONS</a></li>
-                <li><a href="#swatches">SWATCHES</a></li>
-                <li><a href="#guides">GUIDES</a></li>
-                <li><a href="#images">IMAGES</a></li>
-                <li><a href="#fonts">FONTS</a></li>
-                <li><a href="#icons">ICONS</a></li>
-                <li><a href="#forms">FORMS</a></li>
-                <li><a href="#interactions">INTERACTIONS</a></li>
-                <li><a href="#pages">PAGES</a></li>
-                <li><a href="#browserPreview">PREVIEW IN BROWSER</a></li>
-                <li><a href="#export">EXPORTING</a></li>
+                <li><a href="#intro">INTRODUCTION</a></li>
+                <li><a href="#general">GENERAL GUIDELINES</a></li>
+                <div class="spacer-light"></div>
+                <li><a href="#volhours">VOLUNTEER HOURS</a></li>
+                <li><a href="#penhours">PENALTY HOURS</a></li>
+                <li><a href="#approrg">APPROVED ORGANISATIONS</a></li>
+                <div class="spacer-light"></div>
+                <li><a href="#meetings">MEETINGS</a></li>
+                <div class="spacer-light"></div>
+                <li><a href="#obligations">MEMBER OBLIGATIONS</a></li>
+                <li><a href="#bylaws">BY-LAWS</a></li>
                 <div class="spacer"></div>
-                <li><a href="api-guide.html">DEVELOPER API</a></li>
-                <li><a href="changelog.html">CHANGE LOG</a></li>
-                <li><a href="http://support.blocsapp.com/forums/">COMMUNITY</a></li>
+                <li><a href="develop.html">DEVELOPER DOCS</a></li>
+                <li><a href="officer.html">OFFICER DOCS</a></li>
                 <div class="spacer"></div>
-                <li><a href="http://blocsapp.com/">BUY BLOCS</a></li>
+                <li><a href="index.html"><span class="ion ion-arrow-left-c icon-spacer"></span>BACK TO PWNHS</a></li>
             </ul>
         </div>
    
@@ -318,17 +282,7 @@ addToHomescreen();
             </div>
         </div>   
    </div>
- <!-- Footer - bloc-11 -->
-<div class="bloc bgc-platinum l-bloc" id="bloc-11">
-	<div class="container">
-		<div class="row">
-				<p class="text-center  mg-sm">
-                    <a class="pw">Plano West</a> <a class="nhsf">NHS</a> is a student-led <a class="whitelink">501(c)(3)</a>. Site © 2016 <a class="pw">PW</a><a class="nhsf">NHS</a>. Made with <span class="fa fa-heart ex4"></span> in Plano by A. Hafiz. <a class="keep lined" href="info.html#developers">You code?</a>
-				</p>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-11 END -->
+ 
 </div>
 <!-- Main container END -->
 

@@ -620,19 +620,19 @@ iframe{
 }
 
 .mail1:hover .icon-lg, .mail1:hover label{
-    color: #2789a2; 
+    color: #22778e; 
 }
 
 .mail2:hover .icon-lg, .mail2:hover label{
-    color: #2c9ab7; 
+    color: #2789a2; 
 }
 
 .mail3:hover .icon-lg, .mail3:hover label{
-    color: #31abcc; 
+    color: #2c9ab7; 
 }
 
 .mail4:hover .icon-lg, .mail4:hover label{
-    color: #44b4d2; 
+    color: #31abcc; 
 }
 
 /* = Hyperlinks
