@@ -23,13 +23,10 @@ a{
     font-family: 'Montserrat', sans-serif;
     color:#8597A4;
     font-size:14px;
+    text-decoration: none !important;
 }
 
 a:hover{color:#FFF;text-decoration: none;}
-
-a:active, a:visited{
-    text-decoration: none;
-}
 
 a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
     font-family: 'proxima-nova', sans-serif !important;
