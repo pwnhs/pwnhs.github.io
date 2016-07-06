@@ -19,8 +19,26 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif !important; 
 }
 
-a{font-family: 'Montserrat', sans-serif;color:#8597A4;font-size:14px;}
-a:hover{color:#FFF;text-decoration: none;}
+a{
+    font-family: 'Montserrat', sans-serif;
+    color:#8597A4;
+    font-size:14px;
+}
+
+a:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+
+a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 16px;
+    color: #a49285 !important;
+}
+
+a.chill:hover {
+    color:rgba(133,151,164,0.5);
+}
 
 p a{color:#FFF;}
 a{
@@ -64,13 +82,14 @@ h2{
 .active a{
     color:#FFF;  
 }
+
 .docs-section{
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
 .shortcut{
     color:#cfdfea;
-    font-size:13px;
+    font-size:14px;
     font-weight: bold;
     background:#46515a;
     border-radius: 3px;
@@ -87,6 +106,29 @@ h2{
 .spacer-light{
     width:40px;
     height:2px;
-    background:rgba(255,255,255,.3);
+    background:rgba(164,146,133,.8);
     margin:20px 0;
+}
+
+.btn{
+	margin: 0 5px 5px 0;
+}
+
+.btn.pull-right{
+	margin: 0 0 5px 5px;
+}
+
+.btn-wire{
+    color: #8597A4;
+	background:transparent!important;
+	border:2px solid ;
+}
+
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid ;
+}
+
+.icon-spacer{
+	margin-right:5px;
 }
