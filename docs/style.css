@@ -25,10 +25,7 @@ a{
     font-size:14px;
 }
 
-a:hover{
-    opacity: 1;
-    text-decoration: none;
-}
+a:hover{color:#FFF;text-decoration: none;}
 
 a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
     font-family: 'proxima-nova', sans-serif !important;
@@ -36,7 +33,7 @@ a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
     color: #a49285 !important;
 }
 
-a.chill:hover {
+a.chill:hover{
     color:rgba(133,151,164,0.5);
 }
 
