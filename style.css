@@ -36,6 +36,9 @@ body{
 .bloc-lg{
 	padding:100px 50px;
 }
+.bloc-md-lg{
+	padding:75px 50px 50px 50px;
+}
 .bloc-md{
 	padding:50px;
 }
@@ -117,8 +120,11 @@ body{
 	border-color:rgba(255,255,255,.2);
 }
 .d-bloc .a-btn,.d-bloc .navbar a,.d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+    -webkit-transition: color .3s ease-in-out; 
+    transition: color .3s ease-in-out;
 	color:rgba(255,255,255,.6);
 }
+
 .d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc .navbar-brand:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
 	color:rgba(255,255,255,1);
 }
@@ -167,10 +173,12 @@ body{
 .d-bloc .panel .divider-h span,.l-bloc .divider-h span{
 	border-color:rgba(0,0,0,.1);
 }
-.d-bloc .panel .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc .navbar-brand,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-lg, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
+.d-bloc .panel .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc .navbar-brand,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
+    -webkit-transition: color .3s ease-in-out; 
+    transition: color .3s ease-in-out;
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .panel .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc .navbar-brand:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
+.d-bloc .panel .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc .navbar-brand:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
 	color:rgba(0,0,0,1);
 }
 .l-bloc .navbar-toggle .icon-bar{
@@ -562,10 +570,69 @@ iframe{
     -webkit-transition: all .3s ease-in-out; 
 } 
 
-.expansion:hover { 
-    filter: none; 
-    -webkit-filter: grayscale(0); 
+.expansion:hover {
     -webkit-transform: scale(1.02); 
+}
+
+.expansion-social { 
+    -webkit-transition: all .3s ease-in-out; 
+} 
+
+.expansion-social:hover {
+    -webkit-transform: scale(1.05); 
+}
+
+.iconWrap { 
+    position: relative; 
+} 
+
+.iconDescription { 
+    opacity:0; 
+    -webkit-transition: opacity 0.3s ease-in-out;
+} 
+
+.iconWrap:hover .iconDescription { 
+    /*visibility: visible;*/ 
+    opacity:1; 
+    -webkit-transform: scale(1.0); 
+}
+
+.twtr .icon-lg, .fbook .icon-lg, .rmnd .icon-lg, .gith .icon-lg, .mail1 .icon-lg, .mail2 .icon-lg, .mail3 .icon-lg, .mail4 .icon-lg{
+    -webkit-transition: color .3s ease-in-out; 
+    transition: color .3s ease-in-out;
+	color:rgba(0,0,0,.6);
+}
+
+.twtr:hover .icon-lg, .twtr:hover .iconDescription{
+    color: #55acee; 
+}
+
+.fbook:hover .icon-lg, .fbook:hover .iconDescription{
+    color: #3b5998; 
+}
+
+.rmnd:hover .icon-lg, .rmnd:hover .iconDescription{
+    color:rgb(77, 139, 217); 
+}
+
+.gith:hover .icon-lg, .gith:hover .iconDescription{
+    color: #333333; 
+}
+
+.mail1:hover .icon-lg, .mail1:hover label{
+    color: #2789a2; 
+}
+
+.mail2:hover .icon-lg, .mail2:hover label{
+    color: #2c9ab7; 
+}
+
+.mail3:hover .icon-lg, .mail3:hover label{
+    color: #31abcc; 
+}
+
+.mail4:hover .icon-lg, .mail4:hover label{
+    color: #44b4d2; 
 }
 
 /* = Hyperlinks
@@ -588,14 +655,16 @@ a.whitelink, a.whitelink:link, a.whitelink:hover, a.whitelink:visited, a.whiteli
 a.pw, a.pw:link, a.pw:hover, a.pw:visited, a.pw:active {
     color: black !important;
     cursor: text;
-    font-family: "montserrat", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400;
     font-size: 13px;
 }
 
 a.nhsf, a.nhsf:link, a.nhsf:hover, a.nhsf:visited, a.nhsf:active {
     color: #035299 !important;
     cursor: text;
-    font-family: "montserrat", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 400;
     font-size: 13px;
 }
 
