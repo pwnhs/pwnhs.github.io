@@ -414,6 +414,9 @@ button{
 	padding: 3px 20px;
 }
 
+input:focus {
+    outline:none;
+}
 /* = Icons
 -------------------------------------------------------------- */
 .icon-sm{
