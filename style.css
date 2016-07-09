@@ -9,6 +9,21 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
 #page-loading-blocs-notifaction{position: absolute;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;}
 
 /* = Blocs
