@@ -9,10 +9,6 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
- .ios7{
-     margin-top: 17px !important;
-  }
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
