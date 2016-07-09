@@ -15,6 +15,16 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
 /* Globals type styling */
 
 h1,h2,h3,h4,h5,h6{
