@@ -11,6 +11,10 @@ body{
     color:#8597A4;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /* Globals type styling */
 
 h1,h2,h3,h4,h5,h6{
@@ -31,7 +35,7 @@ a:hover{color:#FFF;text-decoration: none;}
 a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
     font-family: 'proxima-nova', sans-serif !important;
     font-size: 16px;
-    color:rgb(164,146,133) !important;
+    color:rgb(164,146,133);
 }
 
 a.chill:hover{
