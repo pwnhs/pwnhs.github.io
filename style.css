@@ -868,6 +868,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
     z-index:1;
 }
 
+.icon-sm-md {
+    font-size: 20px!important;
+}
+
 .btmrow {
     margin: 0 auto;
     text-align: center;
@@ -901,7 +905,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
     }
 
     .btmrow li {
-        padding: 0 20px;
+        padding: 0 18px;
         position: relative;
         margin-top: 0
     }
@@ -922,6 +926,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
     }
 }
 
+code {
+    padding: 2px 4px;
+    color: #d14;
+    white-space: nowrap;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
