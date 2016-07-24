@@ -109,7 +109,34 @@
                 <li><a href="#native">NATIVE OS BUILDS</a></li>
                 <div class="spacer"></div>
                 <li><a href="./docs">STUDENT DOCS</a></li>
-                <li><a href="./officer">OFFICER DOCS</a></li>
+                <li>
+<!-- 
+    To our esteemed web developers:
+        If you're reading this, you're seconds away from figuring out how to get into the Officer Docs page. Because this is a static website, we could not use htpasswd, and so decided to use a low-level js security system instead to at least stop the general public. Don't worry, there's nothing very interesting on the page aside from a tutorial on how to edit content of the site.
+    -ayaz 
+-->
+<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Three Tries Left','');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "probation") {
+location.href = "officer";
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</script>
+<a onClick="passWord()" style="cursor:pointer;">OFFICER DOCS</a>
+                </li>
                 <div class="spacer"></div>
                 <li><a href="//pwnhs.org"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></li>
             </ul>
