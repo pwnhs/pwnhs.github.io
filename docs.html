@@ -7,7 +7,7 @@
     <meta name="description" content="Documentation on PWNHS.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="./favicons/favicon.ico" />
-    <title>Student Docs</title>
+    <title>Developer Docs</title>
         
     <!-- webapp -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -16,6 +16,8 @@
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" id="ppstyle" type="text/css" href="documentation/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
         
     <!-- icons -->
     <link rel='stylesheet' href='./css/font-awesome.min.css'/>
@@ -32,13 +34,26 @@
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="documentation/blocs.js"></script>
+    <script src="./js/prism.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
         
     <!-- typed -->
-    <script src="./scripts/typed/js/typed.js"></script>
+    <script src="./scripts/typed/js/typed-code.js"></script>
     <script>
         $(function(){
             $(".forvara").typed({
-                strings: ["Writtan", "Written^1000"],
+                strings: ["Codad", "Coded^1000"],
+                typeSpeed: 0,
+                loop: true,
+                typeSpeed: 100,
+                showCursor: false,
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $(".likola").typed({
+                strings: ["Typos", "Typed^7500"],
                 typeSpeed: 0,
                 loop: true,
                 typeSpeed: 100,
@@ -77,19 +92,23 @@
         <div id="side-bar" class="col-xs-3 hidden-xs">
             <ul id="sideNav" class="affix-top">
                 <li><a href="#intro">INTRODUCTION</a></li>
-                <li><a href="#general">GENERAL CONSIDERATIONS</a></li>
-                <div class="spacer-light"></div>
-                <li><a href="#volhours">VOLUNTEER HOURS</a></li>
-                <li><a href="#approrg">APPROVED ORGANISATIONS</a></li>
-                <li><a href="#penhours">PENALTY HOURS</a></li>
-                <div class="spacer-light"></div>
-                <li><a href="#meetings">MEETINGS</a></li>
-                <div class="spacer-light"></div>
-                <li><a href="#obligations">MEMBER OBLIGATIONS</a></li>
-                <li><a href="#four-pillars">FOUR PILLARS</a></li>
-                <li><a href="#bylaws">BY-LAWS</a></li>
+                <li><a href="#start">GETTING STARTED</a></li>
+                <li><a href="#allowed">DEVELOPER ALLOWANCES</a></li>
+                <div class="spacer-move"></div>
+                <li><a href="#pulls">ISSUES & SUBMISSIONS</a></li>
+                <div class="spacer-move"></div>
+                <li><a href="#infrastructure">PROJECT INFRASTRUCTURE</a></li>
+                <li><a href="#depend">DEPENDENCIES</a></li>
+                <li><a href="#extensions">EXTENSIONS</a></li>
+                <div class="spacer-move"></div>
+                <li><a href="#icons">FONTS & ICONS</a></li>
+                <li><a href="#colors">STYLING & COLOR PALETTE</a></li>
+                <li><a href="#animations">ANIMATIONS</a></li>
+                <div class="spacer-move"></div>
+                <li><a href="#webapp">WEB APP</a></li>
+                <li><a href="#native">NATIVE OS BUILDS</a></li>
                 <div class="spacer"></div>
-                <li><a href="develop">DEVELOPER DOCS</a></li>
+                <li><a href="./docs">STUDENT DOCS</a></li>
                 <li>
 <!-- 
     To our esteemed web developers:
@@ -123,237 +142,465 @@ return " ";
         <div class="col-xs-9 main-content">
             <div id="intro" class="docs-section">
                 <h1>INTRODUCTION</h1>
-                <p>Welcome to the Plano West NHS Documentation. This page hosts all relevant information for PWNHS members regarding the club and its operations.</p>
-                <h2>What is PWNHS?</h2>
-                <p>Plano West NHS is the most monumental service organisation in the greater DFW area. We are devoted to aiding the community and exemplifying what it means to be an honor student. You can check out our <a class="keep" href="#four-pillars">Four Pillars</a> for more information on NHS foci.</p>
-                <h2>Why Should I Join PWNHS?</h2>
-                <p>The National Honor Society offers many benefits, both to your social and academic experience at West. Some of these benefits may be found <a class="keep" href="//pwnhs.org#montana">here</a>. It never hurts to say you were part of the nation's premier high school organisation!</p>
+                <p>Welcome to the PWNHS Development Kit. This page covers basic requirements and features of the PWNHS website project.</p>
+                <h2>What the PWNHS Development Kit is</h2>
+                <p>To open up more avenues for engagement with the PWNHS community as a whole, we have opened up the PWNHS site project for tweaking by those in our organisation who are particularly code-savvy. The Development Kit provides basic structure for how the site should behave and establishes a path for anyone to help improve our website.</p>
+                <h2>What the PWNHS Development Kit is not</h2>
+                <p>This document does not hold proprietary APIs, Content Management Systems, of FTP clients. Developers are given access to static infrastructure, not server-side technologies.</p>
             </div>
             
-             <div id="general" class="docs-section">
-                <h1>GENERAL CONSIDERATIONS</h1>
-                <br>
-                <h2>Volunteer Hours</h2>
-                <p>Members must complete <span class="shortcut">15 hours</span> of volunteer service each semester to remain in good standing with the Plano West NHS. Be sure that your NHS hours come from approved organisations and that you abide by our <a class="keep" href="#rest">restrictions</a>.</p>
-                <h2>Penalty Hours</h2>
-                 <p>They accumulate quickly! <span class="shortcut">2</span> hours for an abscense at a mandatory meeting, <span class="shortcut">missed + 5</span> hours for every semester you don't complete 15 hours. Try not to get them, and complete them quickly if you do. Our <a class="keep" href="#penhours">penalty hours</a> tab dives into more detail.</p>
-                <h2>Obligations</h2>
-                <p>Make sure to observe honorable behavior. Violation of the law, school conduct code, or academic integrity will result in immediate expulsion. Be sure to review your <a class="keep" href="#obligations">obligations</a>.</p>
-            </div>
-            
-            <div id="volhours" class="docs-section">
-                <h1>VOLUNTEER HOURS</h1>
-                <p>Volunteering is a huge part of NHS. Your ability to aid the community around you goes a long way to demonstrating your capabilities as an individual. We're sure that you will do many amazing things during your volunteer services this year.</p>
-                <h2>Hours Sheet</h2>
-                <p>You can download the PWNHS volunteer hours sheet next to this block.<a href="./files/NHS%20Hours%20Sheet.docx" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Hours Sheet (.docx)</a></p>
-                <div id="guid">
-                    <h2>Guidelines for Hours</h2>
-                </div>
-                <p>Please keep in mind that when filling out your sheet, there should be <span class="shortcut">no crossing out</span> and rewriting of hours, names, or signatures - this is required to eliminate suspicion of fraud. If you must cross out a parameter, cross out the entire box and rewrite your hours in another one.
-                <br>
-                <br>
-                Multiple dates of the same service may be confined to one box, so long as <span class="shortcut">each date is noted</span> to the side and <span class="shortcut">initialed</span>.
-                <br>
-                <br>
-                All members must complete <span class="shortcut">15 hours</span> volunteer hours each semester. <span class="shortcut">No double dipping!</span> Hours turned in for NHS do not count for another club, and vice versa; we do cross-check. 
-                <br>
-                <br>
-                All fall hours must be turned in by <span class="shortcut">Dec. 4</span>.
-                </p>
-                <div id="rest">
-                    <h2>Restrictions</h2>
-                </div>
-                    <p>
-                         Up to <span class="shortcut">10</span> hours from the <span class="shortcut">summer</span> may count towards NHS, and may only be redeemed during the fall semester.
-                        <br>
-                        <br>
-                        Up to <span class="shortcut">10</span> hours from <span class="shortcut">one organisation</span> may count towards NHS. The rest must be from other sources.
-                        <br>
-                        <br>
-                        Don't wear yourself out! You may only volunteer <span class="shortcut">8</span> hours at a time (at one organisation on one day).
-                        <br>
-                        <br>
-                        Only <span class="shortcut">5</span> hours may be from PTSA/Booster Club events. In addition, these events must be approved by the PWNHS. Approval is done on a case-by-case, rolling basis, so <a class="keep" href="contact">contact us </a> as soon as possible if you think you may want to use one of these events for your hours!
-                        <br>
-                        <br>
-                        The organisations you volunteer at must be sanctioned as <span class="shortcut">"approved"</span> by either the national branch of the NHS or the local PWNHS. <a class="keep" href="#approrg">Don't know if your organisation is approved?</a>
-                        <br>
-                        <br>
-                        As unfortunate as it may be, only secular participation from approved organisations is accepted for valid NHS hours. In other words,<span class="shortcut">no religiously-afilliated</span> volunteering may be used for your NHS volunteer hours. This includes, but is not limited to, church/mosque/temple events, religious charity, and the like.
-                        <br>
-                        <br>
-                        <span class="shortcut">Donation/Fundraising</span> events,
-                        helping teachers, and <span class="shortcut">Eagle/Boy/Girl Scouts</span> <span class="shortcut">WILL NOT COUNT FOR NHS HOURS</span>.
-                    </p>
-            </div>
-            
-            <div id="approrg" class="docs-section">
-                <h1>APPROVED ORGANISATIONS</h1>
-                <p>The national branch of the NHS requires that members volunteer only for organisations approved by local branches. This section discusses PWNHS-approved organisations, and how you can get your organisation approved if you feel it should count for volunteer hours.</p>
-                <h2>List</h2>
-                <p>You can visit the list of approved organisations next to this block. <a href="https://docs.google.com/document/d/1Onoejbk8YHy0AXFlCEtfqjPJasvwSGhbuEPW_cmWVIs/edit?usp=sharing" class="btn  chill  btn-wire btn-xs pull-right" target="_blank"><span class="fa fa-file-text icon-spacer"></span>Visit Approved Organisations list (.gdoc)</a>
-                <br>
-                <br>
-                    Check to make sure that the organisation you plan to volunteer for is listed in the document. If it's not, check below for what to do! (We suggest you check your organisation's standing at least two weeks before volunteering in case you must submit an approval form.) 
-                <br>
-                <br>
-                    Note: You <span class="shortcut">will not</span> recieve hours for volunteering at an event or for an organisation that is not on the "approved" list or has otherwise been approved by the PWNHS.
-                </p>
-                <h2>Applying for Approval</h2>
-                <p>You can download the list of approved organisations next to this block. <a href="./files/NHS%20Org%20Approval%20Form.docx" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Approval Form (.docx)</a>
-                <br>
-                <br>
-                    We want to provide all of our members an opportunity to volunteer at rewarding and enjoyable locations. If you wish to volunteer at a particular location that you know adheres to NHS guidelines but is not listed as on the approved organisations list, you can fill out the approval form for your organisation to be considered.
-                <br>
-                <br>
-                    For your organisation/event to be considered, please fill out approval form and <a class="keep" href="mailto:pwestnhs@gmail.com?subject=Approval%20Form">email it</a> to us at least <span class="shortcut">two weeks</span> before the date of your volunteering. Please write emails clearly. For example, if a O and a 0 or 1 and l look similar, please help us distinguish! If you do not recieve a response within a business week, contact one of the <a class="keep" href="team">officers</a> directly.
-                <br>
-                <br>
-                    Note: If you've submitted an approval form for a long-term organization and it has been <span class="shortcut">approved but is NOT listed</span> on the document of approved organisation, don't worry! Not all organizations we approve will be added to this list.
-                </p>
-                <h2>Relationships</h2>
-                <p>The Plano West NHS encourages you to build a lasting, concerted relationship with one or more of these organizations and to give back to your community on a regular basis. It looks great and makes you feel even better!</p>
-            </div>
-            
-            <div id="penhours" class="docs-section">
-                <h1>PENALTY HOURS</h1>
-                <p>Sometimes you can't make two meetings or aren't able to finish all your hours. That's okay! But to be fair to all of our members and adhere to NHS guidelines, we must give penalty hours to all those who are not able to fulfill PWNHS guidelines.</p>
-                <h2>What Incites Penalty Hours?</h2>
-                <p>Failure to complete the 15 required volunteer hours each semester will result in penalty hours for the next semester. The number of penalty hours will be defined as the <span class="shortcut">number of uncompleted horus + 5</span>. For instance, if you only finish 12 hours one semester, you will have missed 3 and have to make up 3 + 5 = <span class="shortcut">8</span> hours the next semester <span class="shortcut">in addition to</span> the normal, required 15 hours per semester (i.e. you will have to do 15 + 8 = 23 hours in total for the next semester).
-                <br>
-                <br>
-                You are required to attend two of four PWNHS meetings each semester. Failure to miss one required meeting will result in <span class="shortcut">2 penalty hours</span>. Failure to miss both required meetings will result in <span class="shortcut">4 penalty hours</span>. Penalty hours for missed meetings must be turned in the same semester the meetings were unattended.</p>
-                <h2>Completing Penalty Hours</h2>
-                <p>You can download the penalty hours sheet next to this block. <a href="./files/NHS%20Penalty%20Hours%20Sheet.docx" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Penalty Hours Sheet (.docx)</a>
-                <br>
-                <br>
-                Turn in your penalty hours sheet(s) together with your regular hours sheets by the required due date(s). Your completion of penalty hours must abide by the same <a class="keep" href="#guid">guidelines</a> and <a class="keep" href="#rest">restrictions</a> as your regular volunteer hours.</p>
-            </div>
-
-            
-            <div id="meetings" class="docs-section">
-                <h1>MEETINGS</h1>
-                <p>Meetings are our primary chance to interact with the PWNHS community and provide you with updates on the club and our evolving progress. They may be big, but they hold a lot of essential information.</p>
-                <h2>General</h2>
-                <p>Meetings are held on specified dates during <span class="shortcut">A/B Lunch</span> or during <span class="shortcut">7th Period</span> (for our zero-hour friends). 
-                <br>
-                <br>
-                Of the four meetings each semester, you are required to attend two. During the fall, you must attend the first meeting (<span class="shortcut">informational meeting</span>) and one of the other three meetings (<span class="shortcut">growth meeting</span>).</p>
-                <h2>Miss a Meeting?</h2>
+             <div id="start" class="docs-section">
+                <h1>GETTING STARTED</h1>
+                 <p></p>
+                <h2>Project Base</h2>
+                <p>PWNHS is a GitHub Pages project hosted (consequently) on GitHub. You can visit the project <a class="move" href="https://github.com/pwnhs/pwnhs.github.io">here</a>. To explore the project and offer contributions, you must first <code class="git">fork</code> and <code class="git">clone</code> the PWNHS repository.</p>
+                <h2>Forking</h2>
                 <p>
-                If you miss a meeting, don't fret! Attend another one so that you can get your two required meetings.
+                To fork the project, click the button below this block. Just save the fork to your account and you're done!
                 <br>
                 <br>
-                Try not to miss our informational meeting, as it is the keynote meeting of the year. If you are unfortuantely unable to make it, download and go through the informational meeting powerpoint (found below) and make up the meeting by attending <span class="shortcut">both growth meetings</span>. Or, you can just do <span class="shortcut">two <a class="keep" href="#penhours" style="font-size:14px;">penalty hours</a></span>  in addition to the required 15.
-                <br>
-                <br>
-                You can download PowerPoints for missed meetings next to this block. <a href="" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Nothing to download yet!</a></p>
-            </div>
-            
-            <div id="obligations" class="docs-section">
-                <h1>MEMBER OBLIGATIONS</h1>
-                <p>The Plano West NHS strives to maintain an active and interconnected, honorable community of members. In order to achieve this ever-continuous goal, we require our members to commit themselves to some basic obligations.</p>
-                <h2>Obligation Form</h2>
-                <p>You can download the Obligation Form next to this block. <a href="./files/NHS%20Member%20Obligations.docx" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Obligations (.docx)</a>
-                <br>
-                <br>
-                All PWNHS members must submit this form following the introductory (first) meeting of the fall semester alongside their $5 dues by <span class="shortuct">October 1</span> to <span class="shortcut">Room 2013</span>. </p>
-                <h2>Membership Qualifications</h2>
-                <p>To become a member of the Plano West NHS, you must have attended <span class="shortcut">Plano West</span>, <span class="shortcut">Jasper</span>, or <span class="shortcut">Shepton</span> for a <span class="shortcut">semester</span> at minimum. New candidates to the PWNHS will be reviewed and approved by a majority vote of the faculty council before induction. New candidates are required to attend induction in order to be achieve standing as official members.</p>
-                <h3>Transfer Students</h3>
-                <p>Transfer students must bring a <span class="shortcut">letter of good standing</span> from their previous principal or NHS chapter advisor, at which point they will be automatically accepted as a member of the PWNHS. <span class="shortcut">Jasper/Shepton members are not transfer students.</span></p>
-                <h2>Membership Requirements</h2>
-                <p>All PWNHS members must have a minimum <span class="shortcut">3.60 GPA</span>, no exceptions.
-                <br>
-                <br>
-                Members are expected to contribute <span class="shortcut">$5</span> in membership dues at the start of the year. These dues help fund national membership fees, special events or projects, meeting supplies, guest speakers, and internal PWNHS ventures. Dues must be submitted with the obligation form by <span class="shortuct">October 1</span> to <span class="shortcut">Room 2013</span>. T-Shirts are not included in the membership dues, and will be sold starting October.
-                <br>
-                <br>
-                Members are expected to complete <span class="shortcut">15</span> hours of community service per semester. These hours may not be counted or used for any other purpose. <span class="shortcut">10 summer hours</span> may be applied to the fall semester only. All fall semester hours must be turned in by <span class="shortcut">December 4th</span> to room 2013. More information on hours can be found <a href="#volhours" class="keep">here</a>.
-                <br>
-                <br>
-                Members must attend <span class="shortcut">2 meetings</span> per semester. Read up on PWNHS meetings <a class="keep" href="#meetings">here</a>.
-                <br>
-                <br>
-                Members <span class="shortcut">must not violate</span> the law, the school conduct code, or academic integrity to remain in good standing with the club. Information on consequences of such actions may be found below.
+                <a class="github-button" href="https://github.com/pwnhs/pwnhs.github.io/fork" data-icon="octicon-repo-forked" aria-label="Fork pwnhs/pwnhs.github.io on GitHub" >Fork</a>
                 </p>
-                <h2>Discipline and Dismissal Policy</h2>
-                <p>Violations of the law, school conduct code, or academic integrity will result in <span class="shortcut">probation</span>, <span class="shortcut">additional hours</span>, or <span class="shortcut">dismissal</span> as decided and enforced by the PWNHS core/faculty council on a case-by-case basis.
-                <br>
-                <br>
-                If the PWNHS suggests the dismissal of a member, the condition will be decided by the faculty council. A <span class="shortcut">majority vote</span> (½ + 1) is required for the motion of dismissal to pass. No veto is enabled.
-                <br>
-                <br>
-                To resign one's position as a PWNHS/NHS member, he or she must directly <a class="keep" href="contact">contact</a> the PWNHS core.
-                <br>
-                <br>
-                <span class="shortcut">Members who resign or are dismissed may not rejoin</span> the PWNHS at a later time.
+                <h2>Cloning to Local</h2>
+                <p>
+                In order to edit your fork of the PWNHS repo, you have to <code class="git">clone</code> the fork to your machine so that all of the code is locally avaliable. Cloning can be done in two ways - via GitHub's desktop application or via command line.
                 </p>
-            </div>
-            
-            <div id="four-pillars" class="docs-section-cut">
-                <h1>FOUR PILLARS</h1>
-            </div>
-					<div class="col-sm-3 expansion docs-section-icon ">
-						<div class="text-center">
-							<span class="fa fa-male icon-md-lg ex1"></span>
-						</div>
-						<h3 class="text-center">
-							Character
-						</h3>
-						<p class="text-center" style="font-size: 12px;">
-							NHS seeks to develop students with responsible citizenship demonstrated in all their actions.
-                        </p>
-					</div>
-					<div class="col-sm-3 expansion docs-section-icon">
-						<div class="text-center">
-							<span class="fa fa-university icon-md-lg ex2"></span>
-						</div>
-						<h3 class="text-center">
-							Scholarship
-						</h3>
-						<p class="text-center" style="font-size: 12px;">
-							We want to create an enthusiasm for knowledge, characterized by a commitment to learning.
-						</p>
-					</div>
-					<div class="col-sm-3 expansion docs-section-icon">
-						<div class="text-center">
-							<span class="fa fa-hand-rock-o icon-md-lg ex3"></span>
-						</div>
-						<h3 class="text-center">
-							Leadership
-						</h3>
-						<p class="text-center" style="font-size: 12px;">
-							Promoting direction by taking the initiative to aid others in our daily activities is a big part of NHS.
-						</p>
-					</div>
-					<div class="col-sm-3 expansion docs-section-icon">
-						<div class="text-center">
-							<span class="fa fa-heartbeat icon-md-lg ex4"></span>
-						</div>
-						<h3 class="text-center">
-							Service
-						</h3>
-						<p class="text-center" style="font-size: 12px;">
-							Members should stimulate a personal desire to render service for the benefit of those in need.
-						</p>
-					</div>
-            
-            <div id="bylaws" class="docs-section">
-                <h1>BY-LAWS</h1>
-                <p>We encourage all of our members to read up on NHS legal documentation and to be well-versed in our practices. Here we host by-laws of the PWNHS/NHS.</p>
-                <h2>PWNHS / Local</h2>
-                <p>You can download the PWNHS By-Laws next to this block. <a href="#" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Nothing to download yet!</a></p>
-                <h2>NHS / National</h2>
-                <p>You can download the NHS National Constitution next to this block. <a href="./files/NHS%20Constitution.pdf" class="btn  chill  btn-wire btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download NHS National Constitution (.docx)</a></p>
-            </div>
-            
+                <h3>Cloning via Desktop App</h3>
+                <p>
+                Cloning via GitHub's desktop app is a one-click process. After <a class="move" href="https://desktop.github.com">downloading</a> the app, simply go to your forked repository of PWNHS (with your GitHub username instead of <code class="git">USER</code>): 
+                <pre><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
+                and press <code class="git velvet">Open in Desktop</code> under the <code class="git button velvet">Clone or download</code> button. This automates the entire process, and we suggest all but the most experienced take this route.
+                </p>
+                <h3>Cloning via Command Line</h3>
+                <p>
+                To create a local clone via command line, open up Terminal or Git Bash and type in <code class="git">git clone</code> followed by the URL of your fork. You can find this URL by going to your fork of PWNHS, clicking the <code class="git button velvet">Clone or download</code> button, and copying the URL found below the Clone with HTTPS block. Your command line will look like this:
+                <pre class="command-line language-bash" data-prompt="machine:~user"><code class=" language-bash"><span class="command-line-prompt"><span data-prompt="machine:~ user $"></span></span><span class="token function">git clone</span> https://github.com/<span class="token function" style="font-style:italic">USER</span>/pwnhs.github.io.git</code></pre>
+                Press <span style="font-style:bold">Enter</span>. Check to make sure all objects are unpacked and the command line reads <code class="git">done</code>.
+                <br>
+                <br>
+                To allow for upstreaming (pulling of changes from the Master repo to your fork), navigate to the location of your fork in the command line and type in <code class="git">git remote add upstream</code> followed by the URL of the original PWNHS repo. Your command line will look like this:
+                <pre class="command-line language-bash" data-prompt="machine:~user"><code class=" language-bash"><span class="command-line-prompt"><span data-prompt="machine:FORK_LOCATION user $"></span></span><span class="token function">git remote add upstream</span> https://github.com/pwnhs/pwnhs.github.io.git</code></pre>
+                </p>
+                <h2>Note</h2>
+                <p>
+                <code class="max">IMPORTANT NOTE</code>: In order to submit pull requests to the Master, you must both <code class="git">fork</code> and then <code class="git">clone</code> the Master PWNHS repo. Only cloning it will not create a server-side branch of the repo, thereby not tying your clone to the Master and disallowing you the ability to merge with the Master branch. More information on forking a repo <a class="move" href="https://guides.github.com/activities/forking/">here</a> and <a class="move" href="https://help.github.com/articles/fork-a-repo/">here</a>.
+                </p>
+         </div>
+    
+         <div id="allowed" class="docs-section-cut">
+             <h1>DEVELOPER ALLOWANCES</h1>
+             <p>Although we are more than eager to have you tweak and improve upon our site, some things better left alone or are only to be handled by the NHS core.</p>
+    </div>
+			<div class="col1 expansion docs-section">
+                <span class="text-center">
+                <h2 class="text-center expagreen">Do's</h2>
+				<p class="text-center">
+                    <br>
+					<span class="fa fa-check check "></span> DO edit format, style, animations, frameworks
+                    <br>
+                    <br>
+					<span class="fa fa-check check "></span>DO tweak expanded stylesheets, javascript, html
+                    <br>
+                    <br>
+					<span class="fa fa-check check "></span>DO add style- and feature-based extensions
+                    <br>
+                    <br>
+					<span class="fa fa-check check "></span>DO observe consistency across pages and styles
+                    <br>
+                    <br>
+					<span class="fa fa-check check "></span>DO keep with established <a class="move" href="#icons">fonts</a> and the <a class="move" href="#colors">color palette</a>
+				</p>
+                </span>
+			</div>
+			<div class="col1 expansion docs-section">
+                <span class="text-center">
+                <h2 class="text-center expared">Don'ts</h2>
+				<p class="text-center">
+                    <br>
+					<span class="fa fa-remove ecks"></span> DON'T edit content (text, pictures) of information
+                    <br>
+                    <br>
+                    <span class="fa fa-remove ecks"></span> DON'T touch minimised files (they're dependencies!)
+                    <br>
+                    <br>
+                    <span class="fa fa-remove ecks"></span> DON'T add infrastructure-altering extensions
+                    <br>
+                    <br>
+                    <span class="fa fa-remove ecks"></span> DON'T generate hyper-independent structures
+                    <br>
+                    <br>
+                    <span class="fa fa-remove ecks"></span> DON'T neglect <a class="move" href="#depend">dependencies</a> or add redundancies
+				</p>
+                </span>
+			</div>
+    
+         <div class="docs-section" id="pulls">
+            <h1>ISSUES & SUBMISSIONS</h1>
+            <p>A community is built on discussion and contribution. We want those of PWNHS who choose to aid in our project to develop a mutually dependent, beneficial collective. That's why opening issues and submitting pull requests are so important.</p>
+            <h2>Issues</h2>
+            <p><code class="git">Issues</code> are a way to point attention to and/or discuss a bug, improvement, or anything else of substance. If you see any place for improvement or have something to bring up, <a class="move" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a> on the PWNHS repo. More on issues <a class="move" href="https://guides.github.com/features/issues/">here</a>.</p>
+            <h2>Submissions (Pull Requests)</h2>
+            <p>A <code class="git">pull request</code> is a way to submit features or fixes of the project you have made on your fork to the <code class="git">master</code> branch. Pull requests are the most important part of your forking process, as they show what contributions you have to propose.
+            <br>
+            <br>
+            To make a pull request, go to your fork of PWNHS on GitHub:
+            <pre><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
+            where you will see a banner noting that you have recently pushed a new branch of the PWNHS project Master. Click on <code class="git button velvet">Compare & pull request</code>. After making a title and filling the description with information regarding what you have added/changed/removed and why, press <code class="git button velvet">Create pull request</code>.
+            </p>
+            <h2>Note</h2>
+            <p>
+            <code class="max">IMPORTANT NOTE</code>: Though the vast majority of your legitimate contributions will get in, there will be the occasional pull request that does not meet our standards. To make sure that your contribitions have the optimal chance of acceptance, make sure they correspond with our <a class="move" href="#allowed">developer allowances</a> and there is nothing in your pull request that does not directly correlate with the betterment of the PWNHS site.
+            <br>
+            <br>
+            To incentivise you, we have a variety of high-caliber perks and rewards given to developers who contribute accepted pull requests 🙃.
+            <h2>Having Trouble?</h2>
+            <p>
+            More information on pull requests <a class="move" href="https://guides.github.com/activities/forking/#making-a-pull-request">here</a> and <a class="move" href="https://help.github.com/articles/creating-a-pull-request/">here</a>.
+            </p>
+         </div>
+        
+        <div id="infrastructure" class="docs-section">
+            <h1>PROJECT INFRASTRUCTURE</h1> 
+            <p>The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.</p>
+            <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
+            <p>
+            Masses can be thought of as the various elements, or building blocks, of a site. These include things like paragraph sections, images with captions, rows of icons, etc. Instead of having to code an element manually, a <code class="language-markup" style="color:#e6db74">mass</code> provides a preset that describes the layout, structure, and function of the element for you. Confused? Here's an example of code that describes the panel of <a class="move" href="//pwnhs.org#upcoming">Upcoming Projects and Volunteer Opportunities</a> on the PWNHS main page:
+<pre class="language-html"><code>&ltdiv class="container"&gt
+    &ltdiv class="row animSpeedFast voffset"&gt
+        &lta class="keep" href="http://act.alz.org/site/TR?fr_id=9319&pg=entry"&gt
+            &ltdiv class="col-sm-4 expansion"&gt
+				&ltdiv class="panel"&gt
+                    &ltdiv class="panel-heading"&gt
+				        &lth3 class="mg-clear  text-right" style="font-weight:600"&gt
+                        Walk to end Alzheimers
+                        &lt/h3&gt
+                    &lt/div&gt
+                    &ltdiv class="panel-body"&gt  
+                        &ltimg src="img/Final_walk_TALK.png" class="img-responsive" /&gt
+				    &lt/div&gt
+                &lt/div&gt
+            &lt/div&gt
+        &lt/a&gt
+    &lt/div&gt
+&lt/div&gt</code></pre>
+            Unless you really love <code class="language-markup">&ltdiv&gt</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
+            <br>
+            <br>
+            Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. More custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet. In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
+            <br>
+            <br>
+            Because we expect our developers to modify the style of the site (as accorded by our <a class="move" href="#allowed">developer allowances</a>), and not the content, we do not have a list of all <code class="language-markup">Molekule</code> <code class="language-markup" style="color:#e6db74">mass</code>es on this Docs page. You are supposed to edit or add/modify to elements already-existing <code class="language-markup" style="color:#e6db74">mass</code> classes, which can be found in <code class="language-markup">./style.css</code>. 
+            <br>
+            <br>
+            If you would like to obtain the full documentation and dependencies of <code class="language-markup">Molekule</code> (which includes all <code class="language-markup" style="color:#e6db74">"mass"</code> structures) for your own projects, just <a class="move" href="mailto:ayaz.hafiz@pwnhs.com?subject=It's%20Spelled%20Molecule">say hi</a>!
+            </p>
+            <h2><code class="language-markup" style="color:#e6db74">"unit"</code> Structures</h2>
+            <p>Much broader in scope and easier to apply, a <code class="language-markup" style="color:#e6db74">unit</code> can be thought of as the larger frame in which <code class="language-markup" style="color:#e6db74">mass</code>es are held. <a class="move" href="//pwnhs.org">PWNHS's landing page</a>, for instance, is full screen, light, and parallaxed - a format allowed by the following structure:
+<pre><code class="language-html">&lt;div class="unit unit-fill-screen b-parallax bg-IMGx bgc-white l-unit" id="florida"&gt;
+
+    &lt;!-- landing page content -->
+
+&lt;/div&gt;</code></pre>
+            The styling for the relevant <code class="language-html" style="color:#e6db74">unit</code> classes (<code class="language-markup" style="color:#e6db74">unit</code>, <code class="language-markup" style="color:#e6db74">unit-fill-screen</code>, <code class="language-markup" style="color:#e6db74">l-unit</code>) are as follow:
+    <div>
+<pre class="language-css">
+<code>.unit{
+	width:100%;
+	clear:both;
+	background: 50% 50% no-repeat;
+	padding:0 50px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+
+.unit-fill-screen{
+	padding-top:0;
+	position: relative;
+	height: inherit;
+}
+
+.unit-fill-screen > .container{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+
+.l-unit{
+	color:rgba(0,0,0,.5);
+}
+</code></pre>
+    </div>
+            Ultimately, then, <code class="language-markup" style="color:#e6db74">unit</code>s allow for the encompassed styling of the container in which <code class="language-markup" style="color:#e6db74">mass</code>es are held.
+            </p>
+            <h2>What do I do with this?</h2>
+            <p>
+            We suggest you play around and edit the styling of various <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code> structures to create something you find appealing and think would better the PWNHS website. You can really do anything, as long as you upkeep the infastructure we've built and observe our <a class="move" href="#allowed">allowances</a>.
+            </p>
+        </div>
+
+        <div id="depend" class="docs-section">
+            <h1>DEPENDENCIES</h1>
+            <p>The PWNHS site relies on multiple objects to keep the project's structure upright. Here we list the vital components of our site so that you establish what is discretionary and what is necessary in your contributions. 
+            <br>
+            <br>
+            <code class="shortcut">General Rule:</code> If a file is minimised (has a <code class="language-html">.min</code> pre-extension), it's a dependency and should not be touched.
+            <br>
+            <br>
+            Essentially, anything relating to <code class="language-">Molekule</code>, <code style="color:#6f5499">Bootstrap</code>, Prism, and any fonts or icons are absolutley essential to this project. Molekule and Bootstrap work hand-in-hand to create the PWNHS site you see, Prism generates the beatiful code examples we have, and fonts/icons make everything extra pretty.
+            <br>
+            <br>
+            The following folders and files are not to be modified or removed:
+<pre class="language-">
+<code>./css/
+./files/
+./fonts/
+./js/
+./README.md
+./scripts/typed/</code>
+</pre>
+            </p>
+        </div>
+
+<div id="extensions" class="docs-section-cut">
+    <h1>EXTENSIONS</h1>
+    <p>
+    Several extensions, including Typed and Prism, are already installed into the PWNHS project as add-ons to improve the functionality and appearance of the site. If you wish to add an extension, reference the do's/don'ts of extensions below.
+    </p>
+</div>
+<div class="col1 expansion">
+                <span class="text-center">
+                <h2 class="text-center expagreen">Do's</h2>
+				<p class="text-center">
+                    <br>
+					<span class="fa fa-check check "></span> DO add stylistic extensions (css, js, svg, fonts)
+                    <br>
+                    <br>
+					<span class="fa fa-check check "></span>DO add static extensions (don't require user input)
+				</p>
+                </span>
+			</div>
+			<div class="col1 expansion">
+                <span class="text-center">
+                <h2 class="text-center expared">Don'ts</h2>
+				<p class="text-center">
+                    <br>
+					<span class="fa fa-remove ecks"></span> DON'T add systematic extensions (Jekyll exception)
+                    <br>
+                    <br>
+                    <span class="fa fa-remove ecks"></span> DON'T add dynamic extensions (php, sql, MySQL)
+				</p>
+                </span>
+			</div>
+<br>
+<br>
+<h2>Want to Use Jekyll?</h2>
+<p class="docs-section">Though we have not had much success with it, if you want to add a "toaster for websites" like Jekyll, 
+<br>
+<br>
+<code class="git">1)</code> Make sure you have experience with Ruby, Python, and have used Jekyll(-like) before,
+<br>
+<br>
+<code class="git">2)</code> Have backed-up your branch of the project (it is suggested you create a totally different branch for the implementation of Jekyll), and
+<br>
+<br>
+<code class="git">3)</code> Modify the <code class="language-">._config</code> to exclude biases, blog feeds, and correctly point to the PWNHS server.
+<br>
+<br>
+Check out <a class="move" href="http://jekyllrb.com">Jekyll's site</a> for more information.
+</p>
+
+<div id="icons" class="docs-section">
+<h1>FONTS & ICONS</h1>
+    <p>
+    If you haven't noticed yet, we really like icons. They're pretty, space-efficient, and quite useful in the construction of site content. Same goes for our fonts - we use only two for content, and our code fonts are system-based, requiring no calls.
+    </p>
+    <h2>FONTS</h2>
+    <p>
+    We use two fonts for site content - <code class="git" style="font-family:Montserrat;">Montserrat</code>, a free Google font, and <code class="git" style="font-family:Proxima-Nova">Proxima Nova</code>, a premium font stylistically similar to Montserrat. Montserrat is used for points of emphasis, whilst the minimalistic style of Proxima Nova is exceptionally made for body content.
+    <br>
+    <br>
+    Code fonts are described in the following manner:
+<pre class="language-css">
+<code>code{
+    font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
+}</code></pre>
+    with <code class="git" style="font-family:Monaco">Monaco</code> obviously being the most prefered reference.
+    <br>
+    <br>
+    Code blocks are described in the following general way:
+    <div>
+<pre class="language-css">
+<code>code./*some class*/{
+    font-size: __px;
+    color: #__;
+    padding: __px __px __px;
+    border: __px solid #__;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background-color: #__;
+}</code>
+</pre>
+        </div>
+    We require that you do not change our two content fonts, Montserrat and Proxima Nova, but you are more than welcome to configure code styles to your liking.
+    </p>
+    <h2>ICONS</h2>
+    <p>
+    This site mainly uses Font Awesome <span class="fa fa-font-awesome"></span>, with guest appearances of Linecons to fit in missing pieces. The general structure for the insertion of Font Awesome icons is:
+<pre class="language-html">
+<code>&lt;span class="fa fa-some-icon"&gt;&lt;/span&gt;
+</code></pre>
+with the following output:
+<pre class="language-">
+<code><span class="fa fa-font-awesome"></span></code>
+</pre>
+While you are only allowed to add more icon packs, not modify or remove existing ones, you are welcome to edit icon styles located in <code class="language-">./style.css</code> or <code class="language-">./documentation/docs-style.css</code>. These styles are described in a manner similar to the following example:
+<div>
+<pre class="language-css">
+<code>.icon-md-lg{
+	font-size: 45px !important;
+}
+</code></pre>
+Because the icons default to Font Awesome's styling, the addition of <code class="language-css">!important</code> is imperative to override normal function.
+</div>
+    </p>
+</div>
+
+<div id="colors" class="docs-section-cut">
+    <h1>STYLING & COLOR PALETTE</h1>
+    <p>
+    To stay consistent and make the process of development for all parties involved, we've generated a simple styling process and defined a color palette to be used for site content.
+    </p>
+    <h2>Styling</h2>
+    <p>
+    The styling of the PWNHS project is quite simple. We employ our main stylesheet, <code class="language-">./style.css</code>, as the reference of styles used by the core NHS site (pwnhs.org), while <code class="language-">./documentation/docs.js</code> and <code class="language-">./documentation/style.css</code> are used by the documentation pages of the site. Therefore, make sure you are modifying the stylesheet directly corresponding to its effected documents.
+    </p>
+    <h2>Color Palette</h2>
+    <p>
+    We use six main colors in the styling of our content. You are welcome to implement these colors, their inverses, their analogues, and their monochromatic (note: monochromatic) shades in your own branch(es) of the PWNHS project:
+    </p>
+</div>
+
+<!-- Color Palette must be minimised to prevent awkward margins caused by <pre></pre> -->
+
+<pre class="docs-section-icon-md" style="background-color:rgba(0,0,0,.5);border-color:black;"><div class="col-sm-2"><div class="docs-section-color" style="background-color:#035299;"><a class="fre copy allTheWayUp text-center" style="color:#022a4e">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.fre', {text: function() {return '#035299';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#5D69B1"><a class="lak copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.lak', {text: function() {return '#5d69b1';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:rgb(164,133,136)"><a class="kild copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.kild', {text: function() {return '#a48588';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#fa575d"><a class="ploi copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.ploi', {text: function() {return '#fa575d';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#a0a0a0"><a class="htyr copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.htyr', {text: function() {return '#a0a0a0';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#e5e5e5;"><a class="xswq copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.xswq', {text: function() {return '#e5e5e5';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div></pre>
+
+<div id="animations" class="docs-section">
+    <h1>ANIMATIONS</h1>
+    <p>
+    Animations make the world go round. Literally, in the case of our pageload spinner:
+    <pre style="text-align:center; background-color:#e5">
+    <img src="img/pageload-spinner.gif"></pre>
+    </p>
+    <h2>Static Animations</h2>
+    <p>
+    Right now, we only have one static animation - the spinning wolf, located at <code class="language-">./img/pageload-spinner.gif</code>. If you would like, you can make a better version of this animation, but don't remove it or make it anything other than the West logo!
+    </p>
+    <h2>Embedded Animations</h2>
+    <p>
+    Embedded Animations are those written directly into the HTML, CSS, and JS of the PWNHS project. Currently, this includes Typed, colorFades, fadeIns, and expansions.
+    </p>
+    <h3><span class="likola max"></span></h3>
+    <p>
+    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in this header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
+    <br>
+<pre class="language-javascript">
+<code>$(function(){
+    $(".some-class").typed({
+        strings: ["String_1", "String_2", "String_3"],
+        loop: true,
+        typeSpeed: 100,
+        showCursor: true,
+    });
+});</code></pre>
+<br>
+<div>
+    <pre class="language-html"><code>&lt;span class="some-class"&gt&lt/span&gt</code></pre>
+</div>
+    <br>
+    You can directly modify the js and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
+    </p>
+
+    <h3 class="xolor">colorFades</h3>
+    <p>
+    Color animations drive attention to otherwise idle objects - particularly to icons. The way PWNHS describes these animations is pretty simple, as exampled by the following HTML/CSS duo.
+    <br>
+<pre class="language-html">
+<code>&lt;span class="colorFade"&gt;&lt;/span&gt;</code>
+</pre>
+<br>
+<div>
+<pre class="language-css">
+<code>@keyframes colorFade { 
+	0%   { color: #8597A4; }
+	50%  { color: #fa575d; }
+	100% { color: #8597A4; }
+}
+
+@-moz-keyframes colorFade { 
+	0%   { color: #8597A4; }
+	50%  { color: #fa575d; }
+	100% { color: #8597A4; }
+}
+
+@-webkit-keyframes colorFade { 
+	0%   { color: #8597A4; }
+	50%  { color: #fa575d; }
+	100% { color: #8597A4; }
+}
+
+.colorFade {
+	animation:         colorFade 2.5s infinite; 
+	-moz-animation:    colorFade 2.5s infinite; 
+	-webkit-animation: colorFade 2.5s infinite;
+}</code>
+</pre>
+</div>
+<br>
+    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket list</a> are completed.
+    </p>
+    <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
+    <p>
+    fadeInDown is used for the sticky navbar on the PWNHS core site. The animation is described by <code class="language-">./css/animate.min.css</code>, and called by:
+<pre class="language-html">
+<code>&lt;div class="fadeInDown animated"&gt;&lt;/div&gt;</code>
+</pre>
+    </p>
+    
+    <h3 class="expansion-h3">Expansion</h3>
+    <p>
+    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
+    <br>
+<pre class="language-html">
+<code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
+</pre>
+<br>
+<div>
+<pre class="language-css">
+<code>.expansion { 
+    -webkit-transition: all .3s ease-in-out; 
+} 
+
+.expansion:hover {
+    -webkit-transform: scale(1.02);
+}</code>
+</pre>
+</div>
+    You can see a working example on the title "Expansion" above this section.
+    </p>
+
+</div>
     <div class="cent btmrow">
         <div class="row cent">
             <div class="cent">
                 <ul class="mg-smm cent">
                     <li>
-                        <span class="forvara"></span> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="shortcut">A. Hafiz</span>
+                        <code class="max"><<span class="forvara max"></span>/></code> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="shortcut">A. Hafiz</span>
                     </li>
                     <li>
                         <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
@@ -362,7 +609,7 @@ return " ";
             </div>
         </div>
     </div>
-
+            
    </div>
  
 </div>
