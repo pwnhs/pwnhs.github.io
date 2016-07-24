@@ -237,7 +237,7 @@
         
         <div id="infrastructure" class="docs-section">
             <h1>PROJECT INFRASTRUCTURE</h1> 
-            <p>The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method. <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.</p>
+            <p>The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.</p>
             <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
             <p>
             Masses can be thought of as the various elements, or building blocks, of a site. These include things like paragraph sections, images with captions, rows of icons, etc. Instead of having to code an element manually, a <code class="language-markup" style="color:#e6db74">mass</code> provides a preset that describes the layout, structure, and function of the element for you. Confused? Here's an example of code that describes the panel of <a class="move" href="//pwnhs.org#upcoming">Upcoming Projects and Volunteer Opportunities</a> on the PWNHS main page:
@@ -542,7 +542,7 @@ Because the icons default to Font Awesome's styling, the addition of <code class
     </p>
     <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
     <p>
-    fadeInDown is used for the sticky navbar on the PWNHS core site. The animation is described by <span class="language-">./css/animate.min.css</span>, and called by:
+    fadeInDown is used for the sticky navbar on the PWNHS core site. The animation is described by <code class="language-">./css/animate.min.css</code>, and called by:
 <pre class="language-html">
 <code>&lt;div class="fadeInDown animated"&gt;&lt;/div&gt;</code>
 </pre>
@@ -550,7 +550,7 @@ Because the icons default to Font Awesome's styling, the addition of <code class
     
     <h3 class="expansion-h3">Expansion</h3>
     <p>
-    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis on crucial areas of our content. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
+    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
     <br>
 <pre class="language-html">
 <code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
@@ -567,6 +567,7 @@ Because the icons default to Font Awesome's styling, the addition of <code class
 }</code>
 </pre>
 </div>
+    You can see a working example on the title "Expansion" above this section.
     </p>
 
 </div>
