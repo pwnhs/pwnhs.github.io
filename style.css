@@ -24,12 +24,12 @@ html, body {
     }
 }
 
-#page-loading-blocs-notifaction{position: absolute;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;}
+#page-loading-molekules-notifaction{position: absolute;top: 0;bottom: 0;width: 100%;z-index:100000;background:#FFFFFF url("img/pageload-spinner.gif") no-repeat center center;}
 
-/* = Blocs
+/* = molekules
 -------------------------------------------------------------- */
 
-.bloc{
+.molekule{
 	width:100%;
 	clear:both;
 	background: 50% 50% no-repeat;
@@ -40,7 +40,7 @@ html, body {
 	background-size: cover;
 	position:relative;
 }
-.bloc .container{
+.molekule .container{
 	padding-left:0;
 	padding-right:0;
 }
@@ -48,37 +48,37 @@ html, body {
 
 /* Sizes */
 
-.bloc-lg{
+.molekule-lg{
 	padding:100px 50px;
 }
-.bloc-md-lg{
+.molekule-md-lg{
 	padding:75px 50px 50px 50px;
 }
-.bloc-md{
+.molekule-md{
 	padding:50px;
 }
-.bloc-sm{
+.molekule-sm{
 	padding:20px 50px;
 }
 
-/* = Full Screen Blocs 
+/* = Full Screen molekules 
 -------------------------------------------------------------- */
 
-.bloc-fill-screen{
+.molekule-fill-screen{
 	padding-top:0;
 	position: relative;
 	height: inherit;
 }
-.bloc-fill-screen > .container{
+.molekule-fill-screen > .container{
 	position:relative;
 	top:50%;
 	transform:translateY(-50%);
 	-webkit-transform:translateY(-50%);
 }
-.bloc-fill-screen.bloc-group .bloc{
+.molekule-fill-screen.molekule-group .molekule{
 	vertical-align: middle!important;
 }
-.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
+.molekule-fill-screen .fill-molekule-top-edge, .molekule-fill-screen .fill-molekule-bottom-edge{
 	position: absolute;
 	margin: 20px auto;
 	left: 0;
@@ -86,14 +86,14 @@ html, body {
 	z-index: 1;
 	transform: none;
 }
-.bloc-fill-screen .fill-bloc-top-edge{
+.molekule-fill-screen .fill-molekule-top-edge{
 	top:0;
 }
-.bloc-fill-screen .fill-bloc-bottom-edge{
+.molekule-fill-screen .fill-molekule-bottom-edge{
 	top: initial;
 	bottom: 20px;
 }
-.blocs-hero-btn-dwn{
+.molekules-hero-btn-dwn{
 	width: 58px;
 	height: 58px;
 	display: block;
@@ -107,7 +107,7 @@ html, body {
 	background: none;
 	border:0;
 }
-.blocs-hero-btn-dwn:hover{
+.molekules-hero-btn-dwn:hover{
 	color: #FFFFFF;
     font-size: 38px;
 }
@@ -122,53 +122,53 @@ html, body {
 
 /* Dark theme */
 
-.d-bloc{
+.d-molekule{
 	color:rgba(255,255,255,.7);
 }
-.d-bloc button:hover{
+.d-molekule button:hover{
 	color:rgba(255,255,255,.9);
 }
-.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+.d-molekule .icon-round,.d-molekule .icon-square,.d-molekule .icon-rounded,.d-molekule .icon-semi-rounded-a,.d-molekule .icon-semi-rounded-b{
 	border-color:rgba(255,255,255,.9);
 }
-.d-bloc .divider-h span{
+.d-molekule .divider-h span{
 	border-color:rgba(255,255,255,.2);
 }
-.d-bloc .a-btn,.d-bloc .navbar a,.d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+.d-molekule .a-btn,.d-molekule .navbar a,.d-molekule .navbar-brand, .d-molekule a .icon-sm, .d-molekule a .icon-md, .d-molekule a .icon-lg, .d-molekule a .icon-xl, .d-molekule h1 a, .d-molekule h2 a, .d-molekule h3 a, .d-molekule h4 a, .d-molekule h5 a, .d-molekule h6 a, .d-molekule p a{
     -webkit-transition: color .3s ease-in-out; 
     transition: color .3s ease-in-out;
 	color:rgba(255,255,255,.6);
 }
 
-.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc .navbar-brand:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+.d-molekule .a-btn:hover,.d-molekule .navbar a:hover,.d-molekule .navbar-brand:hover,.d-molekule a:hover .icon-sm, .d-molekule a:hover .icon-md, .d-molekule a:hover .icon-lg, .d-molekule a:hover .icon-xl, .d-molekule h1 a:hover, .d-molekule h2 a:hover, .d-molekule h3 a:hover, .d-molekule h4 a:hover, .d-molekule h5 a:hover, .d-molekule h6 a:hover, .d-molekule p a:hover{
 	color:rgba(255,255,255,1);
 }
-.d-bloc .navbar-toggle .icon-bar{
+.d-molekule .navbar-toggle .icon-bar{
 	background:rgba(255,255,255,1);
 }
-.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+.d-molekule .btn-wire,.d-molekule .btn-wire:hover{
 	color:rgba(255,255,255,1);
 	border-color:rgba(255,255,255,1);
 }
-.d-bloc .panel{
+.d-molekule .panel{
 	color:rgba(0,0,0,.5);
 }
-.d-bloc .panel button:hover{
+.d-molekule .panel button:hover{
 	color:rgba(0,0,0,.7);
 }
-.d-bloc .panel icon{
+.d-molekule .panel icon{
 	border-color:rgba(0,0,0,.7);
 }
-.d-bloc .panel .divider-h span{
+.d-molekule .panel .divider-h span{
 	border-color:rgba(0,0,0,.1);
 }
-.d-bloc .panel .a-btn{
+.d-molekule .panel .a-btn{
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .panel .a-btn:hover{
+.d-molekule .panel .a-btn:hover{
 	color:rgba(0,0,0,1);
 }
-.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
+.d-molekule .panel .btn-wire, .d-molekule .panel .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
@@ -176,30 +176,30 @@ html, body {
 
 /* Light theme */
 
-.d-bloc .panel,.l-bloc{
+.d-molekule .panel,.l-molekule{
 	color:rgba(0,0,0,.5);
 }
-.d-bloc .panel button:hover,.l-bloc button:hover{
+.d-molekule .panel button:hover,.l-molekule button:hover{
 	color:rgba(0,0,0,.7);
 }
-.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
+.l-molekule .icon-round,.l-molekule .icon-square,.l-molekule .icon-rounded,.l-molekule .icon-semi-rounded-a,.l-molekule .icon-semi-rounded-b{
 	border-color:rgba(0,0,0,.7);
 }
-.d-bloc .panel .divider-h span,.l-bloc .divider-h span{
+.d-molekule .panel .divider-h span,.l-molekule .divider-h span{
 	border-color:rgba(0,0,0,.1);
 }
-.d-bloc .panel .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc .navbar-brand,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
+.d-molekule .panel .a-btn,.l-molekule .a-btn,.l-molekule .navbar a,.l-molekule .navbar-brand,.l-molekule a .icon-sm, .l-molekule a .icon-md, .l-molekule a .icon-xl, .l-molekule h1 a, .l-molekule h2 a, .l-molekule h3 a, .l-molekule h4 a, .l-molekule h5 a, .l-molekule h6 a, .l-molekule p a{
     -webkit-transition: color .2s ease-in-out; 
     transition: color .2s ease-in-out;
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .panel .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc .navbar-brand:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
+.d-molekule .panel .a-btn:hover,.l-molekule .a-btn:hover,.l-molekule .navbar a:hover, .l-molekule .navbar-brand:hover, .l-molekule a:hover .icon-sm, .l-molekule a:hover .icon-md, .l-molekule a:hover .icon-xl, .l-molekule h1 a:hover, .l-molekule h2 a:hover, .l-molekule h3 a:hover, .l-molekule h4 a:hover, .l-molekule h5 a:hover, .l-molekule h6 a:hover, .l-molekule p a:hover{
 	color:rgba(0,0,0,1);
 }
-.l-bloc .navbar-toggle .icon-bar{
+.l-molekule .navbar-toggle .icon-bar{
 	color:rgba(0,0,0,.6);
 }
-.d-bloc .panel .btn-wire,.d-bloc .panel .btn-wire:hover,.l-bloc .btn-wire,.l-bloc .btn-wire:hover{
+.d-molekule .panel .btn-wire,.d-molekule .panel .btn-wire:hover,.l-molekule .btn-wire,.l-molekule .btn-wire:hover{
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
@@ -213,25 +213,25 @@ html, body {
 	margin-top:80px;
 }
 
-/* Bloc text custom styling */
+/* molekule text custom styling */
 
-#bloc-1 h1{
+#molekule-1 h1{
 	font-weight: 900;
 	font-size: 60px;
 }
-#bloc-2 h1{
+#molekule-2 h1{
 	font-size: 48px;
 }
-#bloc-2 p{
+#molekule-2 p{
 	font-size: 17px;
 }
-#bloc-4 h3{
+#molekule-4 h3{
 	font-weight: 700;
 }
-#bloc-5 h3{
+#molekule-5 h3{
 	font-weight: 700;
 }
-#bloc-11 p{
+#molekule-11 p{
 	line-height: 25px;
 }
 
@@ -365,7 +365,7 @@ nav .caret{
 	 transition: all .2s ease-out;
 }
 
-/* = Bric adjustment margins
+/* = mass adjustment margins
 -------------------------------------------------------------- */
 
 .mg-clear{
@@ -703,14 +703,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 .container{
 	max-width:1170px;
 }
-.statement-bloc-text{
+.statement-molekule-text{
 	line-height:38px;
 	font-style:italic;
 	font-size:28px;
 	text-align:center;
 	font-weight:lighter;
 }
-.blocs-personal-panel{
+.molekules-personal-panel{
 	background-color:#FFFFFF;
 	text-align:center;
 	border-radius:6px 6px 6px 6px;
@@ -720,36 +720,36 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 	padding:40px 40px 40px 40px;
 	max-width:100%;
 }
-.blocs-panel-avatar{
+.molekules-panel-avatar{
 	max-width:100px;
 	margin-bottom:20px;
 }
-.blocs-personal-panel h3{
+.molekules-personal-panel h3{
 	color: rgba(0,0,0,.8);
 	font-family:"Lato";
 	font-size:36px;
 	font-weight:700;
 }
-.blocs-personal-panel p{
+.molekules-personal-panel p{
 	color: rgba(0,0,0,.3);
 	font-family:"Lato";
 	font-size:18px;
 	font-weight:700;
 	margin-bottom:20px;
 }
-.blocs-social-list-v{
+.molekules-social-list-v{
 	max-width:100%;
 	margin:0 auto!important;
 }
-.blocs-social-list-v li{
+.molekules-social-list-v li{
 	min-width:30px;
 }
-.hero-bloc-text{
+.hero-molekule-text{
 	font-size:36pt;
 	font-weight:300;
     letter-spacing: 5px;
 }
-.hero-bloc-text-sub{
+.hero-molekule-text-sub{
 	font-weight:400;
 	font-size:19pt;
     color: rgba(255,255,255,.8);
@@ -777,13 +777,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 .hero-text-vc{
 	margin-top:50%;
 }
-.blocs-blue-button{
+.molekules-blue-button{
 	background-color:#41b6f3;
 }
-.blocs-blue-button:hover{
+.molekules-blue-button:hover{
 	background-color:#39a6de;
 }
-.lake-hero-bloc{
+.lake-hero-molekule{
 }
 .lake-hero-text{
 	font-family:"Josefin Sans";
@@ -813,7 +813,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 .mount-italy-hero-text-sub-s{
 	font-size:34px;
 }
-.device-bloc-text-vc{
+.device-molekule-text-vc{
 	font-size:50px;
 	margin-top:50%;
 }
@@ -841,19 +841,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 	height:58px;
 	font-size:38px;
 }
-.blocs-team-title{
+.molekules-team-title{
 	color:#1d1d1d;
 	font-size:50px;
 	font-family:"Lato";
 	font-weight:300;
 }
-.blocs-team-header{
+.molekules-team-header{
 	color:#1d1d1d;
 	font-size:38px;
 	font-family:"Lato";
 	font-weight:300;
 }
-.blocs-team-sub{
+.molekules-team-sub{
 	font-size:18px;
 	font-family:"Lato";
 	font-weight:500;
@@ -863,7 +863,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
 	background-image:url("img/IMG_0758.JPG");
 }
 
-.nav-bloc-top{
+.nav-molekule-top{
     position:absolute;
     z-index:1;
 }
@@ -936,21 +936,21 @@ code {
 
 @media (max-width: 1024px)
 {
-    .bloc{
+    .molekule{
         padding-left: 20px; 
         padding-right: 20px;  
     }
-    .bloc.full-width-bloc, .bloc-tile-2.full-width-bloc .container, .bloc-tile-3.full-width-bloc .container, .bloc-tile-4.full-width-bloc .container{
+    .molekule.full-width-molekule, .molekule-tile-2.full-width-molekule .container, .molekule-tile-3.full-width-molekule .container, .molekule-tile-4.full-width-molekule .container{
         padding-left: 0; 
         padding-right: 0;  
     }
 }
 
-.full-width-bloc{
+.full-width-molekule{
 	padding-left:1%;
 	padding-right:1%;
 }
-.full-width-bloc .container{
+.full-width-molekule .container{
 	width:100%;
 	max-width:100%!important;
 }
@@ -986,7 +986,7 @@ code {
 	border-color:#FFFFFF;
 }
 
-/* Bloc image backgrounds */
+/* molekule image backgrounds */
 
 }.bg-PWSHS-0896-Hales-wide{
 	background-image:url("img/PWSHS+0896-Hales+wide.png?timestamp=1466994547947");
@@ -1073,7 +1073,7 @@ code {
 -------------------------------------------------------------- */
 @media (max-width: 1024px)
 {
-    .bloc{
+    .molekule{
         padding-left: 20px; 
         padding-right: 20px;  
     }
@@ -1082,7 +1082,7 @@ code {
 {
     .container{width:100%;}
     .b-parallax{background-attachment:scroll;}
-    .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */  
+    .page-container, #hero-molekule{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */  
 }
 @media (max-width: 767px)
 {
@@ -1094,16 +1094,16 @@ code {
         padding-left:10px!important; 
         padding-right:10px!important; 
     }
-    #hero-bloc h1{
+    #hero-molekule h1{
         font-size:40px;
     }
-    #hero-bloc h2{
+    #hero-molekule h2{
         font-size:34px;
     }
-    #hero-bloc h3{
+    #hero-molekule h3{
         font-size:25px;
     }
-    .bloc{
+    .molekule{
         padding-left: 0; 
         padding-right: 0;  
         -webkit-background-size: auto 200%;
@@ -1155,10 +1155,10 @@ code {
         height: auto;
     }
     
-    #hero-bloc .navbar .nav{
+    #hero-molekule .navbar .nav{
         background:rgba(0,0,0,.8);
     }
-    #hero-bloc .navbar .nav a{
+    #hero-molekule .navbar .nav a{
         color:rgba(255,255,255,.6);
     }
     .hero{
@@ -1186,18 +1186,18 @@ code {
     .nav-invert .navbar-toggle{
         float:left; 
     }
-    .bloc-group .bloc{
+    .molekule-group .molekule{
          display:block;
          width:100%;
      }
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+    .molekule-tile-2 .container, .molekule-tile-3 .container, .molekule-tile-4 .container{
 	   padding-left: 10px;
 	   padding-right: 10px;
     }
-    .bloc-xxl,.bloc-xl,.bloc-lg{
+    .molekule-xxl,.molekule-xl,.molekule-lg{
         padding: 40px 0;
     }
-    .bloc-sm,.bloc-md{
+    .molekule-sm,.molekule-md{
         padding-left: 0; 
         padding-right: 0;
     }
@@ -1229,13 +1229,13 @@ code {
     .video-bg-contianer{
         display:none;
     }
-    .blocsapp-device-iphone5{
+    .molekulesapp-device-iphone5{
 	   background-size: 216px 425px;
 	   padding-top:60px;
 	   width:216px;
 	   height:425px;
     }
-    .blocsapp-device-iphone5 img{
+    .molekulesapp-device-iphone5 img{
 	   width: 180px;
 	   height: 320px;
     }
@@ -1249,14 +1249,14 @@ code {
 .lake-hero-text-sub{
 	font-size:24px;
 }
-.lake-hero-bloc{
+.lake-hero-molekule{
 	background-size:1550px auto;
 }
-     .hero-bloc-text{
+     .hero-molekule-text{
         font-size:30pt;
         letter-spacing: 2px;
     }
-    .hero-bloc-text-sub{
+    .hero-molekule-text-sub{
         font-size: 16pt; 
         line-height: 22px;
         margin-bottom: 50px;
