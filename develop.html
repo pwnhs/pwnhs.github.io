@@ -118,20 +118,17 @@
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Three Tries Left','');
+var pass1 = prompt("Prove You're an Officer:",'');
 while (testV < 3) {
-if (!pass1) 
-history.go(-1);
 if (pass1.toLowerCase() == "probation") {
 location.href = "officer";
 break;
 } 
 testV+=1;
 var pass1 = 
-prompt('Access Denied, Please Try Again.','Password');
+prompt('Access Denied, Please Try Again.','');
 }
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
+if (pass1.toLowerCase()!="password" & testV ==3)
 return " ";
 } 
 </script>

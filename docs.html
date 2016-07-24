@@ -92,27 +92,24 @@
                 <li><a href="develop">DEVELOPER DOCS</a></li>
                 <li>
 <!-- 
-To our esteemed web developers:
-    If you're reading this, you're seconds away from figuring out how to get into the Officer Docs page. Because this is a static website, we could not use htpasswd, and so decided to use a low-level js security system instead to at least stop the general public. Don't worry, there's nothing very interesting on the page aside from a tutorial on how to edit content of the site.
--ayaz 
+    To our esteemed web developers:
+        If you're reading this, you're seconds away from figuring out how to get into the Officer Docs page. Because this is a static website, we could not use htpasswd, and so decided to use a low-level js security system instead to at least stop the general public. Don't worry, there's nothing very interesting on the page aside from a tutorial on how to edit content of the site.
+    -ayaz 
 -->
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('Prove You're an Officer','');
+var pass1 = prompt("Prove You're an Officer:",'');
 while (testV < 3) {
-if (!pass1) 
-history.go(-1);
 if (pass1.toLowerCase() == "probation") {
 location.href = "officer";
 break;
 } 
 testV+=1;
 var pass1 = 
-prompt('Access Denied, Please Try Again.','Password');
+prompt('Access Denied, Please Try Again.','');
 }
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
+if (pass1.toLowerCase()!="password" & testV ==3)
 return " ";
 } 
 </script>
