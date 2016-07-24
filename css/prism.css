@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+c+objectivec+swift&plugins=command-line */
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+c+objectivec+r+swift&plugins=show-language+command-line */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -121,6 +121,34 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
+div.prism-show-language {
+	position: relative;
+}
+
+div.prism-show-language > div.prism-show-language-label {
+	color: black;
+	background-color: #CFCFCF;
+	display: inline-block;
+	position: absolute;
+	bottom: auto;
+	left: auto;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	font-size: 0.9em;
+	border-radius: 0 .3em 0 .3em;
+	padding: 0 0.5em;
+	text-shadow: none;
+	z-index: 1;
+	box-shadow: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+
 .command-line-prompt {
 	border-right: 1px solid #999;
 	display: block;
@@ -154,4 +182,3 @@ pre[class*="language-"] {
 .command-line-prompt > span[data-prompt]:before {
 	content: attr(data-prompt);
 }
-
