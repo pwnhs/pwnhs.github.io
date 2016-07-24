@@ -4,5 +4,5 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 AuthName "Officers Only"
 AuthType Basic
-AuthUserFile /scripts/.htpasswd
+AuthUserFile /.htpasswd
 require valid-user
