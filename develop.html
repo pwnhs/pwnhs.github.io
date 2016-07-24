@@ -107,7 +107,9 @@
                 <div class="spacer-move"></div>
                 <li><a href="#webapp">WEB APP</a></li>
                 <li><a href="#native">NATIVE OS BUILDS</a></li>
-                <div class="spacer"></div>
+                <div class="spacer" style="opacity:.5"></div>
+                <li><a href="#bucket" style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></li>
+                <div class="spacer" style="opacity:.5"></div>
                 <li><a href="./docs">STUDENT DOCS</a></li>
                 <li>
 <!-- 
@@ -185,6 +187,7 @@ return " ";
                 <p>
                 <code class="max">IMPORTANT NOTE</code>: In order to submit pull requests to the Master, you must both <code class="git">fork</code> and then <code class="git">clone</code> the Master PWNHS repo. Only cloning it will not create a server-side branch of the repo, thereby not tying your clone to the Master and disallowing you the ability to merge with the Master branch. More information on forking a repo <a class="move" href="https://guides.github.com/activities/forking/">here</a> and <a class="move" href="https://help.github.com/articles/fork-a-repo/">here</a>.
                 </p>
+                <h2>Want to help with our site, but don't know what to do or where to start? Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">bucket</a>.</h2>
          </div>
     
          <div id="allowed" class="docs-section-cut">
@@ -258,7 +261,7 @@ return " ";
             More information on pull requests <a class="move" href="https://guides.github.com/activities/forking/#making-a-pull-request">here</a> and <a class="move" href="https://help.github.com/articles/creating-a-pull-request/">here</a>.
             </p>
          </div>
-        
+    
         <div id="infrastructure" class="docs-section">
             <h1>PROJECT INFRASTRUCTURE</h1> 
             <p>The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.</p>
@@ -562,7 +565,7 @@ Because the icons default to Font Awesome's styling, the addition of <code class
 </pre>
 </div>
 <br>
-    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket list</a> are completed.
+    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
     </p>
     <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
     <p>
@@ -593,8 +596,211 @@ Because the icons default to Font Awesome's styling, the addition of <code class
 </div>
     You can see a working example on the title "Expansion" above this section.
     </p>
-
 </div>
+
+<div id="webapp" class="docs-section">
+    <h1>WEB APP</h1>
+    <p>
+    The PWNHS website contains support for its iOS and Android web (addToHomeScreen) app. Designing this was very easy, having only to set the viewport as static in a meta tag:
+<pre class="language-html">
+<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"&gt;</code></pre>
+    And then allowing for iOS web app capability as a meta tag between <code class="language-html">&lt;head&gt&lt/head&gt</code>:
+<div>
+<pre class="language-html">
+<code>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</code></pre>
+</div>
+    Android does sets the Web App styles by itself when a website is added to the homescreen, so there is no need to define android web app capability.
+    <br>
+    <br>
+    To make sure there is no unwanted status bar overlap on iOS, the following  meta tag is also added:
+<div>
+<pre class="language-html">
+<code>&lt;meta name="apple-mobile-web-app-status-bar-style" content="default"&gt;</code></pre>
+</div>
+    </p>
+    <h2>What's Next?</h2>
+    <p>
+    Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. If you would like to explore this problem, make a branch and send a pull request if you find a solution.
+    <br>
+    <br>
+    This problem does not exist for Android devices.
+    </p>
+</div>
+
+<div id="native" class="docs-section">
+    <h1>NATIVE OS BUILDS</h1>
+    <p>
+    If you want to build a native iOS, Android, or even Desktop app for the PWNHS site, please check out our tips for each OS below.
+    </p>
+    <h2>iOS - Swift</h2>
+    <p>
+    To make an app for iOS based off the PWNHS website (HTML), import UIKit and WebKit in <code class="language-swift">ViewController.swift</code>:
+<pre class="language-swift">
+<code>import UIKit
+import WebKit</code></pre>
+    call in an WKWebView webView controller:
+<div>
+<pre class="language-swift">
+<code>class ViewController: UIViewController {
+
+    var webView: WKWebView!
+    
+    @IBOutlet var mainView: UIWebView!
+    
+    override func loadView() {
+        super.loadView() // call parent loadView
+        self.webView = WKWebView() // instantiate WKWebView
+        self.view = self.webView! // make it the main view
+    }
+    
+}
+</code></pre>
+</div>
+    and then identify the webpage webView is to load:
+<div>
+<pre class="language-swift">
+    <code>override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let url = NSURL(string:"http://pwnhs.org")
+        let req = NSURLRequest(url:url! as URL)
+        self.webView!.load(req as URLRequest)
+    }</code></pre>
+</div>
+    <br>
+    The full code will look something like:
+<div>
+<pre class="language-swift">
+<code>//
+//  ViewController.swift
+//  PWNHS.app
+//
+//  Created by Plano West NHS.
+//  Copyright © 2016 PWNHS. All rights reserved.
+//
+
+import UIKit
+import WebKit
+
+class ViewController: UIViewController {
+
+    var webView: WKWebView!
+    
+    @IBOutlet var mainView: UIWebView!
+    
+    override func loadView() {
+        super.loadView() // call parent loadView
+        self.webView = WKWebView() // instantiate WKWebView
+        self.view = self.webView! // make it the main view
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let url = NSURL(string:"http://pwnhs.org")
+        let req = NSURLRequest(url:url! as URL)
+        self.webView!.load(req as URLRequest)
+    }
+    
+}</code></pre>
+</div>
+    </p>
+    <h2>iOS + Android - Objective-C</h2>
+    <p>Cross-platform development with Objective-C is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. Of course, you can just make a Java-based webView app for Android, but here we'll just outline the basic premise for the construction of a webView in Objective-C, as it can be relayed to Android through the NDK and to iOS independently.
+    <br>
+    <br>
+    First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">viewController.h</code>:
+<pre class="language-ObjectiveC">
+<code>#import &lt;UIKit/UIKit.h&gt;
+
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+@end</code></pre>
+    call in <code class="language-ObjectiveC">viewController.h</code> in <code class="language-ObjectiveC">viewController.m</code> and identify http://pwnhs.org as the URL to load:
+<div>
+<pre class="language-ObjectiveC">
+<code>//
+//  ViewController.m
+//  PWNHS
+//
+//  Created by Plano West NHS.
+//  Copyright © 2016 PWNHS. All rights reserved.
+//
+
+#import "ViewController.h"
+
+
+@interface ViewController ()
+
+@end
+
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSString *fullURL = @"http://pwnhs.org";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    _webView.delegate = (id)self;
+    [_webView loadRequest:requestObj];
+}
+
+@end</code></pre>
+</div>
+    And you're done!
+    </p>
+    <h2>Desktop - Electron</h2>
+    <p>
+    Yes, "Desktop" is not an OS. But if you choose to make a PWNHS application for desktop, we require you use <a class="move" href="//electron.atom.io">Electron</a> and its APIs to to create a wrap of the PWNHS site that is able to run on Windows, Mac, and Linux. Electron is very easy to use and creating applications with it is remarkably simple, so we'll let you <a class="move" href="http://electron.atom.io/docs/">check it out</a> on your own.
+    </p>
+</div>
+
+        <div id="bucket" class="docs-section">
+            <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span>
+            </h1>
+            <pre style="background-color:rgb(26,28,34);border:none">
+<code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
+# Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
+
+<span class="fa fa-bitbucket"></span>
+├── To-Do ~ Priority:
+│      ├── <span style="color:red">High</span>/
+│      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing in PWNHS</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      ├── <span style="color:gold">Medium</span>/
+│      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      └── <span style="color:limegreen">Low</span>/
+│          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
+│                 └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│
+└── To-Try ~ Priority:None, Type:
+       └── <span style="color:royalblue">Experimental</span>/
+           ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                        <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+                  └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
+        
+        </div>
+
     <div class="cent btmrow">
         <div class="row cent">
             <div class="cent">
