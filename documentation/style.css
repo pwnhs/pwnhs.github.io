@@ -40,6 +40,12 @@ a.move, a.move:link, a.move:hover, a.move:visited, a.move:active {
     color:rgb(136,164,133);
 }
 
+a.prob8, a.prob8:link, a.prob8:hover, a.prob8:visited, a.prob8:active {
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 16px;
+    color:#035299;
+}
+
 a.chill:hover{
     color:rgba(164,133,136,.6);
 }
