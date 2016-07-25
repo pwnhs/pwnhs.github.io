@@ -50,6 +50,11 @@ a.chill:hover{
     color:rgba(164,133,136,.6);
 }
 
+a.chillhs:hover{
+    color:#035299;
+    opacity: 0.6;
+}
+
 a.copy, a.copy:link, a.copy:visited{
     color: inherit !important;
     cursor: pointer;
@@ -272,6 +277,18 @@ input{
 }
 
 .btn-wire:hover{
+	background:transparent!important;
+	border:2px solid ;
+}
+
+.btn-nhs, a.chillhs:visited{
+    color: #035299;
+	background:transparent!important;
+	border:2px solid ;
+    transition: all .2s ease-in-out; 
+}
+
+.btn-nhs:hover{
 	background:transparent!important;
 	border:2px solid ;
 }
