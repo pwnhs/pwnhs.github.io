@@ -170,7 +170,7 @@ return " ";
                 <h3>Cloning via Desktop App</h3>
                 <p>
                 Cloning via GitHub's desktop app is a one-click process. After <a class="move" href="https://desktop.github.com">downloading</a> the app, simply go to your forked repository of PWNHS (with your GitHub username instead of <code class="git">USER</code>): 
-                <pre><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
+                <pre class="pre-scrollable"><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
                 and press <code class="git velvet">Open in Desktop</code> under the <code class="git button velvet">Clone or download</code> button. This automates the entire process, and we suggest all but the most experienced take this route.
                 </p>
                 <h3>Cloning via Command Line</h3>
@@ -247,7 +247,7 @@ return " ";
             <br>
             <br>
             To make a pull request, go to your fork of PWNHS on GitHub:
-            <pre><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
+            <pre class="pre-scrollable"><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
             where you will see a banner noting that you have recently pushed a new branch of the PWNHS project Master. Click on <code class="git button velvet">Compare & pull request</code>. After making a title and filling the description with information regarding what you have added/changed/removed and why, press <code class="git button velvet">Create pull request</code>.
             </p>
             <h2>Note</h2>
@@ -268,25 +268,25 @@ return " ";
             <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
             <p>
             Masses can be thought of as the various elements, or building blocks, of a site. These include things like paragraph sections, images with captions, rows of icons, etc. Instead of having to code an element manually, a <code class="language-markup" style="color:#e6db74">mass</code> provides a preset that describes the layout, structure, and function of the element for you. Confused? Here's an example of code that describes the panel of <a class="move" href="//pwnhs.org#upcoming">Upcoming Projects and Volunteer Opportunities</a> on the PWNHS main page:
-<pre class="language-html"><code>&ltdiv class="container"&gt
-    &ltdiv class="row animSpeedFast voffset"&gt
-        &lta class="keep" href="http://act.alz.org/site/TR?fr_id=9319&pg=entry"&gt
-            &ltdiv class="col-sm-4 expansion"&gt
-				&ltdiv class="panel"&gt
-                    &ltdiv class="panel-heading"&gt
-				        &lth3 class="mg-clear  text-right" style="font-weight:600"&gt
+<pre class="language-html"><code>&lt;div class="container"&gt;
+    &lt;div class="row animSpeedFast voffset"&gt;
+        &lt;a class="keep" href="http://act.alz.org/site/TR?fr_id=9319&pg;=entry"&gt;
+            &lt;div class="col-sm-4 expansion"&gt;
+				&lt;div class="panel"&gt;
+                    &lt;div class="panel-heading"&gt;
+				        &lt;h3 class="mg-clear  text-right" style="font-weight:600"&gt;
                         Walk to end Alzheimers
-                        &lt/h3&gt
-                    &lt/div&gt
-                    &ltdiv class="panel-body"&gt  
-                        &ltimg src="img/Final_walk_TALK.png" class="img-responsive" /&gt
-				    &lt/div&gt
-                &lt/div&gt
-            &lt/div&gt
-        &lt/a&gt
-    &lt/div&gt
-&lt/div&gt</code></pre>
-            Unless you really love <code class="language-markup">&ltdiv&gt</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
+                        &lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class="panel-body"&gt;  
+                        &lt;img src="img/Final_walk_TALK.png" class="img-responsive" /&gt;
+				    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            Unless you really love <code class="language-markup">&lt;div&gt;</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
             <br>
             <br>
             Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. More custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet. In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
@@ -760,43 +760,43 @@ class ViewController: UIViewController {
         <div id="bucket" class="docs-section">
             <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span>
             </h1>
-<pre style="background-color:rgb(26,28,34);border:none">
+<pre class="language-" style="background-color:rgb(26,28,34);border:none">
 <code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
 # Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
 
 <span class="fa fa-bitbucket"></span>
 ├── To-Do ~ Priority:
 │      ├── <span style="color:red">High</span>/
-│      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
+│      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
+│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
+│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
 │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │      ├── <span style="color:gold">Medium</span>/
-│      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
+│      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
+│      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
 │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │      └── <span style="color:limegreen">Low</span>/
-│          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
+│          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
 │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
+│          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
 │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
+│          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
 │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
+│          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
 │                 └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │
 └── To-Try ~ Priority:None, Type:
        └── <span style="color:royalblue">Experimental</span>/
-           ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                        <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
+           ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
-           ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
+           ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
-           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
                   └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
         
         </div>
@@ -806,7 +806,7 @@ class ViewController: UIViewController {
             <div class="cent">
                 <ul class="mg-smm cent">
                     <li>
-                        <code class="max"><<span class="forvara max"></span>/></code> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="shortcut">A. Hafiz</span>
+                        <code class="max">&lt;<span class="forvara max"></span>/&gt;</code> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="shortcut">A. Hafiz</span>
                     </li>
                     <li>
                         <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
@@ -817,7 +817,6 @@ class ViewController: UIViewController {
     </div>
             
    </div>
- 
 </div>
 <!-- Main container END -->
 

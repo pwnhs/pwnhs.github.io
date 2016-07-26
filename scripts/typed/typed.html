@@ -40,10 +40,11 @@
     <script>
         $(function(){
             $(".forvara").typed({
-                strings: ["Writtan", "Written^1000"],
+                strings: ["Probatian", "Probation^1000"],
                 typeSpeed: 0,
                 loop: true,
                 typeSpeed: 100,
+                showCursor: false,
             });
         });
     </script>
@@ -90,19 +91,124 @@ $(document).ready(function(){
      <div class="row">
         <div id="side-bar" class="col-xs-3 hidden-xs">
             <ul id="sideNav" class="affix-top">
+                <li><a href="#cart" style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;"><span class="fa fa-shopping-cart"></span> THE CART <span class="fa fa-shopping-cart"></span></a></li>
+                <div style="height:0.2px;"></div>
+                <li><a href="#bucket" style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></li>
                 <li><a href="#edit">EDITING PWNHS SITE</a></li>
                 <li><a href="#tempelates">HOURS CODE TEMPLATE</a></li>
                 <li><a href="#hax">HAX</a></li>
                 <div class="spacer">
                 </div>
                 <li><a href="http://pwnhs.org/docs">STUDENT DOCS</a></li>
-                <li><a href="http://pwnhs.org/develop">DEVELOPER DOCS</a></li>
+                <li><a href="http://pwnhs.org/developer">DEVELOPER DOCS</a></li>
                 <div class="spacer"></div>
                 <li><a href="http://pwnhs.org"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></li>
             </ul>
         </div>
    
         <div class="col-xs-9 main-content">
+            <div id="cart" class="docs-section">
+                <h1 style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;">       
+                    <span class="fa fa-shopping-cart"></span>     
+                        THE CART 
+                    <span class="fa fa-shopping-cart"></span>
+                </h1>
+<pre class="language-" style="background-color:rgb(26,28,34);border:none;font-family:Menlo!important;font-size:13px!important;">
+<code style="color:rgb(153,153,153);"># The Cart lists objectives we plan to accomplish this year as Plano West's best-ever NHS.
+# Entries are listed in chronological order of priority with officer assignments for each. 
+
+<span class="fa fa-shopping-cart"></span>
+├── Semester:I ~ Month:
+│      ├── <span style="color:rgb(212,9,21)">August</span>/
+│      │   └── <span style="color:#DD3A44;opacity:1.0;">Start-up: announcements, send out priority membership forms, invite members</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(212,9,21)">A1</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  │style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+│      ├── <span style="color:rgb(251,13,27)">September</span>/
+│      │   └── <span style="color:#FC3D49;opacity:1.0;">Introductory Meeting: outline guidelines, basic overview of PWNHS's function</span>           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(251,13,27)">S1</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  │style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+│      ├── <span style="color:rgb(253,124,35)">October</span>/
+│      │   ├── <span style="color:#FD964F;opacity:1.0;">Meeting II: Updates, volunteer opportunities, introduce service projects</span>               <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+│      │   ├── <span style="color:#FD964F;opacity:0.85;">The Mum Project: design, distribute contracts; formulate PWNHS-STUCO coallition</span>        <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Claire, Pratiksha, Emily</span>
+│      │   └── <span style="color:#FD964F;opacity:0.7;">Hoco for the Homeless: set prices, approximate amt. TBS, approximate profit</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Robinson, Pratiksha, Daniya, Emily</span>
+│      ├── <span style="color:rgb(249,202,46)">November</span>/
+│      │   └── <span style="color:#FAD558;opacity:1.0;">Meeting III: Updates, volunteer opportunities, conclude service projects</span>               <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(249,202,46)">N1</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+│      └── <span style="color:rgb(255,253,56)">December</span>/
+│          ├── <span style="color:#FFFD60;opacity:1.0;">Meeting IV: Updates, volunteer opportunities, wrap-up semester</span>                         <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(255,253,56)">D1</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+│          ├── <span style="color:#FFFD60;opacity:0.85;">Mark senior hours & check students' standing in club</span>                                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(255,253,56)">D2</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Nicky</span>
+│          └── <span style="color:#FFFD60;opacity:0.70;">Mark junior hours & check students' standing in club</span>                                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(255,253,56)">D3</span>
+│                 └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Ayaz</span>
+│
+└── Semester:II ~ Month:
+       ├── <span style="color:rgb(41,253,47)">January</span>/
+       │   └── <span style="color:#54FD59;opacity:1.0;">Meeting I: Updates, volunteer opportunities, introduce semester</span>                        <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(41,253,47)">J1</span>
+       │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+       ├── <span style="color:rgb(19,145,72)">February</span>/
+       │   └── <span style="color:#42A76D;opacity:1.0;">Meeting II: Updates, volunteer opportunities</span>                                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(19,145,72)">F1</span>
+       │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+       ├── <span style="color:rgb(145,45,141)">March</span>/
+       │   ├── <span style="color:#A757A4;opacity:1.0;">Meeting III: Updates, volunteer opportunities, introduce 5k</span>                            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(145,45,141)">M1</span>
+       │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+       │   └── <span style="color:#A757A4;opacity:0.85;">Ready-up for 5k run, finish financial dependencies & advertisement</span>                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(145,45,141)">M2</span>
+       │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+       ├── <span style="color:rgb(252,40,251)">April</span>/
+       │   └── <span style="color:#FD53FC;opacity:1.0;">Meeting IV: Summarize yearly successes, announcements for next year, wrap-up semester </span> <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(252,40,251)">H3</span>
+       │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span  style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
+       └── <span style="color:rgb(17,115,186)">May</span>/
+           ├── <span style="color:#418FC8;opacity:1.0;">Mark senior hours & check students' standing in club</span>                                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(17,115,186)">M1</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Nicky</span>
+           └── <span style="color:#418FC8;opacity:0.85;">Mark junior hours & check students' standing in club</span>                                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(17,115,186)">M2</span>
+                  └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Ayaz</span></code></pre>
+        </div>
+            
+            <div id="bucket" class="docs-section">
+                <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;">       <span class="fa fa-bitbucket"></span>         THE BUCKET 
+                    <span class="fa fa-bitbucket"></span>
+            </h1>
+<pre class="language-" style="background-color:rgb(26,28,34);border:none">
+<code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
+# Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
+
+<span class="fa fa-bitbucket"></span>
+├── To-Do ~ Priority:
+│      ├── <span style="color:red">High</span>/
+│      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      ├── <span style="color:gold">Medium</span>/
+│      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      └── <span style="color:limegreen">Low</span>/
+│          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
+│                 └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│
+└── To-Try ~ Priority:None, Type:
+       └── <span style="color:royalblue">Experimental</span>/
+           ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+                  └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
+            </div>
+            
             <div id="edit" class="docs-section">
                 <h1>EDITING PWNHS SITE</h1>
                 <br>
@@ -115,10 +221,10 @@ $(document).ready(function(){
                 Make sure you edit only the text of the site, located between <code class="language-html">&lt;p&gt;</code>,  <code class="language-html">&lt;h1&gt;</code>, <code class="language-html">&lt;h2&gt;</code>, <code class="language-html">&lt;h3&gt;</code> tags, and images, located in <br><code class="language-html">&lt;img src="./location_of_image.png"/&gt;</code>. Don't touch the styling or JavaScript of the site unless you know what you're doing.
                 <br>
                 <br>
-                Remember to <a class="prob8" href="http://pwnhs.org/develop#pullreq">submit a pull request</a> to the master branch of PWNHS after each of your committs (edits).
+                Remember to <a class="prob8" href="http://pwnhs.org/developer#pullreq">submit a pull request</a> to the master branch of PWNHS after each of your committs (edits).
                 <br>
                 <br>
-                If you'd like to change the styling or JS to improve the site, send your proposal in the group chat, <a class="prob8" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a>, or reference the <a class="prob8" href="http://pwnhs.org/develop">developer docs</a> for help on doing it yourself. If you don't want to mess with content modification as outlined above, you can also send a proposal in the group chat or submit an issue.
+                If you'd like to change the styling or JS to improve the site, send your proposal in the group chat, <a class="prob8" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a>, or reference the <a class="prob8" href="http://pwnhs.org/developer">developer docs</a> for help on doing it yourself. If you don't want to mess with content modification as outlined above, you can also send a proposal in the group chat or submit an issue.
                 </p>
             </div>
             <div id="tempelates" class="docs-section">
@@ -161,7 +267,23 @@ xWY6OmfJz0sY0ip8GdZmMVrkGNpcpEMJcFVaMCWP5nDPig2/gJsqcEcckYI70fyn
 <code style="color:rgb(153,153,153);">Родддина vP.4
 
 [IvanTsar~{~}~/**#/\/*%1/**.\evi*#!/..\ch\]</code></pre>
+                </div>
+    <div class="cent btmrow">
+        <div class="row cent">
+            <div class="cent">
+                <ul class="mg-smm cent">
+                    <li>
+                        <span style="color:#035299; background:#FFF;font-weight: bold;border-radius: 3px;font-size:14px;padding:3px;"><span class="forvara"></span> 2016</span> with
+                        <svg version="1" width="20" height ="15" viewBox="0 0 300.000000 280.000000" style="fill:#035299"><path d="M147.3 33.1c-16.3 4.7-28.4 11.5-40.4 22.6-3.9 3.7-7.1 5.8-8.8 5.9-21.6 1.4-40.7 4.6-46.9 7.8-3.6 1.9-7.2 5.1-7.2 6.4 0 .6.9 1.6 2 2.2 1.1.6 2 1.4 2 1.9 0 .4-5.5 4.4-12.2 8.7-18.3 11.8-23.5 15.9-25.7 20.2l-2 3.9 3.9-.1c2.2-.1 4 .2 4 .7 0 .6-2.2 4.4-4.9 8.6C2.9 134.8.3 141.3.5 148.3c.1 4.2.4 4.3 4.5 2.2l2.9-1.5-.3 11.9c-.4 11.7 1.3 24.4 3.4 26.5.6.6 1.9-.1 3.4-1.9 1.4-1.6 2.7-2.7 3-2.5.2.3 1.6 6.1 3.1 13 3.3 15.4 7.4 25.6 12.6 31.2l4 4.3-.7-6.5c-.7-8.1-.8-30.1-.1-35.5 1.4-10.7 6.2-24.1 11.4-32 4.2-6.3 14.3-15.7 20.3-18.9 11.3-6.1 27.7-8.5 41.9-6.2 11.3 1.9 63.8 18.2 66.5 20.7 2.2 2-.7 1.4-14.4-3.2-8-2.6-17-5.4-20-6-3-.7-5.7-1.3-6-1.4-.6-.1-6.5-1.2-12.5-2.2-5.6-.9-28.2-1-33 0-10.6 2-20.3 7.2-27.5 14.6-4.4 4.6-10.6 14.9-11.6 19.3-4.4 19.5-3.6 36.3 2.7 56 2.4 7.9 11.4 26.2 16.9 34.8 4.6 7.1 10.9 14.2 12.1 13.5.4-.3.3-2.1-.1-4.1-.5-2-.7-11.6-.5-21.3.2-14.9.7-19.1 2.8-27.1 5.9-22.6 15.7-35.3 34.1-44 13.6-6.4 35.3-8.6 53.3-5.3 8.7 1.6 11.5 3.1 5.6 3-5.8-.1-26.5 1.7-31.8 2.7-19.3 3.8-35.2 15.5-42.7 31.5-3.7 7.9-4.1 10-4.4 22.1-.3 12.3 2.1 21.1 8.2 30.8 3.9 6.1 9.2 12.2 10.7 12.2.9 0 0-17.7-1.1-19.4-.7-1.2 1-.1 8.2 5.3 10.1 7.6 20.2 12 28.8 12.5 5 .2 5.6.1 4.8-1.3-1.2-2.2-6.6-7.1-12.7-11.5-9-6.4-13.3-13.1-13.3-20.7 0-5 1.3-8.2 4.7-11.7 4.3-4.3 8.9-6.7 16.8-8.8 6.2-1.6 17.2-2.5 24.8-2 8.6.6 11.5.9 19.2 2.1 1.7.3 5.2.8 8 1.1 2.7.3 5.1.7 5.2.8.1.1.3 1.8.5 3.9.2 3.7.3 3.7 3.8 3.1 1.9-.3 4.9-.9 6.7-1.4 4-1 4.5-.5 3.7 3.7-.3 1.8-.3 3.3 0 3.3 1.1 0 15.7-4 22.8-6.2 3.7-1.1 7.6-2.9 8.7-4 2.5-2.2 2.7-6.5.5-9.6-1.2-1.8-1.4-3.8-.9-9.9.3-4.2.8-8 1.1-8.5 1.4-2.2-2.7-.3-7 3.2-5.6 4.7-7.9 4.9-14.6 1.5-4.2-2.1-6.9-3-10.1-3.4-.4-.1-2.2-1.4-4-3.1-1.9-1.6-4.1-3-4.9-3.1-.8 0-2.4-.2-3.5-.4s-4.1-.6-6.7-.8c-2.6-.3-6-1.3-7.6-2.1-3.2-1.6-5.7-6.9-4.4-9.2 1.3-2.4 14.6-12.6 19.5-14.9 7-3.3 13.1-2 20.7 4.5 2 1.7 6.6 3.9 10.5 5.1 17.1 5.3 20 6.2 20.3 6.4.4.3-3.9 11.7-5.9 15.8-.8 1.4-.5 1.7 1.6 1.7 2.9 0 22.5-14.5 33.1-24.5 3.8-3.6 13.4-16.7 14-19.1 1.5-5.8-.5-7-47.8-27.5L233 117.5l-4.1-8.1c-5.2-10.2-8.2-13.5-19.2-21.2-14.4-10.2-43.4-19.4-64.4-20.5-4.8-.2 3.9-16.8 14.1-27 1.3-1.3 3.3-4.2 4.4-6.3l2-3.9H161c-2.7 0-8.9 1.1-13.7 2.6zm46.6 71.4c2.4.8 6.4 3 9 4.9 2.5 1.8 6.6 4.3 8.9 5.5 2.4 1.3 4.2 2.4 3.9 2.7-.4.4-14.1 4.4-15.1 4.4-.2 0-1-1.6-1.6-3.5-1.4-4.4-6.1-8.4-13.8-12-3.4-1.6-6.2-3.1-6.2-3.5 0-1.1 10.4-.1 14.9 1.5z"/></svg> <span class="fa fa-heart" style="color:#035299;"></span> by westAlumnus <span class="shortcut">A. Hafiz</span>
+                    </li>
+                    <li>
+                        <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </div>
+            
         </div>
     </div>
 </div>

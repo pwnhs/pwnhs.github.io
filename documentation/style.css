@@ -78,6 +78,9 @@ a{
 }
 pre{
 	margin: .5em 0;
+    overflow: auto !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
 }
 /* Site container width */
 .container{
