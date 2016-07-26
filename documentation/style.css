@@ -87,6 +87,10 @@ pre{
 	max-width:1170px;
 }
 
+@media only screen (max-device-width : 768px) {
+    html,body { display: none; } 
+}
+
 h1{
     font-size:24px; 
     padding-bottom: 5px;
