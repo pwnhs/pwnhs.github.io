@@ -8,7 +8,7 @@ $(document).ready(function()
 	   
 	  }
 	})
-	
+    
 	$('a[href*=#]:not([href=#])').click(function()
 	{
 		$('.active').removeClass('active');

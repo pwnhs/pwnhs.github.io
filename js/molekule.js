@@ -2,12 +2,12 @@
 
 $(document).ready(function()
 {
-	$('body').append('<div id="page-loading-molekules-notifaction"></div>'); // Add page loading UI
-	$('.molekule-fill-screen').css('height', $(window).height()*2+'px'); // Set initial hero height
-	$('#scroll-hero').click(function(event)
+	$('body').append('<div id="page-loading-units-notifaction"></div>'); // Add page loading UI
+	$('.unit-fill-screen').css('height', $(window).height()*2+'px'); // Set initial unit height
+	$('#scroll-unit').click(function(event)
 	{
 		event.preventDefault();
-		$('html,body').animate({scrollTop: $('#scroll-hero').closest('.molekule').height()}, 'slow');
+		$('html,body').animate({scrollTop: $('#scroll-unit').closest('.unit').height()}, 'slow');
 	});
 	
 	setUpDropdownSubs(); // Set Up Dropdown Menu Support
@@ -17,19 +17,19 @@ $(document).ready(function()
 // Loading page complete
 $(window).load(function()
 {
-	setFillScreenmolekuleHeight();
+	setFillScreenunitHeight();
 	animateWhenVisible();  // Activate animation when visible	
-	$('#page-loading-molekules-notifaction').remove(); // Remove page loading UI
+	$('#page-loading-units-notifaction').remove(); // Remove page loading UI
 }
 ).resize(function() // Window resize 
 {		
-	setFillScreenmolekuleHeight();	
+	setFillScreenunitHeight();	
 }); 
 
-// Set Fill Screen molekule heights
-function setFillScreenmolekuleHeight()
+// Set Fill Screen unit heights
+function setFillScreenunitHeight()
 {
-	$('.molekule-fill-screen').each(function(i) // Loop all fill Screens
+	$('.unit-fill-screen').each(function(i) // Loop all fill Screens
 	{
 		var parentFillDiv = $(this);
 		window.fillBodyHeight = 0;
@@ -37,13 +37,13 @@ function setFillScreenmolekuleHeight()
 		{
 			fillPadding = parseInt($(this).css('padding-top'))*2
 			
-			if(parentFillDiv.hasClass('molekule-group')) // molekule Groups
+			if(parentFillDiv.hasClass('unit-group')) // unit Groups
 			{
-				fillBodyHeight = fillPadding + $(this).outerHeight()+50; // Set hero body height
+				fillBodyHeight = fillPadding + $(this).outerHeight()+50; // Set unit body height
 			}
 			else
 			{
-				fillBodyHeight = fillBodyHeight + fillPadding + $(this).outerHeight()+50; // Set hero body height
+				fillBodyHeight = fillBodyHeight + fillPadding + $(this).outerHeight()+50; // Set unit body height
 			}
 		});
 		$(this).css('height', (getFillHeight()) + 'px'); // Set Fill height
@@ -73,7 +73,7 @@ function scrollToTarget(D)
 	{
 		D = $(document).height();
 	}
-	else // Specific molekule
+	else // Specific unit
 	{
 		D = $(D).offset().top;
 		if($('.sticky-nav').length) // Sticky Nav in use
@@ -131,7 +131,7 @@ function stickyNavToggle()
 	var V = 0; // offset Value
 	var C = "sticky"; // Classes
 	
-	if($('.sticky-nav').hasClass('fill-molekule-top-edge')) // If nav is in hero animate in
+	if($('.sticky-nav').hasClass('fill-unit-top-edge')) // If nav is in unit animate in
 	{
 		V = $('.sticky-nav').height();
 		C = "sticky animated fadeInDown";
@@ -153,7 +153,7 @@ function hideAll()
 {
 	$('.animated').each(function(i)
 	{	
-		if(!$(this).closest('.hero').length) // Dont hide hero object
+		if(!$(this).closest('.unit').length) // Dont hide unit object
 		{
 			$(this).removeClass('animated').addClass('hideMe');
 		}
