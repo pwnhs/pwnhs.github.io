@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         
@@ -90,7 +90,7 @@
         <div id="mobileHide" class="hidden-md hidden-lg" style="text-align: center;text-align: -webkit-center;">
                 <span style="font-size:60px">)-:</span>
             <br>
-                developing is hard on a mobile device! 
+                developing is hard on small screens! 
             <br>
                 we'll see you on your desktop.
         </div>    
@@ -216,7 +216,7 @@ return " ";
                             <p>
                                     <code class="max">IMPORTANT NOTE</code>: In order to submit pull requests to the Master, you must both <code class="git">fork</code> and then <code class="git">clone</code> the Master PWNHS repo. Only cloning it will not create a server-side branch of the repo, thereby not tying your clone to the Master and disallowing you the ability to merge with the Master branch. More information on forking a repo <a class="move" href="https://guides.github.com/activities/forking/">here</a> and <a class="move" href="https://help.github.com/articles/fork-a-repo/">here</a>.
                             </p>
-                        <h2>Want to help with our site, but don't know what to do or where to start? Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">bucket</a>.</h2>
+                        <h2>Want to help with our site, but don't know what to do or where to start? Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">Bucket</a>.</h2>
                     </div>
 
                     <div id="allowed" class="docs-section-cut">
@@ -226,634 +226,748 @@ return " ";
                             </p>
                     </div>
                     
-                    <div class="col1 expansion docs-section">
-                        <span class="text-center">
-                            <h2 class="text-center expagreen">Do's</h2>
-                                <p class="text-center">
-                                    <br>
-                                        <span class="fa fa-check check "></span> DO edit format, style, animations, frameworks
-                                    <br>
-                                    <br>
-                                        <span class="fa fa-check check "></span>DO tweak expanded stylesheets, javascript, html
-                                    <br>
-                                    <br>
-                                        <span class="fa fa-check check "></span>DO add style- and feature-based extensions
-                                    <br>
-                                    <br>
-                                        <span class="fa fa-check check "></span>DO observe consistency across pages and styles
-                                    <br>
-                                    <br>
-                                        <span class="fa fa-check check "></span>DO keep with established <a class="move" href="#icons">fonts</a> and the <a class="move" href="#colors">color palette</a>
-                                </p>
-                        </span>
-                    </div>
-                    
-                    <div class="col1 expansion docs-section">
-                        <span class="text-center">
-                        <h2 class="text-center expared">Don'ts</h2>
-                        <p class="text-center">
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T edit content (text, pictures) of information
-                            <br>
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T touch minimised files (they're dependencies!)
-                            <br>
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T add infrastructure-altering extensions
-                            <br>
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T generate hyper-independent structures
-                            <br>
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T neglect <a class="move" href="#depend">dependencies</a> or add redundancies
-                        </p>
-                        </span>
+                    <div id="contain-unit-list">
+                        <div class="contain-do-dont expansion docs-section">
+                            <span class="text-center">
+                                <h2 class="text-center expagreen">Do's</h2>
+                                    <p class="text-center">
+                                        <br>
+                                            <span class="fa fa-check check "></span> DO edit format, style, animations, frameworks
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-check check "></span>DO tweak expanded stylesheets, javascript, html
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-check check "></span>DO add style- and feature-based extensions
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-check check "></span>DO observe consistency across pages and styles
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-check check "></span>DO keep with established <a class="move" href="#icons">fonts</a> and the <a class="move" href="#colors">color palette</a>
+                                    </p>
+                            </span>
+                        </div>
+
+                        <div class="contain-do-dont expansion docs-section">
+                            <span class="text-center">
+                                <h2 class="text-center expared">Don'ts</h2>
+                                    <p class="text-center">
+                                        <br>
+                                            <span class="fa fa-remove ecks">    </span> DON'T edit content (text, pictures) of information
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T touch minimised files (they're dependencies!)
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T add infrastructure-altering extensions
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T generate hyper-independent structures
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T neglect <a class="move" href="#depend">dependencies</a> or add redundancies
+                                    </p>
+                            </span>
+                        </div>
                     </div>
 
-                 <div class="docs-section" id="pulls">
-                    <h1>ISSUES & SUBMISSIONS</h1>
-                    <p>A community is built on discussion and contribution. We want those of PWNHS who choose to aid in our project to develop a mutually dependent, beneficial collective. That's why opening issues and submitting pull requests are so important.</p>
-                    <h2>Issues</h2>
-                    <p><code class="git">Issues</code> are a way to point attention to and/or discuss a bug, improvement, or anything else of substance. If you see any place for improvement or have something to bring up, <a class="move" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a> on the PWNHS repo. More on issues <a class="move" href="https://guides.github.com/features/issues/">here</a>.</p>
-                    <div id="pullreq"><h2>Submissions (Pull Requests)</h2></div>
-                    <p>A <code class="git">pull request</code> is a way to submit features or fixes of the project you have made on your fork to the <code class="git">master</code> branch. Pull requests are the most important part of your forking process, as they show what contributions you have to propose.
-                    <br>
-                    <br>
-                    To make a pull request, go to your fork of PWNHS on GitHub:
-                    <pre class="pre-scrollable"><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
-                    where you will see a banner noting that you have recently pushed a new branch of the PWNHS project Master. Click on <code class="git button velvet">Compare & pull request</code>. After making a title and filling the description with information regarding what you have added/changed/removed and why, press <code class="git button velvet">Create pull request</code>.
-                    </p>
-                    <h2>Note</h2>
-                    <p>
-                    <code class="max">IMPORTANT NOTE</code>: Though the vast majority of your legitimate contributions will get in, there will be the occasional pull request that does not meet our standards. To make sure that your contribitions have the optimal chance of acceptance, make sure they correspond with our <a class="move" href="#allowed">developer allowances</a> and there is nothing in your pull request that does not directly correlate with the betterment of the PWNHS site.
-                    <br>
-                    <br>
-                    To incentivise you, we have a variety of high-caliber perks and rewards given to developers who contribute accepted pull requests 🙃.
-                    <h2>Having Trouble?</h2>
-                    <p>
-                    More information on pull requests <a class="move" href="https://guides.github.com/activities/forking/#making-a-pull-request">here</a> and <a class="move" href="https://help.github.com/articles/creating-a-pull-request/">here</a>.
-                    </p>
-                 </div>
+                    <div class="docs-section" id="pulls">
+                        <h1>ISSUES & SUBMISSIONS</h1>
+                            <p>
+                                    A community is built on discussion and contribution. We want those of PWNHS who choose to aid in our project to develop a mutually dependent, beneficial collective. That's why opening issues and submitting pull requests are so important.
+                            </p>
+                        <h2>Issues</h2>
+                            <p>
+                                    <code class="git">Issues</code> are a way to point attention to and/or discuss a bug, improvement, or anything else of substance. If you see any place for improvement or have something to bring up, <a class="move" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a> on the PWNHS repo. More on issues <a class="move" href="https://guides.github.com/features/issues/">here</a>.
+                            </p>
+                    <div id="pullreq">
+                        <h2>Submissions (Pull Requests)</h2>
+                    </div>
+                            <p>
+                                    A <code class="git">pull request</code> is a way to submit features or fixes of the project you have made on your fork to the <code class="git">master</code> branch. Pull requests are the most important part of your forking process, as they show what contributions you have to propose.
+                                <br>
+                                <br>
+                                    To make a pull request, go to your fork of PWNHS on GitHub:
+                            </p>
+                        
+<pre class="pre-scrollable"><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
+                        
+                            <p>
+                                    where you will see a banner noting that you have recently pushed a new branch of the PWNHS project Master. Click on <code class="git button velvet">Compare & pull request</code>. After making a title and filling the description with information regarding what you have added/changed/removed and why, press <code class="git button velvet">Create pull request</code>.
+                            </p>
+                        <h2>Note</h2>
+                            <p>
+                                    <code class="max">IMPORTANT NOTE</code>: Though the vast majority of your legitimate contributions will get in, there will be the occasional pull request that does not meet our standards. To make sure that your contribitions have the optimal chance of acceptance, make sure they correspond with our <a class="move" href="#allowed">developer allowances</a> and there is nothing in your pull request that does not directly correlate with the betterment of the PWNHS site.
+                                <br>
+                                <br>
+                                    To incentivise you, we have a variety of high-caliber perks and rewards given to developers who contribute accepted pull requests 🙃.
+                            </p>
+                        <h2>Having Trouble?</h2>
+                            <p>
+                                    More information on pull requests <a class="move" href="https://guides.github.com/activities/forking/#making-a-pull-request">here</a> and <a class="move" href="https://help.github.com/articles/creating-a-pull-request/">here</a>.
+                            </p>
+                    </div>
 
-                <div id="infrastructure" class="docs-section">
-                    <h1>PROJECT INFRASTRUCTURE</h1> 
-                    <p>The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.</p>
-                    <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
-                    <p>
-                    Masses can be thought of as the various elements, or building blocks, of a site. These include things like paragraph sections, images with captions, rows of icons, etc. Instead of having to code an element manually, a <code class="language-markup" style="color:#e6db74">mass</code> provides a preset that describes the layout, structure, and function of the element for you. Confused? Here's an example of code that describes the panel of <a class="move" href="//pwnhs.org#upcoming">Upcoming Projects and Volunteer Opportunities</a> on the PWNHS main page:
-        <pre class="language-html"><code>&lt;div class="container"&gt;
-            &lt;div class="row animSpeedFast voffset"&gt;
-                &lt;a class="keep" href="http://act.alz.org/site/TR?fr_id=9319&pg;=entry"&gt;
-                    &lt;div class="col-sm-4 expansion"&gt;
-                        &lt;div class="panel"&gt;
-                            &lt;div class="panel-heading"&gt;
-                                &lt;h3 class="mg-clear  text-right" style="font-weight:600"&gt;
-                                Walk to end Alzheimers
-                                &lt;/h3&gt;
-                            &lt;/div&gt;
-                            &lt;div class="panel-body"&gt;  
-                                &lt;img src="img/Final_walk_TALK.png" class="img-responsive" /&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
+                    <div id="infrastructure" class="docs-section">
+                        <h1>PROJECT INFRASTRUCTURE</h1> 
+                            <p>
+                                    The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.
+                            </p>
+                        <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
+                            <p>
+                                    Masses can be thought of as the various elements, or building blocks, of a site. These include things like paragraph sections, images with captions, rows of icons, etc. Instead of having to code an element manually, a <code class="language-markup" style="color:#e6db74">mass</code> provides a preset that describes the layout, structure, and function of the element for you. Confused? Here's an example of code that describes the panel of <a class="move" href="//pwnhs.org#upcoming">Upcoming Projects and Volunteer Opportunities</a> on the PWNHS main page:
+                            </p>
+                        
+<pre class="language-html"><code>&lt;div class="container"&gt;
+    &lt;div class="row animSpeedFast voffset"&gt;
+        &lt;a class="keep" href="http://act.alz.org/site/TR?fr_id=9319&pg;=entry"&gt;
+            &lt;div class="col-sm-4 expansion"&gt;
+                &lt;div class="panel"&gt;
+                    &lt;div class="panel-heading"&gt;
+                        &lt;h3 class="mg-clear  text-right" style="font-weight:600"&gt;
+                        Walk to end Alzheimers
+                        &lt;/h3&gt;
                     &lt;/div&gt;
-                &lt;/a&gt;
+                    &lt;div class="panel-body"&gt;  
+                        &lt;img src="img/Final_walk_TALK.png" class="img-responsive" /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
-        &lt;/div&gt;</code></pre>
-                    Unless you really love <code class="language-markup">&lt;div&gt;</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
-                    <br>
-                    <br>
-                    Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. More custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet. In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
-                    <br>
-                    <br>
-                    Because we expect our developers to modify the style of the site (as accorded by our <a class="move" href="#allowed">developer allowances</a>), and not the content, we do not have a list of all <code class="language-markup">Molekule</code> <code class="language-markup" style="color:#e6db74">mass</code>es on this Docs page. You are supposed to edit or add/modify to elements already-existing <code class="language-markup" style="color:#e6db74">mass</code> classes, which can be found in <code class="language-markup">./style.css</code>. 
-                    <br>
-                    <br>
-                    If you would like to obtain the full documentation and dependencies of <code class="language-markup">Molekule</code> (which includes all <code class="language-markup" style="color:#e6db74">"mass"</code> structures) for your own projects, just <a class="move" href="mailto:ayaz.hafiz@pwnhs.com?subject=It's%20Spelled%20Molecule">say hi</a>!
-                    </p>
-                    <h2><code class="language-markup" style="color:#e6db74">"unit"</code> Structures</h2>
-                    <p>Much broader in scope and easier to apply, a <code class="language-markup" style="color:#e6db74">unit</code> can be thought of as the larger frame in which <code class="language-markup" style="color:#e6db74">mass</code>es are held. <a class="move" href="//pwnhs.org">PWNHS's landing page</a>, for instance, is full screen, light, and parallaxed - a format allowed by the following structure:
-        <pre><code class="language-html">&lt;div class="unit unit-fill-screen b-parallax bg-west bgc-white l-unit" id="florida"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        
+                            <p>
+                                    Unless you really love <code class="language-markup">&lt;div&gt;</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
+                                <br>
+                                <br>
+                                    Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. More custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet. In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
+                                <br>
+                                <br>
+                                    Because we expect our developers to modify the style of the site (as accorded by our <a class="move" href="#allowed">developer allowances</a>), and not the content, we do not have a list of all <code class="language-markup">Molekule</code> <code class="language-markup" style="color:#e6db74">mass</code>es on this Docs page. You are supposed to edit or add/modify to elements already-existing <code class="language-markup" style="color:#e6db74">mass</code> classes, which can be found in <code class="language-markup">./style.css</code>. 
+                                <br>
+                                <br>
+                                    If you would like to obtain the full documentation and dependencies of <code class="language-markup">Molekule</code> (which includes all <code class="language-markup" style="color:#e6db74">"mass"</code> structures) for your own projects, just <a class="move" href="mailto:ayaz.hafiz@pwnhs.com?subject=It's%20Spelled%20Molecule">say hi</a>!
+                            </p>
+                        <h2><code class="language-markup" style="color:#e6db74">"unit"</code> Structures</h2>
+                            <p>
+                                    Much broader in scope and easier to apply, a <code class="language-markup" style="color:#e6db74">unit</code> can be thought of as the larger frame in which <code class="language-markup" style="color:#e6db74">mass</code>es are held. <a class="move" href="//pwnhs.org">PWNHS's landing page</a>, for instance, is full screen, light, and parallaxed - a format allowed by the following structure:
+                            </p>
+                        
+<pre><code class="language-html">&lt;div class="unit unit-fill-screen b-parallax bg-west bgc-white l-unit" id="florida"&gt;
 
-            &lt;!-- landing page content -->
+    &lt;!-- landing page content -->
 
-        &lt;/div&gt;</code></pre>
-                    The styling for the relevant <code class="language-html" style="color:#e6db74">unit</code> classes (<code class="language-markup" style="color:#e6db74">unit</code>, <code class="language-markup" style="color:#e6db74">unit-fill-screen</code>, <code class="language-markup" style="color:#e6db74">l-unit</code>) are as follow:
-            <div>
-        <pre class="language-css">
-        <code>.unit{
-            width:100%;
-            clear:both;
-            background: 50% 50% no-repeat;
-            padding:0 50px;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position:relative;
-        }
+&lt;/div&gt;</code></pre>
+                            
+                            <p>
+                                    The styling for the relevant <code class="language-html" style="color:#e6db74">unit</code> classes (<code class="language-markup" style="color:#e6db74">unit</code>, <code class="language-markup" style="color:#e6db74">unit-fill-screen</code>, <code class="language-markup" style="color:#e6db74">l-unit</code>) are as follow:
+<div>
+<pre class="language-css">
+<code>.unit{
+    width:100%;
+    clear:both;
+    background: 50% 50% no-repeat;
+    padding:0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position:relative;
+}
 
-        .unit-fill-screen{
-            padding-top:0;
-            position: relative;
-            height: inherit;
-        }
+.unit-fill-screen{
+    padding-top:0;
+    position: relative;
+    height: inherit;
+}
 
-        .unit-fill-screen > .container{
-            position:relative;
-            top:50%;
-            transform:translateY(-50%);
-            -webkit-transform:translateY(-50%);
-        }
+.unit-fill-screen > .container{
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
+}
 
-        .l-unit{
-            color:rgba(0,0,0,.5);
-        }
-        </code></pre>
-            </div>
-                    Ultimately, then, <code class="language-markup" style="color:#e6db74">unit</code>s allow for the encompassed styling of the container in which <code class="language-markup" style="color:#e6db74">mass</code>es are held.
-                    </p>
-                    <h2>What do I do with this?</h2>
-                    <p>
-                    We suggest you play around and edit the styling of various <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code> structures to create something you find appealing and think would better the PWNHS website. You can really do anything, as long as you upkeep the infastructure we've built and observe our <a class="move" href="#allowed">allowances</a>.
-                    </p>
-                </div>
-
-                <div id="depend" class="docs-section">
-                    <h1>DEPENDENCIES</h1>
-                    <p>The PWNHS site relies on multiple objects to keep the project's structure upright. Here we list the vital components of our site so that you establish what is discretionary and what is necessary in your contributions. 
-                    <br>
-                    <br>
-                    <code class="emph">General Rule:</code> If a file is minimised (has a <code class="language-html">.min</code> pre-extension), it's a dependency and should not be touched.
-                    <br>
-                    <br>
-                    Essentially, anything relating to <code class="language-">Molekule</code>, <code style="color:#6f5499">Bootstrap</code>, Prism, and any fonts or icons are absolutley essential to this project. Molekule and Bootstrap work hand-in-hand to create the PWNHS site you see, Prism generates the beatiful code examples we have, and fonts/icons make everything extra pretty.
-                    <br>
-                    <br>
-                    The following folders and files are not to be modified or removed:
-        <pre class="language-">
-        <code>./css/
-        ./files/
-        ./fonts/
-        ./js/
-        ./README.md
-        ./scripts/typed/</code>
-        </pre>
-                    </p>
-                </div>
-
-        <div id="extensions" class="docs-section-cut">
-            <h1>EXTENSIONS</h1>
-            <p>
-            Several extensions, including Typed and Prism, are already installed into the PWNHS project as add-ons to improve the functionality and appearance of the site. If you wish to add an extension, reference the do's/don'ts of extensions below.
-            </p>
-        </div>
-        <div class="col1 expansion">
-                        <span class="text-center">
-                        <h2 class="text-center expagreen">Do's</h2>
-                        <p class="text-center">
-                            <br>
-                            <span class="fa fa-check check "></span> DO add stylistic extensions (css, js, svg, fonts)
-                            <br>
-                            <br>
-                            <span class="fa fa-check check "></span>DO add static extensions (don't require user input)
-                        </p>
-                        </span>
+.l-unit{
+    color:rgba(0,0,0,.5);
+}
+</code></pre>
+</div>
+                            <p>
+                                    Ultimately, then, <code class="language-markup" style="color:#e6db74">unit</code>s allow for the encompassed styling of the container in which <code class="language-markup" style="color:#e6db74">mass</code>es are held.
+                            </p>
+                        <h2>What do I do with this?</h2>
+                            <p>
+                                    We suggest you play around and edit the styling of various <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code> structures to create something you find appealing and think would better the PWNHS website. You can really do anything, as long as you upkeep the infastructure we've built and observe our <a class="move" href="#allowed">allowances</a>.
+                                <br>
+                                <br>
+                                    <span class="emph">Nothing to do?</span> Check out our <a href="#bucket" class="move">Bucket</a>.
+                            </p>
                     </div>
-                    <div class="col1 expansion">
-                        <span class="text-center">
-                        <h2 class="text-center expared">Don'ts</h2>
-                        <p class="text-center">
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T add systematic extensions (Jekyll exception)
-                            <br>
-                            <br>
-                            <span class="fa fa-remove ecks"></span> DON'T add dynamic extensions (php, sql, MySQL)
-                        </p>
-                        </span>
+
+                    <div id="depend" class="docs-section">
+                        <h1>DEPENDENCIES</h1>
+                            <p>
+                                    The PWNHS site relies on multiple objects to keep the project's structure upright. Here we list the vital components of our site so that you establish what is discretionary and what is necessary in your contributions. 
+                                <br>
+                                <br>
+                                    <code class="emph">General Rule:</code> If a file is minimised (has a <code class="language-html">.min</code> pre-extension), it's a dependency and should not be touched.
+                                <br>
+                                <br>
+                                    Essentially, anything relating to <code class="language-">Molekule</code>, <code style="color:#6f5499">Bootstrap</code>, Prism, and any fonts or icons are absolutley essential to this project. Molekule and Bootstrap work hand-in-hand to create the PWNHS site you see, Prism generates the beatiful code examples we have, and fonts/icons make everything extra pretty.
+                                <br>
+                                <br>
+                                    The following folders and files are not to be modified or removed:
+                            </p>
+                        
+<pre class="language-">
+<code>./css/
+./files/
+./fonts/
+./js/
+./README.md
+./scripts/typed/</code>
+</pre>
+            
                     </div>
-        <br>
-        <br>
-        <h2>Want to Use Jekyll?</h2>
-        <p class="docs-section">Though we have not had much success with it, if you want to add a "toaster for websites" like Jekyll, 
-        <br>
-        <br>
-        <code class="git">1)</code> Make sure you have experience with Ruby, Python, and have used Jekyll(-like) before,
-        <br>
-        <br>
-        <code class="git">2)</code> Have backed-up your branch of the project (it is suggested you create a totally different branch for the implementation of Jekyll), and
-        <br>
-        <br>
-        <code class="git">3)</code> Modify the <code class="language-">._config</code> to exclude biases, blog feeds, and correctly point to the PWNHS server.
-        <br>
-        <br>
-        Check out <a class="move" href="http://jekyllrb.com">Jekyll's site</a> for more information.
-        </p>
 
-        <div id="icons" class="docs-section">
-        <h1>FONTS & ICONS</h1>
-            <p>
-            If you haven't noticed yet, we really like icons. They're pretty, space-efficient, and quite useful in the construction of site content. Same goes for our fonts - we use only two for content, and our code fonts are system-based, requiring no calls.
-            </p>
-            <h2>FONTS</h2>
-            <p>
-            We use two fonts for site content - <code class="git" style="font-family:Montserrat;">Montserrat</code>, a free Google font, and <code class="git" style="font-family:Proxima-Nova">Proxima Nova</code>, a premium font stylistically similar to Montserrat. Montserrat is used for points of emphasis, whilst the minimalistic style of Proxima Nova is exceptionally made for body content.
-            <br>
-            <br>
-            Code fonts are described in the following manner:
-        <pre class="language-css">
-        <code>code{
-            font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
-        }</code></pre>
-            with <code class="git" style="font-family:Monaco">Monaco</code> obviously being the most prefered reference.
-            <br>
-            <br>
-            Code blocks are described in the following general way:
-            <div>
-        <pre class="language-css">
-        <code>code./*some class*/{
-            font-size: __px;
-            color: #__;
-            padding: __px __px __px;
-            border: __px solid #__;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-            background-clip: padding-box;
-            background-color: #__;
-        }</code>
-        </pre>
-                </div>
-            We require that you do not change our two content fonts, Montserrat and Proxima Nova, but you are more than welcome to configure code styles to your liking.
-            </p>
-            <h2>ICONS</h2>
-            <p>
-            This site mainly uses Font Awesome <span class="fa fa-font-awesome"></span>, with guest appearances of Linecons to fit in missing pieces. The general structure for the insertion of Font Awesome icons is:
-        <pre class="language-html">
-        <code>&lt;span class="fa fa-some-icon"&gt;&lt;/span&gt;
-        </code></pre>
-        with the following output:
-        <pre class="language-">
-        <code><span class="fa fa-font-awesome"></span></code>
-        </pre>
-        While you are only allowed to add more icon packs, not modify or remove existing ones, you are welcome to edit icon styles located in <code class="language-">./style.css</code> or <code class="language-">./documentation/docs-style.css</code>. These styles are described in a manner similar to the following example:
-        <div>
-        <pre class="language-css">
-        <code>.icon-md-lg{
-            font-size: 45px !important;
-        }
-        </code></pre>
-        Because the icons default to Font Awesome's styling, the addition of <code class="language-css">!important</code> is imperative to override normal function.
-        </div>
-            </p>
-        </div>
+                    <div id="extensions" class="docs-section-cut">
+                        <h1>EXTENSIONS</h1>
+                            <p>
+                                    Several extensions, including Typed and Prism, are already installed into the PWNHS project as add-ons to improve the functionality and appearance of the site. If you wish to add an extension, reference the do's/don'ts of extensions below.
+                            </p>
+                    </div>
+                    <div id="contain-unit-list">
+                        <div class="contain-do-dont expansion">
+                            <span class="text-center">
+                                <h2 class="text-center expagreen">Do's</h2>
+                                    <p class="text-center">
+                                        <br>
+                                            <span class="fa fa-check check "></span> DO add stylistic extensions (css, js, svg, fonts)
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-check check "></span>DO add static extensions (don't require user input)
+                                    </p>
+                            </span>
+                        </div>
+                        <div class="contain-do-dont expansion">
+                            <span class="text-center">
+                                <h2 class="text-center expared">Don'ts</h2>
+                                    <p class="text-center">
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T add systematic extensions (Jekyll exception)
+                                        <br>
+                                        <br>
+                                            <span class="fa fa-remove ecks"></span> DON'T add dynamic extensions (php, sql, MySQL)
+                                    </p>
+                            </span>
+                        </div>
+                    </div>
+                                    <br>
+                                    <br>
+                        <h2>Want to Use Jekyll?</h2>
+                            <p class="docs-section">
+                                    Though we have not had much success with it, if you want to add a "toaster for websites" like Jekyll, 
+                                <br>
+                                <br>
+                                    <code class="git">1)</code> Make sure you have experience with Ruby, Python, and have used Jekyll(-like) before,
+                                <br>
+                                <br>
+                                    <code class="git">2)</code> Have backed-up your branch of the project (it is suggested you create a totally different branch for the implementation of Jekyll), and
+                                <br>
+                                <br>
+                                    <code class="git">3)</code> Modify the <code class="language-">._config</code> to exclude biases, blog feeds, and correctly point to the PWNHS server.
+                                <br>
+                                <br>
+                                    Check out <a class="move" href="http://jekyllrb.com">Jekyll's site</a> for more information.
+                            </p>
 
-        <div id="colors" class="docs-section-cut">
-            <h1>STYLING & COLOR PALETTE</h1>
-            <p>
-            To stay consistent and make the process of development for all parties involved, we've generated a simple styling process and defined a color palette to be used for site content.
-            </p>
-            <h2>Styling</h2>
-            <p>
-            The styling of the PWNHS project is quite simple. We employ our main stylesheet, <code class="language-">./style.css</code>, as the reference of styles used by the core NHS site (pwnhs.org), while <code class="language-">./documentation/docs.js</code> and <code class="language-">./documentation/style.css</code> are used by the documentation pages of the site. Therefore, make sure you are modifying the stylesheet directly corresponding to its effected documents.
-            </p>
-            <h2>Color Palette</h2>
-            <p>
-            We use six main colors in the styling of our content. You are welcome to implement these colors, their inverses, their analogues, and their monochromatic (note: monochromatic) shades in your own branch(es) of the PWNHS project:
-            </p>
-        </div>
+                    <div id="icons" class="docs-section">
+                        <h1>FONTS & ICONS</h1>
+                            <p>
+                                    If you haven't noticed yet, we really like icons. They're pretty, space-efficient, and quite useful in the construction of site content. Same goes for our fonts - we use only two for content, and our code fonts are system-based, requiring no calls.
+                            </p>
+                        <h2>FONTS</h2>
+                            <p>
+                                    We use two fonts for site content - <code class="git" style="font-family:Montserrat;">Montserrat</code>, a free Google font, and <code class="git" style="font-family:Proxima-Nova">Proxima Nova</code>, a premium font stylistically similar to Montserrat. Montserrat is used for points of emphasis, whilst the minimalistic style of Proxima Nova is exceptionally made for body content.
+                                <br>
+                                <br>
+                                    Code fonts are described in the following manner:
+                            </p>
+                        
+<pre class="language-css">
+<code>code{
+    font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
+}</code></pre>
+                        
+                            <p>
+                                    with <code class="git" style="font-family:Monaco">Monaco</code> obviously being the most prefered reference.
+                                <br>
+                                <br>
+                                    Code blocks are described in the following general way:
+                            </p>
+                        
+<div>
+<pre class="language-css">
+<code>code./*some class*/{
+    font-size: __px;
+    color: #__;
+    padding: __px __px __px;
+    border: __px solid #__;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background-color: #__;
+}</code>
+</pre>
+</div>
+                            <p>
+                                    We require that you do not change our two content fonts, Montserrat and Proxima Nova, but you are more than welcome to configure code styles to your liking.
+                            </p>
+                        <h2>ICONS</h2>
+                            <p>
+                                    This site mainly uses Font Awesome <span class="fa fa-font-awesome"></span>, with guest appearances of Linecons to fit in missing pieces. The general structure for the insertion of Font Awesome icons is:
+                            </p>
+                        
+<pre class="language-html">
+<code>&lt;span class="fa fa-some-icon"&gt;&lt;/span&gt;
+</code></pre>
+                        
+                            <p>
+                                    with the following output:
+                            </p>
+                        
+<pre class="language-">
+<code><span class="fa fa-font-awesome"></span></code>
+</pre>
+                        
+                            <p>
+                                    While you are only allowed to add more icon packs, not modify or remove existing ones, you are welcome to edit icon styles located in <code class="language-">./style.css</code> or <code class="language-">./documentation/docs-style.css</code>. These styles are described in a manner similar to the following example:
+                            </p>
+                        
+<div>
+<pre class="language-css">
+<code>.icon-md-lg{
+    font-size: 45px !important;
+}
+</code></pre>
+</div>
+                        
+                            <p>
+                                    Because the icons default to Font Awesome's styling, the addition of <code class="language-css">!important</code> is imperative to override normal function.
+                            </p>
+                    </div>
+
+                    <div id="colors" class="docs-section-cut">
+                        <h1>STYLING & COLOR PALETTE</h1>
+                            <p>
+                                    To stay consistent and make the process of development for all parties involved, we've generated a simple styling process and defined a color palette to be used for site content.
+                            </p>
+                        <h2>Styling</h2>
+                            <p>
+                                    The styling of the PWNHS project is quite simple. We employ our main stylesheet, <code class="language-">./style.css</code>, as the reference of styles used by the core NHS site (pwnhs.org), while <code class="language-">./documentation/docs.js</code> and <code class="language-">./documentation/style.css</code> are used by the documentation pages of the site. Therefore, make sure you are modifying the stylesheet directly corresponding to its effected documents.
+                            </p>
+                        <h2>Color Palette</h2>
+                            <p>
+                                    We use six main colors in the styling of our content. You are welcome to implement these colors, their inverses, their analogues, and their monochromatic (note: monochromatic) shades in your own branch(es) of the PWNHS project:
+                            </p>
+                    </div>
 
         <!-- Color Palette must be minimised to prevent awkward margins caused by <pre></pre> -->
-
+<div>
         <pre class="docs-section-icon-md" style="background-color:rgba(0,0,0,.5);border-color:black;"><div class="col-sm-2"><div class="docs-section-color" style="background-color:#035299;"><a class="fre copy allTheWayUp text-center" style="color:#022a4e">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.fre', {text: function() {return '#035299';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#5D69B1"><a class="lak copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.lak', {text: function() {return '#5d69b1';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:rgb(164,133,136)"><a class="kild copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.kild', {text: function() {return '#a48588';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#fa575d"><a class="ploi copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.ploi', {text: function() {return '#fa575d';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#a0a0a0"><a class="htyr copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.htyr', {text: function() {return '#a0a0a0';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div><div class="col-sm-2"><div class="docs-section-color" style="background-color:#e5e5e5;"><a class="xswq copy allTheWayUp text-center">Click to copy<br>Hex Color</a><script src="./js/clipboard.min.js"></script><script>var clipboard = new Clipboard('.xswq', {text: function() {return '#e5e5e5';}});clipboard.on('success', function(e) {console.log(e);});clipboard.on('error', function(e) {console.log(e);});</script></div></div></pre>
+</div>
 
-        <div id="animations" class="docs-section">
-            <h1>ANIMATIONS</h1>
-            <p>
-            Animations make the world go round. Literally, in the case of our pageload spinner:
-            <pre style="text-align:center; background-color:#e5">
-            <img src="img/pageload-spinner.gif"></pre>
-            </p>
-            <h2>Static Animations</h2>
-            <p>
-            Right now, we only have one static animation - the spinning wolf, located at <code class="language-">./img/pageload-spinner.gif</code>. If you would like, you can make a better version of this animation, but don't remove it or make it anything other than the West logo!
-            </p>
-            <h2>Embedded Animations</h2>
-            <p>
-            Embedded Animations are those written directly into the HTML, CSS, and JS of the PWNHS project. Currently, this includes Typed, colorFades, fadeIns, and expansions.
-            </p>
-            <h3><span class="likola max"></span></h3>
-            <p>
-            <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in this header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
-            <br>
-        <pre class="language-javascript">
-        <code>$(function(){
-            $(".some-class").typed({
-                strings: ["String_1", "String_2", "String_3"],
-                loop: true,
-                typeSpeed: 100,
-                showCursor: true,
-            });
-        });</code></pre>
-        <br>
-        <div>
-            <pre class="language-html"><code>&lt;span class="some-class"&gt&lt/span&gt</code></pre>
-        </div>
-            <br>
-            You can directly modify the js and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
-            </p>
-
-            <h3 class="xolor">colorFades</h3>
-            <p>
-            Color animations drive attention to otherwise idle objects - particularly to icons. The way PWNHS describes these animations is pretty simple, as exampled by the following HTML/CSS duo.
-            <br>
-        <pre class="language-html">
-        <code>&lt;span class="colorFade"&gt;&lt;/span&gt;</code>
-        </pre>
-        <br>
-        <div>
-        <pre class="language-css">
-        <code>@keyframes colorFade { 
-            0%   { color: #8597A4; }
-            50%  { color: #fa575d; }
-            100% { color: #8597A4; }
-        }
-
-        @-moz-keyframes colorFade { 
-            0%   { color: #8597A4; }
-            50%  { color: #fa575d; }
-            100% { color: #8597A4; }
-        }
-
-        @-webkit-keyframes colorFade { 
-            0%   { color: #8597A4; }
-            50%  { color: #fa575d; }
-            100% { color: #8597A4; }
-        }
-
-        .colorFade {
-            animation:         colorFade 2.5s infinite; 
-            -moz-animation:    colorFade 2.5s infinite; 
-            -webkit-animation: colorFade 2.5s infinite;
-        }</code>
-        </pre>
-        </div>
-        <br>
-            We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
-            </p>
-            <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
-            <p>
-            fadeInDown is used for the sticky navbar on the PWNHS core site. The animation is described by <code class="language-">./css/animate.min.css</code>, and called by:
-        <pre class="language-html">
-        <code>&lt;div class="fadeInDown animated"&gt;&lt;/div&gt;</code>
-        </pre>
-            </p>
-
-            <h3 class="expansion-h3">Expansion</h3>
-            <p>
-            Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
-            <br>
-        <pre class="language-html">
-        <code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
-        </pre>
-        <br>
-        <div>
-        <pre class="language-css">
-        <code>.expansion { 
-            -webkit-transition: all .3s ease-in-out; 
-        } 
-
-        .expansion:hover {
-            -webkit-transform: scale(1.02);
-        }</code>
-        </pre>
-        </div>
-            You can see a working example on the title "Expansion" above this section.
-            </p>
-        </div>
-
-        <div id="webapp" class="docs-section">
-            <h1>WEB APP</h1>
-            <p>
-            The PWNHS website contains support for its iOS and Android web (addToHomeScreen) app. Designing this was very easy, having only to set the viewport as static in a meta tag:
-        <pre class="language-html">
-        <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"&gt;</code></pre>
-            And then allowing for iOS web app capability as a meta tag between <code class="language-html">&lt;head&gt&lt/head&gt</code>:
-        <div>
-        <pre class="language-html">
-        <code>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</code></pre>
-        </div>
-            Android does sets the Web App styles by itself when a website is added to the homescreen, so there is no need to define android web app capability.
-            <br>
-            <br>
-            To make sure there is no unwanted status bar overlap on iOS, the following  meta tag is also added:
-        <div>
-        <pre class="language-html">
-        <code>&lt;meta name="apple-mobile-web-app-status-bar-style" content="default"&gt;</code></pre>
-        </div>
-            </p>
-            <h2>What's Next?</h2>
-            <p>
-            Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. If you would like to explore this problem, make a branch and send a pull request if you find a solution.
-            <br>
-            <br>
-            This problem does not exist for Android devices.
-            </p>
-        </div>
-
-        <div id="native" class="docs-section">
-            <h1>NATIVE OS BUILDS</h1>
-            <p>
-            If you want to build a native iOS, Android, or even Desktop app for the PWNHS site, please check out our tips for each OS below.
-            </p>
-            <h2>iOS - Swift</h2>
-            <p>
-            To make an app for iOS based off the PWNHS website (HTML), import UIKit and WebKit in <code class="language-swift">ViewController.swift</code>:
-        <pre class="language-swift">
-        <code>import UIKit
-        import WebKit</code></pre>
-            call in an WKWebView webView controller:
-        <div>
-        <pre class="language-swift">
-        <code>class ViewController: UIViewController {
-
-            var webView: WKWebView!
-
-            @IBOutlet var mainView: UIWebView!
-
-            override func loadView() {
-                super.loadView() // call parent loadView
-                self.webView = WKWebView() // instantiate WKWebView
-                self.view = self.webView! // make it the main view
-            }
-
-        }
-        </code></pre>
-        </div>
-            and then identify the webpage webView is to load:
-        <div>
-        <pre class="language-swift">
-            <code>override func viewDidLoad() {
-                super.viewDidLoad()
-
-                let url = NSURL(string:"http://pwnhs.org")
-                let req = NSURLRequest(url:url! as URL)
-                self.webView!.load(req as URLRequest)
-            }</code></pre>
-        </div>
-            <br>
-            The full code will look something like:
-        <div>
-        <pre class="language-swift">
-        <code>//
-        //  ViewController.swift
-        //  PWNHS.app
-        //
-        //  Created by Plano West NHS.
-        //  Copyright © 2016 PWNHS. All rights reserved.
-        //
-
-        import UIKit
-        import WebKit
-
-        class ViewController: UIViewController {
-
-            var webView: WKWebView!
-
-            @IBOutlet var mainView: UIWebView!
-
-            override func loadView() {
-                super.loadView() // call parent loadView
-                self.webView = WKWebView() // instantiate WKWebView
-                self.view = self.webView! // make it the main view
-            }
-
-            override func viewDidLoad() {
-                super.viewDidLoad()
-
-                let url = NSURL(string:"http://pwnhs.org")
-                let req = NSURLRequest(url:url! as URL)
-                self.webView!.load(req as URLRequest)
-            }
-
-        }</code></pre>
-        </div>
-            </p>
-            <h2>iOS + Android - Objective-C</h2>
-            <p>Cross-platform development with Objective-C is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. Of course, you can just make a Java-based webView app for Android, but here we'll just outline the basic premise for the construction of a webView in Objective-C, as it can be relayed to Android through the NDK and to iOS independently.
-            <br>
-            <br>
-            First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">viewController.h</code>:
-        <pre class="language-ObjectiveC">
-        <code>#import &lt;UIKit/UIKit.h&gt;
-
-        @interface ViewController : UIViewController
-        @property (weak, nonatomic) IBOutlet UIWebView *webView;
-
-        @end</code></pre>
-            call in <code class="language-ObjectiveC">viewController.h</code> in <code class="language-ObjectiveC">viewController.m</code> and identify http://pwnhs.org as the URL to load:
-        <div>
-        <pre class="language-ObjectiveC">
-        <code>//
-        //  ViewController.m
-        //  PWNHS
-        //
-        //  Created by Plano West NHS.
-        //  Copyright © 2016 PWNHS. All rights reserved.
-        //
-
-        #import "ViewController.h"
-
-
-        @interface ViewController ()
-
-        @end
-
-
-        @implementation ViewController
-
-        - (void)viewDidLoad {
-            [super viewDidLoad];
-            NSString *fullURL = @"http://pwnhs.org";
-            NSURL *url = [NSURL URLWithString:fullURL];
-            NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-            _webView.delegate = (id)self;
-            [_webView loadRequest:requestObj];
-        }
-
-        @end</code></pre>
-        </div>
-            And you're done!
-            </p>
-            <h2>Desktop - Electron</h2>
-            <p>
-            Yes, "Desktop" is not an OS. But if you choose to make a PWNHS application for desktop, we require you use <a class="move" href="//electron.atom.io">Electron</a> and its APIs to to create a wrap of the PWNHS site that is able to run on Windows, Mac, and Linux. Electron is very easy to use and creating applications with it is remarkably simple, so we'll let you <a class="move" href="http://electron.atom.io/docs/">check it out</a> on your own.
-            </p>
-        </div>
-
-                <div id="bucket" class="docs-section">
-                    <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span>
-                    </h1>
-        <pre class="language-" style="background-color:rgb(26,28,34);border:none">
-        <code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
-        # Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
-
-        <span class="fa fa-bitbucket"></span>
-        ├── To-Do ~ Priority:
-        │      ├── <span style="color:red">High</span>/
-        │      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
-        │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
-        │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
-        │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      ├── <span style="color:gold">Medium</span>/
-        │      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
-        │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
-        │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
-        │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │      └── <span style="color:limegreen">Low</span>/
-        │          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
-        │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
-        │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
-        │          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
-        │                 └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-        │
-        └── To-Try ~ Priority:None, Type:
-               └── <span style="color:royalblue">Experimental</span>/
-                   ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
-                   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
-                   ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
-                   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
-                   └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
-                          └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
-
-                </div>
-
-            <div class="cent btmrow">
-                <div class="row cent">
-                    <div class="cent">
-                        <ul class="mg-smm cent">
-                            <li>
-                                <code class="max">&lt;<span class="forvara max"></span>/&gt;</code> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="emph">A. Hafiz</span>
-                            </li>
-                            <li>
-                                <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                    <div id="animations" class="docs-section">
+                        <h1>ANIMATIONS</h1>
+                            <p>
+                                    Animations make the world go round. Literally, in the case of our pageload spinner:
+                            </p>
+                        
+<pre style="text-align:center; background-color:#e5">
+<img src="img/pageload-spinner.gif"></pre>
             
-   </div>
+                        <h2>Static Animations</h2>
+                            <p>
+                                    Right now, we only have one static animation - the spinning wolf, located at <code class="language-">./img/pageload-spinner.gif</code>. If you would like, you can make a better version of this animation, but don't remove it or make it anything other than the West logo!
+                            </p>
+                        <h2>Embedded Animations</h2>
+                            <p>
+                                    Embedded Animations are those written directly into the HTML, CSS, and JS of the PWNHS project. Currently, this includes Typed, colorFades, fadeIns, and expansions.
+                            </p>
+                        <h3><span class="likola max"></span></h3>
+                            <p>
+                                    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in this header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
+                            </p>
+                                <br>
+                        
+<pre class="language-javascript">
+<code>$(function(){
+    $(".some-class").typed({
+        strings: ["String_1", "String_2", "String_3"],
+        loop: true,
+        typeSpeed: 100,
+        showCursor: true,
+    });
+});</code></pre>
+                        
+                                <br>
+                        
+<div>
+<pre class="language-html"><code>&lt;span class="some-class"&gt&lt/span&gt</code></pre>
 </div>
+                        
+                                <br>
+                            <p>
+                                    You can directly modify the js and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
+                            </p>
+
+                        <h3 class="xolor">colorFades</h3>
+                            <p>
+                                    Color animations drive attention to otherwise idle objects - particularly to icons. The way PWNHS describes these animations is pretty simple, as exampled by the following HTML/CSS duo.
+                                <br>
+                            </p>
+                        
+<pre class="language-html">
+<code>&lt;span class="colorFade"&gt;&lt;/span&gt;</code>
+</pre>
+                        
+                                <br>
+                        
+<div>
+<pre class="language-css">
+<code>@keyframes colorFade { 
+    0%   { color: #8597A4; }
+    50%  { color: #fa575d; }
+    100% { color: #8597A4; }
+}
+
+@-moz-keyframes colorFade { 
+    0%   { color: #8597A4; }
+    50%  { color: #fa575d; }
+    100% { color: #8597A4; }
+}
+
+@-webkit-keyframes colorFade { 
+    0%   { color: #8597A4; }
+    50%  { color: #fa575d; }
+    100% { color: #8597A4; }
+}
+
+.colorFade {
+    animation:         colorFade 2.5s infinite; 
+    -moz-animation:    colorFade 2.5s infinite; 
+    -webkit-animation: colorFade 2.5s infinite;
+}</code>
+</pre>
 </div>
-<!-- Main container END -->
+                        
+                                <br>
+                            <p>
+                                    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
+                            </p>
+                        <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
+                            <p>
+                                    fadeInDown is used for the sticky navbar on the PWNHS core site. The animation is described by <code class="language-">./css/animate.min.css</code>, and called by:
+                            </p>
+                        
+<pre class="language-html">
+<code>&lt;div class="fadeInDown animated"&gt;&lt;/div&gt;</code></pre>
+
+                        <h3 class="expansion-h3">Expansion</h3>
+                            <p>
+                                    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
+                            </p>
+                                <br>
+                        
+<pre class="language-html">
+<code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
+</pre>
+                        
+                                <br>
+                        
+<div>
+<pre class="language-css">
+<code>.expansion { 
+    -webkit-transition: all .3s ease-in-out; 
+} 
+
+.expansion:hover {
+    -webkit-transform: scale(1.02);
+}</code>
+</pre>
+</div>
+                        
+                            <p>
+                                    You can see a working example on the title "Expansion" above this section.
+                            </p>
+                    </div>
+
+                    <div id="webapp" class="docs-section">
+                        <h1>WEB APP</h1>
+                            <p>
+                                    The PWNHS website contains support for its iOS and Android web (addToHomeScreen) app. Designing this was very easy, having only to set the viewport as static in a meta tag:
+                            </p>
+                        
+<pre class="language-html">
+<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"&gt;</code></pre>
+                        
+                            <p>
+                                    And then allowing for iOS web app capability as a meta tag between <code class="language-html">&lt;head&gt&lt/head&gt</code>:
+                            </p>
+                        
+<div>
+<pre class="language-html">
+<code>&lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;</code></pre>
+</div>
+                        
+                            <p>
+                                    Android does sets the Web App styles by itself when a website is added to the homescreen, so there is no need to define android web app capability.
+                                <br>
+                                <br>
+                                    To make sure there is no unwanted status bar overlap on mobile Safari, the following  meta tag is also added:
+                            </p>
+                        
+<div>
+<pre class="language-html">
+<code>&lt;meta name="apple-mobile-web-app-status-bar-style" content="default"&gt;</code></pre>
+</div>
+                        
+                        <h2>What's Next?</h2>
+                            <p>
+                                    Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. If you would like to explore this problem, make a branch and send a pull request if you find a solution.
+                                <br>
+                                <br>
+                                    This problem does not exist for Android devices.
+                            </p>
+                    </div>
+
+                    <div id="native" class="docs-section">
+                        <h1>NATIVE OS BUILDS</h1>
+                            <p>
+                                    If you want to build a native iOS, Android, or even Desktop app for the PWNHS site, please check out our tips for each OS below.
+                            </p>
+                        <h2>iOS - Swift</h2>
+                            <p>
+                                    To make an app for iOS based off the PWNHS website (HTML), import UIKit and WebKit in <code class="language-swift">ViewController.swift</code>:
+                            </p>
+                        
+<pre class="language-swift">
+<code>import UIKit
+import WebKit</code></pre>
+                        
+                            <p>
+                                    call in an WKWebView webView controller:
+                            </p>
+                        
+<div>
+<pre class="language-swift">
+<code>class ViewController: UIViewController {
+
+    var webView: WKWebView!
+
+    @IBOutlet var mainView: UIWebView!
+
+    override func loadView() {
+        super.loadView() // call parent loadView
+        self.webView = WKWebView() // instantiate WKWebView
+        self.view = self.webView! // make it the main view
+    }
+
+}
+</code></pre>
+</div>
+                        
+                            <p>
+                                    and then identify the webpage webView is to load:
+                            </p>
+                        
+<div>
+<pre class="language-swift">
+    <code>override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let url = NSURL(string:"http://pwnhs.org")
+        let req = NSURLRequest(url:url! as URL)
+        self.webView!.load(req as URLRequest)
+    }</code></pre>
+</div>
+                        
+                                <br>
+                            <p>
+                                    The full code will look something like:
+                            </p>
+                        
+<div>
+<pre class="language-swift">
+<code>//
+//  ViewController.swift
+//  PWNHS.app
+//
+//  Created by Plano West NHS.
+//  Copyright © 2016 PWNHS. All rights reserved.
+//
+
+import UIKit
+import WebKit
+
+class ViewController: UIViewController {
+
+    var webView: WKWebView!
+
+    @IBOutlet var mainView: UIWebView!
+
+    override func loadView() {
+        super.loadView() // call parent loadView
+        self.webView = WKWebView() // instantiate WKWebView
+        self.view = self.webView! // make it the main view
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let url = NSURL(string:"http://pwnhs.org")
+        let req = NSURLRequest(url:url! as URL)
+        self.webView!.load(req as URLRequest)
+    }
+
+}</code></pre>
+</div>
+            
+                        <h2>iOS + Android - Objective-C</h2>
+                            <p>
+                                    Cross-platform development with Objective-C is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. Of course, you can just make a Java-based webView app for Android, but here we'll just outline the basic premise for the construction of a webView in Objective-C, as it can be relayed to Android through the NDK and to iOS independently.
+                                <br>
+                                <br>
+                                    First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">viewController.h</code>:
+                            </p>
+                        
+<pre class="language-ObjectiveC">
+<code>#import &lt;UIKit/UIKit.h&gt;
+
+@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+@end</code></pre>
+                        
+                            <p>
+                                    call in <code class="language-ObjectiveC">viewController.h</code> in <code class="language-ObjectiveC">viewController.m</code> and identify http://pwnhs.org as the URL to load:
+                            </p>
+                        
+<div>
+<pre class="language-ObjectiveC">
+<code>//
+//  ViewController.m
+//  PWNHS
+//
+//  Created by Plano West NHS.
+//  Copyright © 2016 PWNHS. All rights reserved.
+//
+
+#import "ViewController.h"
 
 
+@interface ViewController ()
 
-</body></html>
+@end
+
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSString *fullURL = @"http://pwnhs.org";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    _webView.delegate = (id)self;
+    [_webView loadRequest:requestObj];
+}
+
+@end</code></pre>
+</div>
+                        
+                            <p>
+                                    And you're done!
+                            </p>
+                        <h2>Desktop - Electron</h2>
+                            <p>
+                                    Yes, "Desktop" is not an OS. But if you choose to make a PWNHS application for desktop, we require you use <a class="move" href="//electron.atom.io">Electron</a> and its APIs to to create a wrap of the PWNHS site that is able to run on Windows, Mac, and Linux. Electron is very easy to use and creating applications with it is remarkably simple, so we'll let you <a class="move" href="http://electron.atom.io/docs/">check it out</a> on your own.
+                            </p>
+                    </div>
+
+                    <div id="bucket" class="docs-section">
+                        <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></h1>
+
+<pre class="language- hidden-md-lg" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># The Bucket is best viewed on devices with a width of at least <span style="color:white">1200px</span>.
+# Please increase your browser or display width.
+</code></pre>                      
+                        
+<pre class="language- hidden-sm-md" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
+# Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
+
+<span class="fa fa-bitbucket"></span>
+├── To-Do ~ Priority:
+│      ├── <span style="color:red">High</span>/
+│      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      ├── <span style="color:gold">Medium</span>/
+│      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      └── <span style="color:limegreen">Low</span>/
+│          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.85">Create a parallax effect that works on mobile</span>                                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L2</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          ├── <span style="color:greenyellow;opacity:0.7">Generate JavaScript that allows for dynamic styling of animations</span>                      <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L3</span>
+│          │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│          └── <span style="color:greenyellow;opacity:0.55">Implement <a href="http://t4t5.github.io/sweetalert/" style="color:greenyellow;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:13px;border-bottom:1px solid greenyellow">SweetAlert</a> for system-described classes like &lt;input&gt; and prompt()</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L4</span>
+│                 └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│
+└── To-Try ~ Priority:None, Type:
+       └── <span style="color:royalblue">Experimental</span>/
+           ├── <span style="color:deepskyblue;opacity:1.0">Implement Jekyll & RSS for blog-type applications, subscriptions</span>                       <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E1</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+                  └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
+
+                    </div>
+
+                    <div class="cent btmrow">
+                        <div class="row cent">
+                            <div class="cent">
+                                <ul class="mg-smm cent">
+                                    <li>
+                                        <code class="max">&lt;<span class="forvara max"></span>/&gt;</code> with <span class="fa fa-heart" style="color:#fa575d;"></span> in Plano by <span class="emph">A. Hafiz</span>
+                                    </li>
+                                    <li>
+                                        <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <!-- Content END -->
+                 
+            </div>
+        </div>
+        <!-- Main container END -->
+
+    </body>
+</html>

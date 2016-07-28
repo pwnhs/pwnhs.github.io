@@ -1,124 +1,135 @@
+<!DOCTYPE html>
 <html>
     <head>
         
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta name="keywords" content="plano, west, pwnhs, nhs, honor, society, national honor society, pw">
-    <meta name="description" content="Documentation on PWNHS.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="http://pwnhs.org/favicons/favicon.ico" />
-    <title>Officer Docs</title>
-        
-    <!-- webapp -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-capable" content="yes">  
-        
-    <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/bootstrap.min.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="http://pwnhs.org/documentation/style.css">
-    <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/prism.css">
-    <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/animate.min.css">
-        
-    <!-- icons -->
-    <link rel='stylesheet' href='http://pwnhs.org/css/font-awesome.min.css'/>
-    <link rel='stylesheet' href='http://pwnhs.org/css/linecons.min.css'/>
-    <link rel='stylesheet' href='http://pwnhs.org/css/ionicons.min.css'/>
-    <link rel='stylesheet' href='http://pwnhs.org/css/prism.css'/>
-        
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="https://use.typekit.net/c/774e41/1w;proxima-nova,2,2clzCK:W:n1,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/d" media="all">
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style>
-    
-    <!-- js -->
-    <script src="http://pwnhs.org/js/jquery-2.1.0.min.js"></script>
-    <script src="http://pwnhs.org/js/bootstrap.min.js"></script>
-    <script src="http://pwnhs.org/documentation/molekule_docs.js"></script>
-    <script src="http://pwnhs.org/js/prism.min.js"></script>
-        
-    <!-- typed -->
-    <script src="http://pwnhs.org/scripts/typed/js/typed.js"></script>
-    <script>
-        $(function(){
-            $(".forvara").typed({
-                strings: ["Probatian", "Probation^1000"],
-                typeSpeed: 0,
-                loop: true,
-                typeSpeed: 100,
-                showCursor: false,
-            });
-        });
-    </script>
-        
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="http://pwnhs.org/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="http://pwnhs.org/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://pwnhs.org/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://pwnhs.org/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://pwnhs.org/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="http://pwnhs.org/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="http://pwnhs.org/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="http://pwnhs.org/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://pwnhs.org/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="http://pwnhs.org/favicons/manifest.json">
-    <link rel="mask-icon" href="http://pwnhs.org/safaritab.svg" color="#035299">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="http://pwnhs.org/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="http://pwnhs.org/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    
-</head>
-<body>
-    <script type="text/javascript">
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
+                    <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="keywords" content="plano, west, pwnhs, nhs, honor, society, national honor society, pw">
+        <meta name="description" content="Documentation on PWNHS.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="http://pwnhs.org/favicons/favicon.ico" />
+        <title>Officer Docs</title>
 
-        //Reload the page
-        location.reload(true);
-    }
-});
-</script>
-<!-- Main container -->
+        <!-- webapp -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="apple-mobile-web-app-capable" content="yes">  
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/bootstrap.min.css">
+        <link rel="stylesheet" id="ppstyle" type="text/css" href="http://pwnhs.org/documentation/style.css">
+        <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/prism.css">
+        <link rel="stylesheet" type="text/css" href="http://pwnhs.org/css/animate.min.css">
+
+        <!-- icons -->
+        <link rel='stylesheet' href='http://pwnhs.org/css/font-awesome.min.css'/>
+        <link rel='stylesheet' href='http://pwnhs.org/css/linecons.min.css'/>
+        <link rel='stylesheet' href='http://pwnhs.org/css/ionicons.min.css'/>
+        <link rel='stylesheet' href='http://pwnhs.org/css/prism.css'/>
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" href="https://use.typekit.net/c/774e41/1w;proxima-nova,2,2clzCK:W:n1,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/d" media="all">
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style>
+
+        <!-- js -->
+        <script src="http://pwnhs.org/js/jquery-2.1.0.min.js"></script>
+        <script src="http://pwnhs.org/js/bootstrap.min.js"></script>
+        <script src="http://pwnhs.org/documentation/molekule_docs.js"></script>
+        <script src="http://pwnhs.org/js/prism.min.js"></script>
+
+        <!-- typed -->
+        <script src="http://pwnhs.org/scripts/typed/js/typed.js"></script>
+        <script>
+            $(function(){
+                $(".forvara").typed({
+                    strings: ["Probatian", "Probation^1000"],
+                    typeSpeed: 0,
+                    loop: true,
+                    typeSpeed: 100,
+                    showCursor: false,
+                });
+            });
+        </script>
+
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://pwnhs.org/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="http://pwnhs.org/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://pwnhs.org/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="http://pwnhs.org/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://pwnhs.org/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="http://pwnhs.org/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="http://pwnhs.org/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="http://pwnhs.org/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="http://pwnhs.org/favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="http://pwnhs.org/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="http://pwnhs.org/favicons/manifest.json">
+        <link rel="mask-icon" href="http://pwnhs.org/safaritab.svg" color="#035299">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="http://pwnhs.org/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="http://pwnhs.org/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     
-    <pre id="prenav" class="navbar-fixed full-width-unit docsnav hidden-md hidden-lg language-" style="margin-top:0; padding-left:3%; padding-top:2%; padding-bottom:2%; border-top-left-radius:0;border-top-right-radius:0;border:0;"><code><span><a href="//pwnhs.org" style="color:#035299;"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></span>   <span><a href="#cart" style="color:#035299;padding-top:5px;padding-bottom:5px;"><span class="fa fa-shopping-cart"></span>THE CART<span class="fa fa-shopping-cart"></span></a></span>   <span><a href="#bucket" style="color:rgb(136,164,133);padding-top:5px;padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></span>   <span><a href="#edit">EDITING PWNHS SITE</a></span>   <span><a href="#tempelates">HOURS CODE TEMPLATE</a></span>   <span><a href="#hax">HAX</a></span></code></pre>
+    </head>
     
-<div id="mainContainer" class="container">
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function(){    
+                //Check if the current URL contains '#'
+                if(document.URL.indexOf("#")==-1){
+                    // Set the URL to whatever it was plus "#".
+                    url = document.URL+"#";
+                    location = "#";
+
+                    //Reload the page
+                    location.reload(true);
+                }
+            });
+        </script>
+        
+        <!-- Main container -->
     
-     <div class="row">
-        <div id="side-bar" class="col-xs-3 hidden-xs hidden-sm">
-            <ul id="sideNav" class="affix-top">
-                <li><a href="#cart" style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;"><span class="fa fa-shopping-cart"></span> THE CART <span class="fa fa-shopping-cart"></span></a></li>
-                <div style="height:0.2px;"></div>
-                <li><a href="#bucket" style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></li>
-                <li><a href="#edit">EDITING PWNHS SITE</a></li>
-                <li><a href="#tempelates">HOURS CODE TEMPLATE</a></li>
-                <li><a href="#hax">HAX</a></li>
-                <div class="spacer">
+            <pre id="prenav" class="navbar-fixed full-width-unit docsnav hidden-md hidden-lg language-" style="margin-top:0; padding-left:3%; padding-top:2%; padding-bottom:2%; border-top-left-radius:0;border-top-right-radius:0;border:0;"><code><span><a href="//pwnhs.org" style="color:#035299;"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></span>   <span><a href="#cart" style="color:#035299;padding-top:5px;padding-bottom:5px;"><span class="fa fa-shopping-cart"></span>THE CART<span class="fa fa-shopping-cart"></span></a></span>   <span><a href="#bucket" style="color:rgb(136,164,133);padding-top:5px;padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></span>   <span><a href="#edit">EDITING PWNHS SITE</a></span>   <span><a href="#tempelates">HOURS CODE TEMPLATE</a></span>   <span><a href="#hax">HAX</a></span></code></pre>
+    
+        <div id="mainContainer" class="container">
+            <div class="row">
+                <div id="side-bar" class="col-xs-3 hidden-xs hidden-sm">
+                    <ul id="sideNav" class="affix-top">
+                        <li><a href="#cart" style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;"><span class="fa fa-shopping-cart"></span> THE CART <span class="fa fa-shopping-cart"></span></a></li>
+                        <div style="height:0.2px;"></div>
+                        <li><a href="#bucket" style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;"><span class="fa fa-bitbucket"></span> THE BUCKET <span class="fa fa-bitbucket"></span></a></li>
+                        <li><a href="#edit">EDITING PWNHS SITE</a></li>
+                        <li><a href="#tempelates">HOURS CODE TEMPLATE</a></li>
+                        <li><a href="#hax">HAX</a></li>
+                        <div class="spacer">
+                        </div>
+                        <li><a href="http://pwnhs.org/docs">STUDENT DOCS</a></li>
+                        <li><a href="http://pwnhs.org/developer">DEVELOPER DOCS</a></li>
+                        <div class="spacer"></div>
+                        <li><a href="http://pwnhs.org"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></li>
+                    </ul>
                 </div>
-                <li><a href="http://pwnhs.org/docs">STUDENT DOCS</a></li>
-                <li><a href="http://pwnhs.org/developer">DEVELOPER DOCS</a></li>
-                <div class="spacer"></div>
-                <li><a href="http://pwnhs.org"><span class="ion ion-arrow-left-c icon-spacer"></span> BACK TO PWNHS</a></li>
-            </ul>
-        </div>
    
-        <div class="col-xs-9 main-content">
-            <div id="cart" class="docs-section">
-                <h1 style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;">       
-                    <span class="fa fa-shopping-cart"></span>     
-                        THE CART 
-                    <span class="fa fa-shopping-cart"></span>
-                </h1>
-<pre class="language-" style="background-color:rgb(26,28,34);border:none;font-family:Menlo!important;font-size:13px!important;">
+                <div class="col-xs-9 main-content">
+                    <div id="cart" class="docs-section">
+                        <h1 style="color:#035299;border-top:1px solid #035299;padding-top:5px;border-bottom:1px solid #035299;padding-bottom:5px;">       
+                            <span class="fa fa-shopping-cart"></span>     THE CART 
+                            <span class="fa fa-shopping-cart"></span>
+                        </h1>
+
+<pre class="language- hidden-md hidden-lg" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># It's hard to fit a full cart on a small screen!
+# Please view the Cart on your desktop.</code></pre>
+                
+<pre class="language- hidden-xs hidden-sm hidden-lg" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># The Cart is best viewed on devices with a width of at least <span style="color:white">1200px</span>.
+# Please increase your browser or display width.
+</code></pre>
+                
+<pre class="language- hidden-xs hidden-sm hidden-sm-md" style="background-color:rgb(26,28,34);border:none;font-family:Menlo!important;font-size:13px!important;">
 <code style="color:rgb(153,153,153);"># The Cart lists objectives we plan to accomplish this year as Plano West's best-ever NHS.
 # Entries are listed in chronological order of priority with officer assignments for each. 
 
@@ -135,7 +146,7 @@ $(document).ready(function(){
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="/*color:rgb(65,155,249)*/"><span class="fa fa-group"></span> All Officers</span>
 │      │   ├── <span style="color:#FD964F;opacity:0.85;">The Mum Project: design, distribute contracts; formulate PWNHS-STUCO coallition</span>        <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O2</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Claire, Pratiksha, Emily</span>
-│      │   └── <span style="color:#FD964F;opacity:0.7;">Hoco for the Homeless: set prices, approximate amt. TBS, approximate profit</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O3</span>
+│      │   └── <span style="color:#FD964F;opacity:0.7;">Hoco for the Homeless: approximate amt. TBS, profit, begin promotion</span>                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(253,124,35)">O3</span>
 │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Robinson, Pratiksha, Daniya, Emily</span>
 │      ├── <span style="color:rgb(249,202,46)">November</span>/
 │      │   └── <span style="color:#FAD558;opacity:1.0;">Meeting III: Updates, volunteer opportunities, conclude service projects</span>               <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(249,202,46)">N1</span>
@@ -168,13 +179,25 @@ $(document).ready(function(){
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Nicky</span>
            └── <span style="color:#418FC8;opacity:0.85;">Mark junior hours & check students' standing in club</span>                                   <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:rgb(17,115,186)">M2</span>
                   └── <input type="checkbox" disabled="" style="cursor:default;"> achievement not known yet       └── <span    style="color:rgb(65,155,249)"><span class="fa fa-user"></span> Ayaz</span></code></pre>
-        </div>
+                        
+                    </div>
             
-            <div id="bucket" class="docs-section">
-                <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;">       <span class="fa fa-bitbucket"></span>         THE BUCKET 
-                    <span class="fa fa-bitbucket"></span>
-            </h1>
-<pre class="language-" style="background-color:rgb(26,28,34);border:none">
+                    <div id="bucket" class="docs-section">
+                        <h1 style="color:rgb(136,164,133);border-top:1px solid rgb(136,164,133);padding-top:5px;border-bottom:1px solid rgb(136,164,133);padding-bottom:5px;">             <span class="fa fa-bitbucket"></span>             THE BUCKET 
+                            <span class="fa fa-bitbucket"></span>
+                        </h1>
+                
+<pre class="language- hidden-md hidden-lg" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># It's hard to fit a full bucket on a small screen!
+# Please view the Bucket on your desktop.
+</code></pre>
+                
+<pre class="language- hidden-xs hidden-sm hidden-lg" style="background-color:rgb(26,28,34);border:none;">
+<code style="color:rgb(153,153,153);"># The Bucket is best viewed on devices with a width of at least <span style="color:white">1200px</span>.
+# Please increase your browser or display width.
+</code></pre>
+                
+<pre class="language- hidden-xs hidden-sm hidden-sm-md" style="background-color:rgb(26,28,34);border:none">
 <code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
 # Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
 
@@ -212,37 +235,47 @@ $(document).ready(function(){
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
            └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
                   └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
-            </div>
+                        
+                    </div>
             
-            <div id="edit" class="docs-section">
-                <h1>EDITING PWNHS SITE</h1>
-                <br>
-                <div class="text-center">
-                <br>
-                <a href="https://youtu.be/luV4lE_-9pU" class="btn btn-lg btn-nhs chillhs" target="_blank"><span class="fa fa-youtube-play icon-spacer"></span> Quick Tutorial</a>
-                </div>
-                <br>
-                <p>
-                Make sure you edit only the text of the site, located between <code class="language-html">&lt;p&gt;</code>,  <code class="language-html">&lt;h1&gt;</code>, <code class="language-html">&lt;h2&gt;</code>, <code class="language-html">&lt;h3&gt;</code> tags, and images, located in <br><code class="language-html">&lt;img src="./location_of_image.png"/&gt;</code>. Don't touch the styling or JavaScript of the site unless you know what you're doing.
-                <br>
-                <br>
-                Remember to <a class="prob8" href="http://pwnhs.org/developer#pullreq">submit a pull request</a> to the master branch of PWNHS after each of your committs (edits).
-                <br>
-                <br>
-                If you'd like to change the styling or JS to improve the site, send your proposal in the group chat, <a class="prob8" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a>, or reference the <a class="prob8" href="http://pwnhs.org/developer">developer docs</a> for help on doing it yourself. If you don't want to mess with content modification as outlined above, you can also send a proposal in the group chat or submit an issue.
-                </p>
-            </div>
-            <div id="tempelates" class="docs-section">
-                <h1>HOURS CODE TEMPLATE</h1>
-                <p>VP:Membership - download the Junior Hours code template next to this block.<a href="http://pwnhs.org/files/junior-code-template.xlsm" class="btn  chillhs  btn-nhs btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Junior Hours Code Template (.xlsm)</a>
-                <br>
-                <br>
-                VP:Membership - download the Senior Hours code template next to this block.<a href="http://pwnhs.org/files/senior-code-template.xlsm" class="btn  chillhs  btn-nhs btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Senior Hours Code Template (.xlsm)</a></p>
-            </div>
-            <div id="hax" class="docs-section">
-                <h1>HAX</h1>
-                <p>Ignore this section, it holds keys for security use.</p>
-                <br>
+                    <div id="edit" class="docs-section">
+                        <h1>EDITING PWNHS SITE</h1>
+                                <br>
+                    <div class="text-center">
+                                <br>
+                            <a href="https://youtu.be/luV4lE_-9pU" class="btn btn-lg btn-nhs chillhs" target="_blank"><span class="fa fa-youtube-play icon-spacer"></span> 
+                                    Quick Tutorial
+                            </a>
+                    </div>
+                                <br>
+                            <p>
+                                    Make sure you edit only the text of the site, located between <code class="language-html">&lt;p&gt;</code>,  <code class="language-html">&lt;h1&gt;</code>, <code class="language-html">&lt;h2&gt;</code>, <code class="language-html">&lt;h3&gt;</code> tags, and images, located in <br><code class="language-html">&lt;img src="./location_of_image.png"/&gt;</code>. Don't touch the styling or JavaScript of the site unless you know what you're doing.
+                                <br>
+                                <br>
+                                    Remember to <a class="prob8" href="http://pwnhs.org/developer#pullreq">submit a pull request</a> to the master branch of PWNHS after each of your committs (edits).
+                                <br>
+                                <br>
+                                    If you'd like to change the styling or JS to improve the site, send your proposal in the group chat, <a class="prob8" href="https://github.com/pwnhs/pwnhs.github.io/issues/new">open up an issue</a>, or reference the <a class="prob8" href="http://pwnhs.org/developer">developer docs</a> for help on doing it yourself. If you don't want to mess with content modification as outlined above, you can also send a proposal in the group chat or submit an issue.
+                            </p>
+                    </div>
+                    
+                    <div id="tempelates" class="docs-section">
+                        <h1>HOURS CODE TEMPLATE</h1>
+                            <p>
+                                    VP:Membership - download the Junior Hours code template next to this block.<a href="http://pwnhs.org/files/junior-code-template.xlsm" class="btn  chillhs  btn-nhs btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Junior Hours Code Template (.xlsm)</a>
+                                <br>
+                                <br>
+                                    VP:Membership - download the Senior Hours code template next to this block.<a href="http://pwnhs.org/files/senior-code-template.xlsm" class="btn  chillhs  btn-nhs btn-xs pull-right" download><span class="fa fa-download icon-spacer"></span>Download Senior Hours Code Template (.xlsm)</a>
+                            </p>
+                    </div>
+                    
+                    <div id="hax" class="docs-section">
+                        <h1>HAX</h1>
+                            <p>
+                                    Ignore this section, it holds keys for security use.
+                            </p>
+                                <br>
+                        
 <pre style="background-color:rgb(26,28,34);border:none; max-width:520px;">
 <code style="color:rgb(153,153,153);">-----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: hereWeHereWeGoAgain C# v2.1.3
@@ -262,35 +295,49 @@ xWY6OmfJz0sY0ip8GdZmMVrkGNpcpEMJcFVaMCWP5nDPig2/gJsqcEcckYI70fyn
 3pLL
 =m1QR
 -----END PGP PUBLIC KEY BLOCK-----</code></pre>
-<br>
+                        
+                                <br>
+                        
 <pre style="background-color:rgb(26,28,34);border:none; max-width:520px;">
 <code style="color:rgb(153,153,153);">MD5 hash
 
 1D005F90275A005E0DCEA10786881A41</code></pre>
-<br>
+                        
+                                <br>
+                        
 <pre style="background-color:rgb(26,28,34);border:none; max-width:520px;">
 <code style="color:rgb(153,153,153);">Родддина vP.4
 
 [IvanTsar~{~}~/**#/\/*%1/**.\evi*#!/..\ch\]</code></pre>
+                        
+                    </div>
+                    
+                    <div class="cent btmrow">
+                        <div class="row cent">
+                            <div class="cent">
+                                <ul class="mg-smm cent">
+                                    <li>
+                                        <span style="color:#035299; background:#FFF;font-weight: bold;border-radius: 3px;font-size:14px;padding:3px;"><span class="forvara"></span> 2016</span> at
+                                        
+<!-- wolf icon -->
+<svg version="1" width="20" height ="15" viewBox="0 0 300.000000 280.000000" style="fill:#035299"><path d="M147.3 33.1c-16.3 4.7-28.4 11.5-40.4 22.6-3.9 3.7-7.1 5.8-8.8 5.9-21.6 1.4-40.7 4.6-46.9 7.8-3.6 1.9-7.2 5.1-7.2 6.4 0 .6.9 1.6 2 2.2 1.1.6 2 1.4 2 1.9 0 .4-5.5 4.4-12.2 8.7-18.3 11.8-23.5 15.9-25.7 20.2l-2 3.9 3.9-.1c2.2-.1 4 .2 4 .7 0 .6-2.2 4.4-4.9 8.6C2.9 134.8.3 141.3.5 148.3c.1 4.2.4 4.3 4.5 2.2l2.9-1.5-.3 11.9c-.4 11.7 1.3 24.4 3.4 26.5.6.6 1.9-.1 3.4-1.9 1.4-1.6 2.7-2.7 3-2.5.2.3 1.6 6.1 3.1 13 3.3 15.4 7.4 25.6 12.6 31.2l4 4.3-.7-6.5c-.7-8.1-.8-30.1-.1-35.5 1.4-10.7 6.2-24.1 11.4-32 4.2-6.3 14.3-15.7 20.3-18.9 11.3-6.1 27.7-8.5 41.9-6.2 11.3 1.9 63.8 18.2 66.5 20.7 2.2 2-.7 1.4-14.4-3.2-8-2.6-17-5.4-20-6-3-.7-5.7-1.3-6-1.4-.6-.1-6.5-1.2-12.5-2.2-5.6-.9-28.2-1-33 0-10.6 2-20.3 7.2-27.5 14.6-4.4 4.6-10.6 14.9-11.6 19.3-4.4 19.5-3.6 36.3 2.7 56 2.4 7.9 11.4 26.2 16.9 34.8 4.6 7.1 10.9 14.2 12.1 13.5.4-.3.3-2.1-.1-4.1-.5-2-.7-11.6-.5-21.3.2-14.9.7-19.1 2.8-27.1 5.9-22.6 15.7-35.3 34.1-44 13.6-6.4 35.3-8.6 53.3-5.3 8.7 1.6 11.5 3.1 5.6 3-5.8-.1-26.5 1.7-31.8 2.7-19.3 3.8-35.2 15.5-42.7 31.5-3.7 7.9-4.1 10-4.4 22.1-.3 12.3 2.1 21.1 8.2 30.8 3.9 6.1 9.2 12.2 10.7 12.2.9 0 0-17.7-1.1-19.4-.7-1.2 1-.1 8.2 5.3 10.1 7.6 20.2 12 28.8 12.5 5 .2 5.6.1 4.8-1.3-1.2-2.2-6.6-7.1-12.7-11.5-9-6.4-13.3-13.1-13.3-20.7 0-5 1.3-8.2 4.7-11.7 4.3-4.3 8.9-6.7 16.8-8.8 6.2-1.6 17.2-2.5 24.8-2 8.6.6 11.5.9 19.2 2.1 1.7.3 5.2.8 8 1.1 2.7.3 5.1.7 5.2.8.1.1.3 1.8.5 3.9.2 3.7.3 3.7 3.8 3.1 1.9-.3 4.9-.9 6.7-1.4 4-1 4.5-.5 3.7 3.7-.3 1.8-.3 3.3 0 3.3 1.1 0 15.7-4 22.8-6.2 3.7-1.1 7.6-2.9 8.7-4 2.5-2.2 2.7-6.5.5-9.6-1.2-1.8-1.4-3.8-.9-9.9.3-4.2.8-8 1.1-8.5 1.4-2.2-2.7-.3-7 3.2-5.6 4.7-7.9 4.9-14.6 1.5-4.2-2.1-6.9-3-10.1-3.4-.4-.1-2.2-1.4-4-3.1-1.9-1.6-4.1-3-4.9-3.1-.8 0-2.4-.2-3.5-.4s-4.1-.6-6.7-.8c-2.6-.3-6-1.3-7.6-2.1-3.2-1.6-5.7-6.9-4.4-9.2 1.3-2.4 14.6-12.6 19.5-14.9 7-3.3 13.1-2 20.7 4.5 2 1.7 6.6 3.9 10.5 5.1 17.1 5.3 20 6.2 20.3 6.4.4.3-3.9 11.7-5.9 15.8-.8 1.4-.5 1.7 1.6 1.7 2.9 0 22.5-14.5 33.1-24.5 3.8-3.6 13.4-16.7 14-19.1 1.5-5.8-.5-7-47.8-27.5L233 117.5l-4.1-8.1c-5.2-10.2-8.2-13.5-19.2-21.2-14.4-10.2-43.4-19.4-64.4-20.5-4.8-.2 3.9-16.8 14.1-27 1.3-1.3 3.3-4.2 4.4-6.3l2-3.9H161c-2.7 0-8.9 1.1-13.7 2.6zm46.6 71.4c2.4.8 6.4 3 9 4.9 2.5 1.8 6.6 4.3 8.9 5.5 2.4 1.3 4.2 2.4 3.9 2.7-.4.4-14.1 4.4-15.1 4.4-.2 0-1-1.6-1.6-3.5-1.4-4.4-6.1-8.4-13.8-12-3.4-1.6-6.2-3.1-6.2-3.5 0-1.1 10.4-.1 14.9 1.5z"/></svg>
+                                        
+                                        with <span class="fa fa-heart" style="color:#035299;"></span> from <span class="emph">A. Hafiz</span>
+                                    </li>
+                                    <li>
+                                        <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-    <div class="cent btmrow">
-        <div class="row cent">
-            <div class="cent">
-                <ul class="mg-smm cent">
-                    <li>
-                        <span style="color:#035299; background:#FFF;font-weight: bold;border-radius: 3px;font-size:14px;padding:3px;"><span class="forvara"></span> 2016</span> at
-                        <svg version="1" width="20" height ="15" viewBox="0 0 300.000000 280.000000" style="fill:#035299"><path d="M147.3 33.1c-16.3 4.7-28.4 11.5-40.4 22.6-3.9 3.7-7.1 5.8-8.8 5.9-21.6 1.4-40.7 4.6-46.9 7.8-3.6 1.9-7.2 5.1-7.2 6.4 0 .6.9 1.6 2 2.2 1.1.6 2 1.4 2 1.9 0 .4-5.5 4.4-12.2 8.7-18.3 11.8-23.5 15.9-25.7 20.2l-2 3.9 3.9-.1c2.2-.1 4 .2 4 .7 0 .6-2.2 4.4-4.9 8.6C2.9 134.8.3 141.3.5 148.3c.1 4.2.4 4.3 4.5 2.2l2.9-1.5-.3 11.9c-.4 11.7 1.3 24.4 3.4 26.5.6.6 1.9-.1 3.4-1.9 1.4-1.6 2.7-2.7 3-2.5.2.3 1.6 6.1 3.1 13 3.3 15.4 7.4 25.6 12.6 31.2l4 4.3-.7-6.5c-.7-8.1-.8-30.1-.1-35.5 1.4-10.7 6.2-24.1 11.4-32 4.2-6.3 14.3-15.7 20.3-18.9 11.3-6.1 27.7-8.5 41.9-6.2 11.3 1.9 63.8 18.2 66.5 20.7 2.2 2-.7 1.4-14.4-3.2-8-2.6-17-5.4-20-6-3-.7-5.7-1.3-6-1.4-.6-.1-6.5-1.2-12.5-2.2-5.6-.9-28.2-1-33 0-10.6 2-20.3 7.2-27.5 14.6-4.4 4.6-10.6 14.9-11.6 19.3-4.4 19.5-3.6 36.3 2.7 56 2.4 7.9 11.4 26.2 16.9 34.8 4.6 7.1 10.9 14.2 12.1 13.5.4-.3.3-2.1-.1-4.1-.5-2-.7-11.6-.5-21.3.2-14.9.7-19.1 2.8-27.1 5.9-22.6 15.7-35.3 34.1-44 13.6-6.4 35.3-8.6 53.3-5.3 8.7 1.6 11.5 3.1 5.6 3-5.8-.1-26.5 1.7-31.8 2.7-19.3 3.8-35.2 15.5-42.7 31.5-3.7 7.9-4.1 10-4.4 22.1-.3 12.3 2.1 21.1 8.2 30.8 3.9 6.1 9.2 12.2 10.7 12.2.9 0 0-17.7-1.1-19.4-.7-1.2 1-.1 8.2 5.3 10.1 7.6 20.2 12 28.8 12.5 5 .2 5.6.1 4.8-1.3-1.2-2.2-6.6-7.1-12.7-11.5-9-6.4-13.3-13.1-13.3-20.7 0-5 1.3-8.2 4.7-11.7 4.3-4.3 8.9-6.7 16.8-8.8 6.2-1.6 17.2-2.5 24.8-2 8.6.6 11.5.9 19.2 2.1 1.7.3 5.2.8 8 1.1 2.7.3 5.1.7 5.2.8.1.1.3 1.8.5 3.9.2 3.7.3 3.7 3.8 3.1 1.9-.3 4.9-.9 6.7-1.4 4-1 4.5-.5 3.7 3.7-.3 1.8-.3 3.3 0 3.3 1.1 0 15.7-4 22.8-6.2 3.7-1.1 7.6-2.9 8.7-4 2.5-2.2 2.7-6.5.5-9.6-1.2-1.8-1.4-3.8-.9-9.9.3-4.2.8-8 1.1-8.5 1.4-2.2-2.7-.3-7 3.2-5.6 4.7-7.9 4.9-14.6 1.5-4.2-2.1-6.9-3-10.1-3.4-.4-.1-2.2-1.4-4-3.1-1.9-1.6-4.1-3-4.9-3.1-.8 0-2.4-.2-3.5-.4s-4.1-.6-6.7-.8c-2.6-.3-6-1.3-7.6-2.1-3.2-1.6-5.7-6.9-4.4-9.2 1.3-2.4 14.6-12.6 19.5-14.9 7-3.3 13.1-2 20.7 4.5 2 1.7 6.6 3.9 10.5 5.1 17.1 5.3 20 6.2 20.3 6.4.4.3-3.9 11.7-5.9 15.8-.8 1.4-.5 1.7 1.6 1.7 2.9 0 22.5-14.5 33.1-24.5 3.8-3.6 13.4-16.7 14-19.1 1.5-5.8-.5-7-47.8-27.5L233 117.5l-4.1-8.1c-5.2-10.2-8.2-13.5-19.2-21.2-14.4-10.2-43.4-19.4-64.4-20.5-4.8-.2 3.9-16.8 14.1-27 1.3-1.3 3.3-4.2 4.4-6.3l2-3.9H161c-2.7 0-8.9 1.1-13.7 2.6zm46.6 71.4c2.4.8 6.4 3 9 4.9 2.5 1.8 6.6 4.3 8.9 5.5 2.4 1.3 4.2 2.4 3.9 2.7-.4.4-14.1 4.4-15.1 4.4-.2 0-1-1.6-1.6-3.5-1.4-4.4-6.1-8.4-13.8-12-3.4-1.6-6.2-3.1-6.2-3.5 0-1.1 10.4-.1 14.9 1.5z"/></svg> with <span class="fa fa-heart" style="color:#035299;"></span> from <span class="emph">A. Hafiz</span>
-                    </li>
-                    <li>
-                        <code class="codel"> # <span class="fa fa-pied-piper icon-sm-md" style="color:rgb(16, 124, 94);"></span> piperCorp #</code>
-                    </li>
-                </ul>
+                <!-- Content END -->
+                
             </div>
         </div>
-    </div>
-            
-        </div>
-    </div>
-</div>
-</body>
+        <!-- Main container END -->
+        
+    </body>
 </html>
