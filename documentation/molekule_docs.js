@@ -9,6 +9,17 @@ $(document).ready(function()
 	  }
 	})
     
+    $(function () {
+        $(window).scroll(function () {
+            var top_offset = $(window).scrollTop();
+            if (top_offset == 0) {
+                $('#prenav').removeClass('navbar-border');
+            } else {
+                $('#prenav').addClass('navbar-border');
+            }
+        })
+    });
+    
 	$('a[href*=#]:not([href=#])').click(function()
 	{
 		$('.active').removeClass('active');
@@ -23,8 +34,8 @@ $(document).ready(function()
 	        }, 300);
 	        return false;
 	      }
-	    }
-	  });
+        }
+    });
 
 	
 });
