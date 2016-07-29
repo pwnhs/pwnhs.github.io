@@ -75,7 +75,7 @@ Bucket
            │      └──  not tried yet                   └──  success not known yet
            ├── Call CSS & JS from external servers, remove local references       
            │      └──  not tried yet                   └──  success not known yet
-           └── Add support for Accelerated Mobile Pages (`<html ⚡️>`)                               
+           └── Add support for Accelerated Mobile Pages (<html ⚡️>)                               
                   └──  not tried yet                   └──  success not known yet
 ```
 
