@@ -1,34 +1,7 @@
-# pwnhs.github.io ~ pwnhs.org
-Plano West NHS Site
+# PWNHS Beta branch
 
 A. Hafiz w/ Molekule + Bootstrap  
-please don't touch minimised / licensed files thx
-
-#### What you can + should do:
-
-+ edit format, style, animations, frameworks
-+ tweak expanded stylesheets, javascript, html 
-+ add style- and feature-based extensions 
-+ observe consistency across pages and styles 
-+ keep with established fonts and the color palette
-
-#### What you can't do:
-
-+ edit content (text, pictures) of information 
-+ touch minimised files (they're dependencies!) 
-+ add infrastructure-altering extensions 
-+ generate hyper-independent structures 
-+ neglect dependencies or add redundancies
-
-
-`
-DON'T TOUCH THE TEXT!
-`
-
-More on development, allowances, and infastructure at the Developer Docs, found in the PWNHS 
-### [Developer Portal](http://github.com/)  
-  
-### Fork the project, do your thing, make a pull request, and get reward$ !  
+this is mostly just me messing around + bricking the project 🙃  
 
 ---
 
