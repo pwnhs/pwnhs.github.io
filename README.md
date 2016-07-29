@@ -30,7 +30,11 @@ More on development, allowances, and infastructure at the Developer Docs, found 
   
 ### Fork the project, do your thing, make a pull request, and get reward$ !  
 
-      
+---
+
+/master - alpha branch w/ development of the site before initial release (yes, i know it should be /pre-release or something but then i have to delete the whole branch)
+/publicRelease - alpha branch w/ development of the site before initial release
+/beta - beta stuff when i feel like adding something that may / may not be merged later
       
 ---  
 
