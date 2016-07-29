@@ -9,6 +9,17 @@ $(document).ready(function()
 		event.preventDefault();
 		$('html,body').animate({scrollTop: $('#scroll-unit').closest('.unit').height()}, 'slow');
 	});
+    
+    $(function () {
+        $(window).scroll(function () {
+            var top_offset = $(window).scrollTop();
+            if (top_offset == 0) {
+                $('#prenav').removeClass('navbar-border');
+            } else {
+                $('#prenav').addClass('navbar-border');
+            }
+        })
+    });
 	
 	setUpDropdownSubs(); // Set Up Dropdown Menu Support
 	setUpLightBox(); // Add lightbox Support

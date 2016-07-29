@@ -101,7 +101,7 @@
         <div id="mainContainer" class="container">
              <div class="row hidden-xs hidden-sm">
                 <div id="side-bar" class="col-xs-3 hidden-xs hidden-sm">
-                    <ul id="sideNav" class="affix-top">
+                    <ul id="sideNav" class="affix-top navtrack">
                         <li><a href="#intro">INTRODUCTION</a></li>
                         <li><a href="#start">GETTING STARTED</a></li>
                         <li><a href="#allowed">DEVELOPER ALLOWANCES</a></li>
@@ -204,7 +204,7 @@ return " ";
 <pre class="command-line language-bash" data-prompt="machine:~user"><code class=" language-bash"><span class="command-line-prompt"><span data-prompt="machine:~ user $"></span></span><span class="token function">git clone</span> https://github.com/<span class="token function" style="font-style:italic">USER</span>/pwnhs.github.io.git</code></pre>
                             
                             <p>
-                                    Press <span style="font-style:bold">Enter</span>. Check to make sure all objects are unpacked and the command line reads <code class="git">done</code>.
+                                    Press <span style="font-weight:bold">Enter</span>. Check to make sure all objects are unpacked and the command line reads <code class="git">done</code>.
                                 <br>
                                 <br>
                                     To allow for upstreaming (pulling of changes from the Master repo to your fork), navigate to the location of your fork in the command line and type in <code class="git">git remote add upstream</code> followed by the URL of the original PWNHS repo. Your command line will look like this:
@@ -682,11 +682,13 @@ return " ";
                                     Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
                             </p>
                                 <br>
-                        
+
+<div>
 <pre class="language-html">
 <code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
 </pre>
-                        
+</div>
+    
                                 <br>
                         
 <div>
@@ -906,7 +908,7 @@ class ViewController: UIViewController {
 # Please increase your browser or display width.
 </code></pre>                      
                         
-<pre class="language- hidden-sm-md" style="background-color:rgb(26,28,34);border:none;">
+<pre class=" hidden-sm-md" style="background-color:rgb(26,28,34);border:none;">
 <code style="color:rgb(153,153,153);"># The Bucket lists things to do in the project. Complete something, request a pull, and get rewarded.
 # Reference the item fastcode (e.g. M2) when submitting a pull request for something from the Bucket.
 
@@ -915,16 +917,20 @@ class ViewController: UIViewController {
 │      ├── <span style="color:red">High</span>/
 │      │   ├── <span style="color:orangered; opacity:1.0">Create js array to input user ID # and output good/bad standing with PWNHS</span>             <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H1</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins and Y-translations of navbar on mobile</span>                                     <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
+│      │   ├── <span style="color:orangered;opacity:0.85;">Fix margins of navbar on mobile (brand too high, list has whitespace)</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H2</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   └── <span style="color:orangered;opacity:0.75;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H3</span>
+│      │   ├── <span style="color:orangered;opacity:0.7;">Make mobileView of site prettier (reduce full-width images, more VBRcolors)</span>            <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red;">H3</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:orangered;opacity:0.55;">Improve styling and responsive function of ./team.html</span>                                 <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:red">H4</span>
 │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │      ├── <span style="color:gold">Medium</span>/
 │      │   ├── <span style="color:yellow;opacity:1">Make a calendar system for the first-party recording of members' volunteer sign-ups</span>    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M1</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │      │   ├── <span style="color:yellow;opacity:0.85">Minimize non-essential documents and sections not needed to be edited</span>                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M2</span>
 │      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
-│      │   └── <span style="color:yellow;opacity:0.7">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │   ├── <span style="color:yellow;opacity:0.7">Decrease page load time through caching, reduction of request sizes</span>                    <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M3</span>
+│      │   │      └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
+│      │   └── <span style="color:yellow;opacity:0.55">Remove duplicates and unnecessary mentions in HTML, CSS</span>                                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:gold">M4</span>
 │      │          └── <input type="checkbox" disabled="" style="cursor:default;"> not done yet
 │      └── <span style="color:limegreen">Low</span>/
 │          ├── <span style="color:greenyellow;opacity:1">Optimize webpage-, animation-, and image-load speed on mobile</span>                          <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:limegreen">L1</span>
@@ -942,9 +948,11 @@ class ViewController: UIViewController {
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
            ├── <span style="color:deepskyblue;opacity:0.85">Move images and downloadable files to Dropbox for possible faster calls</span>                <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E2</span>
            │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
-           └── <span style="color:deepskyblue;opacity:0.85">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+           ├── <span style="color:deepskyblue;opacity:0.7">Call CSS & JS from external servers, remove local references</span>                           <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E3</span>
+           │      └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet
+           └── <span style="color:deepskyblue;opacity:0.55">Add support for Accelerated Mobile Pages</span> (<span class="amp"><span style="color:dodgerblue;font-weight:bold">&lt;</span><span style="color:dodgerblue;">html</span> ⚡️<span style="color:dodgerblue;font-weight:bold">&gt;</span></span>)                                  <span style="border-left:1px solid rgb(153,153,153);padding-left:5px;color:royalblue">E4</span>
                   └── <input type="checkbox" disabled="" style="cursor:default;"> not tried yet                   └── <input type="checkbox" disabled="" style="cursor:default;"> success not known yet</code></pre>
-
+                        
                     </div>
 
                     <div class="cent btmrow">
