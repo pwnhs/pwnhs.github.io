@@ -32,8 +32,7 @@ More on development, allowances, and infastructure at the Developer Docs, found 
 
 ---
 
-/master - alpha branch w/ development of the site before initial release (yes, i know it should be /pre-release or something but then i have to delete the whole branch)
-/publicRelease - alpha branch w/ development of the site before initial release
+/master - Master branch (publicRelease @ version 2.0, includes pre-release alpha stuff from before 2.0)
 /beta - beta stuff when i feel like adding something that may / may not be merged later
       
 ---  
