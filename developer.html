@@ -87,12 +87,14 @@
     
     <body data-spy="scroll" data-target=".navspy">
 
-        <div id="mobileHide" class="hidden-md hidden-lg" style="text-align: center;text-align: -webkit-center;">
+        <div id="centerDisplay" class="hidden-md hidden-lg" style="text-align: center;text-align: -webkit-center;">
                 <span style="font-size:60px">)-:</span>
             <br>
                 developing is hard on small screens! 
             <br>
                 we'll see you on your desktop.
+            <br>
+                <a class="prob8" style="font-size: 16px;" href="//pwnhs.org"><span class="pw">PW</span><span class="nhsf">NHS</span></a> <span style="margin-right:20px"></span> <a class="prob8" href="//docs.pwnhs.org"><span class="pw">PW</span><span class="nhsf">NHS</span><span style="color:#a0a0a0;font-family:Montserrat">DOCS</span></a>
         </div>    
 
 
@@ -160,11 +162,11 @@ return " ";
                             </p>
                         <h2>What the PWNHS Development Kit is</h2>
                             <p>
-                                    To open up more avenues for engagement with the PWNHS community as a whole, we have opened up the PWNHS site project for tweaking by those in our organisation who are particularly code-savvy. The Development Kit provides basic structure for how the site should behave and establishes a path for anyone to help improve our website.
+                                    To open up more avenues for engagement with the PWNHS community as a whole, we have opened up the PWNHS site project for tweaking by those in our organisation who are particularly code-savvy. The Development Kit provides basic guides for how the site should behave and establishes a path for anyone to help improve our website.
                             </p>
                         <h2>What the PWNHS Development Kit is not</h2>
                             <p>
-                                    This document does not hold proprietary APIs, Content Management Systems, of FTP clients. Developers are given access to static infrastructure, not server-side technologies.
+                                    This document does not hold proprietary APIs, Content Management Systems, or FTP clients. Developers are given access to static infrastructure, not server-side technologies.
                             </p>
                     </div>
 
@@ -184,17 +186,17 @@ return " ";
                             </p>
                         <h2>Cloning to Local</h2>
                             <p>
-                                    In order to edit your fork of the PWNHS repo, you have to <code class="git">clone</code> the fork to your machine so that all of the code is locally avaliable. Cloning can be done in two ways - via GitHub's desktop application or via command line.
+                                    In order to edit your fork of the PWNHS repo, you have to <code class="git">clone</code> the fork to your machine so the project is locally avaliable. Cloning can be done in two ways - via GitHub's desktop application or via command line.
                             </p>
                         <h3>Cloning via Desktop App</h3>
                             <p>
-                                    Cloning via GitHub's desktop app is a one-click process. After <a class="move" href="https://desktop.github.com">downloading</a> the app, simply go to your forked repository of PWNHS (with your GitHub username instead of <code class="git">USER</code>):
+                                    Cloning via GitHub's desktop app is a two-click process. After <a class="move" href="https://desktop.github.com">downloading</a> the app, simply go to your forked repository of PWNHS (with your GitHub username instead of <code class="git">USER</code>):
                             </p>
                                 
 <pre class="pre-scrollable"><code>https://github.com/<code class="git">USER</code>/pwnhs.github.io</code></pre>
                             
                             <p>
-                                    and press <code class="git velvet">Open in Desktop</code> under the <code class="git button velvet">Clone or download</code> button. This automates the entire process, and we suggest all but the most experienced take this route.
+                                    and press <code class="git velvet">Open in Desktop</code> under the <code class="git button velvet">Clone or download</code> button. The GitHub desktop app will open up, prompting you to save the project in an easy-accessible location on your machine. This automates the entire <code class="git">svn checkout</code> process, so we suggest all but the most experienced take this route.
                             </p>
                         <h3>Cloning via Command Line</h3>
                             <p>
@@ -207,7 +209,7 @@ return " ";
                                     Press <span style="font-weight:bold">Enter</span>. Check to make sure all objects are unpacked and the command line reads <code class="git">done</code>.
                                 <br>
                                 <br>
-                                    To allow for upstreaming (pulling of changes from the Master repo to your fork), navigate to the location of your fork in the command line and type in <code class="git">git remote add upstream</code> followed by the URL of the original PWNHS repo. Your command line will look like this:
+                                    To allow for upstreaming (pulling of changes from the Master repo to your fork), navigate to the location of your fork in the command line and type in <code class="git">git remote add upstream</code> followed by the URL of the master PWNHS repo. Your command line will look like this:
                             </p>
                         
 <pre class="command-line language-bash" data-prompt="machine:~user"><code class=" language-bash"><span class="command-line-prompt"><span data-prompt="machine:FORK_LOCATION user $"></span></span><span class="token function">git remote add upstream</span> https://github.com/pwnhs/pwnhs.github.io.git</code></pre>
@@ -216,7 +218,7 @@ return " ";
                             <p>
                                     <code class="max">IMPORTANT NOTE</code>: In order to submit pull requests to the Master, you must both <code class="git">fork</code> and then <code class="git">clone</code> the Master PWNHS repo. Only cloning it will not create a server-side branch of the repo, thereby not tying your clone to the Master and disallowing you the ability to merge with the Master branch. More information on forking a repo <a class="move" href="https://guides.github.com/activities/forking/">here</a> and <a class="move" href="https://help.github.com/articles/fork-a-repo/">here</a>.
                             </p>
-                        <h2>Want to help with our site, but don't know what to do or where to start? Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">Bucket</a>.</h2>
+                        <h2 class="text-center">Want to help with our site, but don't know what to do or where to start? Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">Bucket</a>.</h2>
                     </div>
 
                     <div id="allowed" class="docs-section-cut">
@@ -298,10 +300,10 @@ return " ";
                             </p>
                         <h2>Note</h2>
                             <p>
-                                    <code class="max">IMPORTANT NOTE</code>: Though the vast majority of your legitimate contributions will get in, there will be the occasional pull request that does not meet our standards. To make sure that your contribitions have the optimal chance of acceptance, make sure they correspond with our <a class="move" href="#allowed">developer allowances</a> and there is nothing in your pull request that does not directly correlate with the betterment of the PWNHS site.
+                                    <code class="max">IMPORTANT NOTE</code>: Though the vast majority of your legitimate contributions will be merged, there will be the occasional pull request that does not meet our standards. To make sure that your contributions have the optimal chance of acceptance, make sure they correspond with our <a class="move" href="#allowed">developer allowances</a> and there is nothing in your pull request that does not directly correlate with the betterment of the PWNHS site.
                                 <br>
                                 <br>
-                                    To incentivise you, we have a variety of high-caliber perks and rewards given to developers who contribute accepted pull requests 🙃.
+                                    To incentivise you, we have a variety of high-caliber perks and rewards avaliable to developers who contribute accepted pull requests 🙃.
                             </p>
                         <h2>Having Trouble?</h2>
                             <p>
@@ -312,7 +314,7 @@ return " ";
                     <div id="infrastructure" class="docs-section">
                         <h1>PROJECT INFRASTRUCTURE</h1> 
                             <p>
-                                    The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> uses two fundamental bases, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, to generate modules that come to make up the entire site. Just as cells make tissues that make up organs, classic styling makes up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.
+                                    The PWNHS site is built on a proprietary <code class="language-markup">Molekule</code> <span style="font-size:12px">(Hafiz, 2013)</span> architecture based on the open-source <code class="git">Blocks</code> <span style="font-size:12px">(Sheeran, 2011)</span> method (used in Blocsapp). <code class="language-markup">Molekule</code> finds an advantage in web development through its enhanced modularisation of typical site components and SpecGen custom subclass styling. <code class="language-markup">Molekule</code> has two fundamental plinths, <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code>, that generate modules working to make up the entire site. Just as cells make up tissues that make up organs, HTML tags make up <code class="language-markup" style="color:#e6db74">mass</code>es that make up <code class="language-markup" style="color:#e6db74">unit</code>s.
                             </p>
                         <h2><code class="language-markup" style="color:#e6db74">"mass"</code> Structures</h2>
                             <p>
@@ -342,17 +344,17 @@ return " ";
                                     Unless you really love <code class="language-markup">&lt;div&gt;</code>s, manually creating this is not ideal. A <code class="language-markup" style="color:#e6db74">mass</code>, then, makes the entire preset for you, complete with the five inset div tags, numerous classes, and header styles, so that all the user has to do is add content.
                                 <br>
                                 <br>
-                                    Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. More custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet. In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
+                                    Most of the classes imbeded in <code class="language-markup" style="color:#e6db74">mass</code>es, such as <code class="language-markup" style="color:#e6db74">col-sm-4</code> in our example, are defined by <code class="git">Bootstrap</code> styling. All other, custom classes exclusive to <code class="language-markup">Molekule</code> are described in the general stylesheet (<code class="language-">./style.css</code>). In our example, these custom classes include <code class="language-markup" style="color:#e6db74">voffset</code>, <code class="language-markup" style="color:#e6db74">panel</code>, and <code class="language-markup" style="color:#e6db74">mg-clear</code>.
                                 <br>
                                 <br>
                                     Because we expect our developers to modify the style of the site (as accorded by our <a class="move" href="#allowed">developer allowances</a>), and not the content, we do not have a list of all <code class="language-markup">Molekule</code> <code class="language-markup" style="color:#e6db74">mass</code>es on this Docs page. You are supposed to edit or add/modify to elements already-existing <code class="language-markup" style="color:#e6db74">mass</code> classes, which can be found in <code class="language-markup">./style.css</code>. 
                                 <br>
                                 <br>
-                                    If you would like to obtain the full documentation and dependencies of <code class="language-markup">Molekule</code> (which includes all <code class="language-markup" style="color:#e6db74">"mass"</code> structures) for your own projects, just <a class="move" href="mailto:ayaz.hafiz@pwnhs.com?subject=It's%20Spelled%20Molecule">say hi</a>!
+                                    If you would like to obtain the full documentation and dependencies of <code class="language-markup">Molekule</code> (which includes all <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code> structures in a much larger CSS and JS framework package) for your own projects, <a class="move" href="mailto:ayaz.hafiz@pwnhs.com?subject=It's%20Spelled%20Molecule">just say hi</a>!
                             </p>
                         <h2><code class="language-markup" style="color:#e6db74">"unit"</code> Structures</h2>
                             <p>
-                                    Much broader in scope and easier to apply, a <code class="language-markup" style="color:#e6db74">unit</code> can be thought of as the larger frame in which <code class="language-markup" style="color:#e6db74">mass</code>es are held. <a class="move" href="//pwnhs.org">PWNHS's landing page</a>, for instance, is full screen, light, and parallaxed - a format allowed by the following structure:
+                                    Much broader in scope and easier to apply, <code class="language-markup" style="color:#e6db74">unit</code>s can be thought of as the larger frames in which <code class="language-markup" style="color:#e6db74">mass</code>es are held. <a class="move" href="//pwnhs.org">PWNHS's landing page</a>, for instance, is full screen, light, and parallaxed - a format allowed by the following structure:
                             </p>
                         
 <pre><code class="language-html">&lt;div class="unit unit-fill-screen b-parallax bg-west bgc-white l-unit" id="florida"&gt;
@@ -366,32 +368,32 @@ return " ";
 <div>
 <pre class="language-css">
 <code>.unit{
-    width:100%;
-    clear:both;
+    width: 100%;
+    clear: both;
     background: 50% 50% no-repeat;
-    padding:0 50px;
+    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
 
 .unit-fill-screen{
-    padding-top:0;
+    padding-top: 0;
     position: relative;
     height: inherit;
 }
 
 .unit-fill-screen > .container{
-    position:relative;
-    top:50%;
-    transform:translateY(-50%);
-    -webkit-transform:translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .l-unit{
-    color:rgba(0,0,0,.5);
+    color: rgba(0,0,0,.5);
 }
 </code></pre>
 </div>
@@ -403,14 +405,14 @@ return " ";
                                     We suggest you play around and edit the styling of various <code class="language-markup" style="color:#e6db74">"mass"</code> and <code class="language-markup" style="color:#e6db74">"unit"</code> structures to create something you find appealing and think would better the PWNHS website. You can really do anything, as long as you upkeep the infastructure we've built and observe our <a class="move" href="#allowed">allowances</a>.
                                 <br>
                                 <br>
-                                    <span class="emph">Nothing to do?</span> Check out our <a href="#bucket" class="move">Bucket</a>.
                             </p>
+                        <h2 class="text-center"><span class="emph">Nothing to do?</span> Check our <a class="move" href="#bucket" style="font-size:18px!important;font-family: 'Montserrat', sans-serif !important;">Bucket</a>.</h2>
                     </div>
 
                     <div id="depend" class="docs-section">
                         <h1>DEPENDENCIES</h1>
                             <p>
-                                    The PWNHS site relies on multiple objects to keep the project's structure upright. Here we list the vital components of our site so that you establish what is discretionary and what is necessary in your contributions. 
+                                    The PWNHS site relies on multiple frames to keep the project's structure upright. Here we list the vital components of our site so that you establish what is discretionary and what is necessary in your contributions. 
                                 <br>
                                 <br>
                                     <code class="emph">General Rule:</code> If a file is minimised (has a <code class="language-html">.min</code> pre-extension), it's a dependency and should not be touched.
@@ -423,12 +425,12 @@ return " ";
                             </p>
                         
 <pre class="language-">
-<code>./css/
+<code>./css/ (except prism.css)
 ./files/
 ./fonts/
-./js/
-./README.md
-./scripts/typed/</code>
+./js/ (except molekule.js)
+./scripts/typed/
+./README.md</code>
 </pre>
             
                     </div>
@@ -448,7 +450,7 @@ return " ";
                                             <span class="fa fa-check check "></span> DO add stylistic extensions (css, js, svg, fonts)
                                         <br>
                                         <br>
-                                            <span class="fa fa-check check "></span>DO add static extensions (don't require user input)
+                                            <span class="fa fa-check check "></span> DO add static extensions (don't need input (JS okay))
                                     </p>
                             </span>
                         </div>
@@ -478,7 +480,7 @@ return " ";
                                     <code class="git">2)</code> Have backed-up your branch of the project (it is suggested you create a totally different branch for the implementation of Jekyll), and
                                 <br>
                                 <br>
-                                    <code class="git">3)</code> Modify the <code class="language-">._config</code> to exclude biases, blog feeds, and correctly point to the PWNHS server.
+                                    <code class="git">3)</code> Modify the <code class="language-">_config.yml</code> to exclude biases, blog feeds, and correctly point to the PWNHS server.
                                 <br>
                                 <br>
                                     Check out <a class="move" href="http://jekyllrb.com">Jekyll's site</a> for more information.
@@ -491,7 +493,7 @@ return " ";
                             </p>
                         <h2>FONTS</h2>
                             <p>
-                                    We use two fonts for site content - <code class="git" style="font-family:Montserrat;">Montserrat</code>, a free Google font, and <code class="git" style="font-family:Proxima-Nova">Proxima Nova</code>, a premium font stylistically similar to Montserrat. Montserrat is used for points of emphasis, whilst the minimalistic style of Proxima Nova is exceptionally made for body content.
+                                    We use two fonts for site content - <code class="git" style="font-family:Montserrat;">Montserrat</code>, a free Google font, and <code class="git" style="font-family:Proxima-Nova">Proxima Nova</code>, a premium font stylistically similar to Montserrat. Montserrat is used for points of emphasis, whilst the minimalistic style of Proxima Nova is exceptional for body content.
                                 <br>
                                 <br>
                                     Code fonts are described in the following manner:
@@ -499,11 +501,11 @@ return " ";
                         
 <pre class="language-css">
 <code>code{
-    font-family: Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
+    font-family: Menlo, Consolas, Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
 }</code></pre>
                         
                             <p>
-                                    with <code class="git" style="font-family:Monaco">Monaco</code> obviously being the most prefered reference.
+                                    with <code class="git" style="font-family:Menlo">Menlo</code> obviously being the most prefered font for most code.
                                 <br>
                                 <br>
                                     Code blocks are described in the following general way:
@@ -525,11 +527,11 @@ return " ";
 </pre>
 </div>
                             <p>
-                                    We require that you do not change our two content fonts, Montserrat and Proxima Nova, but you are more than welcome to configure code styles to your liking.
+                                    We ask that you not change our two content fonts, Montserrat and Proxima Nova, but you are more than welcome to configure code styles to your liking.
                             </p>
                         <h2>ICONS</h2>
                             <p>
-                                    This site mainly uses Font Awesome <span class="fa fa-font-awesome"></span>, with guest appearances of Linecons to fit in missing pieces. The general structure for the insertion of Font Awesome icons is:
+                                    This site mainly uses Font Awesome <span class="fa fa-font-awesome"></span>, with guest appearances of Linecons and Ionicons to fit in missing pieces. The general structure for Font Awesome icons is:
                             </p>
                         
 <pre class="language-html">
@@ -537,7 +539,7 @@ return " ";
 </code></pre>
                         
                             <p>
-                                    with the following output:
+                                    with the following general output:
                             </p>
                         
 <pre class="language-">
@@ -545,7 +547,7 @@ return " ";
 </pre>
                         
                             <p>
-                                    While you are only allowed to add more icon packs, not modify or remove existing ones, you are welcome to edit icon styles located in <code class="language-">./style.css</code> or <code class="language-">./documentation/docs-style.css</code>. These styles are described in a manner similar to the following example:
+                                    While you are only allowed to add more icon packs, not modify or remove existing ones, you are welcome to edit icon styles located in <code class="language-">./style.css</code> or <code class="language-">./documentation/docs-style.css</code>. These icon styles describe size and other qualitative parameters in a manner similar to the following example:
                             </p>
                         
 <div>
@@ -564,11 +566,11 @@ return " ";
                     <div id="colors" class="docs-section-cut">
                         <h1>STYLING & COLOR PALETTE</h1>
                             <p>
-                                    To stay consistent and make the process of development for all parties involved, we've generated a simple styling process and defined a color palette to be used for site content.
+                                    To stay consistent and make the process of development straightforward for all parties involved, we've generated a simple styling process and defined a color palette to be used for site content.
                             </p>
                         <h2>Styling</h2>
                             <p>
-                                    The styling of the PWNHS project is quite simple. We employ our main stylesheet, <code class="language-">./style.css</code>, as the reference of styles used by the core NHS site (pwnhs.org), while <code class="language-">./documentation/docs.js</code> and <code class="language-">./documentation/style.css</code> are used by the documentation pages of the site. Therefore, make sure you are modifying the stylesheet directly corresponding to its effected documents.
+                                    The styling of the PWNHS project is quite simple. We employ our main stylesheet, <code class="language-">./style.css</code>, as the reference of styles used by the core NHS site (pwnhs.org), while <code class="language-">./documentation/molekule_docs.js</code> and <code class="language-">./documentation/style.css</code> are used by the documentation pages of the site. Because both the main site and the docs site have a <code class="language-">style.css</code>, make sure you are modifying the stylesheet directly corresponding to its effected documents.
                             </p>
                         <h2>Color Palette</h2>
                             <p>
@@ -596,14 +598,14 @@ return " ";
                             </p>
                         <h2>Embedded Animations</h2>
                             <p>
-                                    Embedded Animations are those written directly into the HTML, CSS, and JS of the PWNHS project. Currently, this includes Typed, colorFades, fadeIns, and expansions.
+                                    Embedded Animations are those written directly in the HTML, CSS, and JS of the PWNHS project. Currently, this includes Typed, colorFades, fadeIns, and expansions.
                             </p>
                         <h3><span class="likola max"></span></h3>
                             <p>
-                                    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in this header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
+                                    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in the header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
                             </p>
-                                <br>
                         
+<div> 
 <pre class="language-javascript">
 <code>$(function(){
     $(".some-class").typed({
@@ -613,6 +615,7 @@ return " ";
         showCursor: true,
     });
 });</code></pre>
+</div>
                         
                                 <br>
                         
@@ -622,7 +625,7 @@ return " ";
                         
                                 <br>
                             <p>
-                                    You can directly modify the js and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
+                                    You can directly modify the JS and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
                             </p>
 
                         <h3 class="xolor">colorFades</h3>
@@ -640,21 +643,21 @@ return " ";
 <div>
 <pre class="language-css">
 <code>@keyframes colorFade { 
-    0%   { color: #8597A4; }
+    0%   { color: #8597a4; }
     50%  { color: #fa575d; }
-    100% { color: #8597A4; }
+    100% { color: #8597a4; }
 }
 
 @-moz-keyframes colorFade { 
-    0%   { color: #8597A4; }
+    0%   { color: #8597a4; }
     50%  { color: #fa575d; }
-    100% { color: #8597A4; }
+    100% { color: #8597a4; }
 }
 
 @-webkit-keyframes colorFade { 
-    0%   { color: #8597A4; }
+    0%   { color: #8597a4; }
     50%  { color: #fa575d; }
-    100% { color: #8597A4; }
+    100% { color: #8597a4; }
 }
 
 .colorFade {
@@ -667,7 +670,7 @@ return " ";
                         
                                 <br>
                             <p>
-                                    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a js route; the PWNHS core development will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
+                                    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a JS route; the PWNHS officer development team will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
                             </p>
                         <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
                             <p>
@@ -679,9 +682,8 @@ return " ";
 
                         <h3 class="expansion-h3">Expansion</h3>
                             <p>
-                                    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis in crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
+                                    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis on crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
                             </p>
-                                <br>
 
 <div>
 <pre class="language-html">
@@ -698,7 +700,7 @@ return " ";
 } 
 
 .expansion:hover {
-    -webkit-transform: scale(1.02);
+    -webkit-transform: scale(1.1);
 }</code>
 </pre>
 </div>
@@ -711,7 +713,7 @@ return " ";
                     <div id="webapp" class="docs-section">
                         <h1>WEB APP</h1>
                             <p>
-                                    The PWNHS website contains support for its iOS and Android web (addToHomeScreen) app. Designing this was very easy, having only to set the viewport as static in a meta tag:
+                                    The PWNHS website contains support for iOS and Android web (addToHomeScreen) apps. Designing this was very easy, having only to set the viewport as static in a meta tag:
                             </p>
                         
 <pre class="language-html">
@@ -727,7 +729,7 @@ return " ";
 </div>
                         
                             <p>
-                                    Android does sets the Web App styles by itself when a website is added to the homescreen, so there is no need to define android web app capability.
+                                    Android sets the Web App styles by itself when a website is added to the homescreen, so there is no need to define android web app capability.
                                 <br>
                                 <br>
                                     To make sure there is no unwanted status bar overlap on mobile Safari, the following  meta tag is also added:
@@ -743,7 +745,7 @@ return " ";
                                     Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. If you would like to explore this problem, make a branch and send a pull request if you find a solution.
                                 <br>
                                 <br>
-                                    This problem does not exist for Android devices.
+                                    This problem does not exist on Android devices.
                             </p>
                     </div>
 
@@ -844,7 +846,7 @@ class ViewController: UIViewController {
                                     Cross-platform development with Objective-C is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. Of course, you can just make a Java-based webView app for Android, but here we'll just outline the basic premise for the construction of a webView in Objective-C, as it can be relayed to Android through the NDK and to iOS independently.
                                 <br>
                                 <br>
-                                    First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">viewController.h</code>:
+                                    First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">ViewController.h</code>:
                             </p>
                         
 <pre class="language-ObjectiveC">
@@ -856,7 +858,7 @@ class ViewController: UIViewController {
 @end</code></pre>
                         
                             <p>
-                                    call in <code class="language-ObjectiveC">viewController.h</code> in <code class="language-ObjectiveC">viewController.m</code> and identify http://pwnhs.org as the URL to load:
+                                    call <code class="language-ObjectiveC">ViewController.h</code> in <code class="language-ObjectiveC">ViewController.m</code> and identify <code class="git">http://pwnhs.org</code> as the URL to load:
                             </p>
                         
 <div>

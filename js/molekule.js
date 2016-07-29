@@ -4,10 +4,10 @@ $(document).ready(function()
 {
 	$('body').append('<div id="page-loading-units-notifaction"></div>'); // Add page loading UI
 	$('.unit-fill-screen').css('height', $(window).height()*2+'px'); // Set initial unit height
-	$('#scroll-unit').click(function(event)
+	$('#scroll-atom').click(function(event)
 	{
 		event.preventDefault();
-		$('html,body').animate({scrollTop: $('#scroll-unit').closest('.unit').height()}, 'slow');
+		$('html,body').animate({scrollTop: $('#scroll-atom').closest('.unit').height()}, 'slow');
 	});
     
     $(function () {
