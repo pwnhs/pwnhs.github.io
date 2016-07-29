@@ -32,7 +32,7 @@ More on development, allowances, and infastructure at the Developer Docs, found 
 
 ---
 
-/master - Master branch (publicRelease @ version 2.0, includes pre-release alpha stuff from before 2.0)
+/master - Master branch (publicRelease @ version 2.0, includes pre-release alpha stuff from before 2.0)  
 /beta - beta stuff when i feel like adding something that may / may not be merged later
       
 ---  
