@@ -30,7 +30,10 @@ More on development, allowances, and infastructure at the Developer Docs, found 
   
 ### Fork the project, do your thing, make a pull request, and get reward$ !  
 
-      
+---
+
+/master - Master branch (publicRelease @ version 2.0, includes pre-release alpha stuff from before 2.0)
+/beta - beta stuff when i feel like adding something that may / may not be merged later
       
 ---  
 
