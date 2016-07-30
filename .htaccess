@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ http://www.mysite.com/404.html [R=301,L]
+RewriteRule ^(.*)$ http://pwnhs.org/404.html [R=301,L]
