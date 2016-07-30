@@ -7,5 +7,4 @@ RewriteBase /
 RewriteCond %{REQUEST_URI} !^/404\.html$
 RewriteRule ^(.*)$ http://pwnhs.org/404.html [R=307,L]
 
-RewriteEngine on
 DirectoryIndex 404.html
