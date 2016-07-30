@@ -1,2 +1,4 @@
-RewriteEngine On
-RewriteRule ^(.*)$ http://pwnhs.org/404.html [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pwnhs\.org [NC]
+RewriteCond %{REQUEST_URI} !^/404.html$ [NC]
+RewriteRule ^.*$ http://www.pwnhs.org/404.html [L]
