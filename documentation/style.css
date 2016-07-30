@@ -235,7 +235,7 @@ a.move, a.move:link, a.move:hover, a.move:visited, a.move:active {
     font-size: 16px;
     color:rgb(136,164,133);
 }
-a.prob8, a.prob8:link, a.prob8:hover, a.prob8:visited, a.prob8:active {
+a.prob8, a.prob8:link, a.prob8:visited{
     font-family: 'proxima-nova', sans-serif !important;
     font-size: 16px;
     color:#035299;
@@ -246,6 +246,16 @@ a.chill:hover{
 a.chillhs:hover{
     color:#035299;
     opacity: 0.6;
+}
+a.side, a.nope{
+    transition: all .3s ease-in-out; 
+}
+a.side:hover, .active a.side{
+    color: rgba(255,255,255,0.75) !important;
+    border-color: rgba(255,255,255,0.75) !important;
+}
+a.nope:hover, .active a.nope{
+    opacity: 0.4;
 }
 a.copy, a.copy:link, a.copy:visited{
     color: inherit !important;
@@ -361,13 +371,13 @@ code.git {
   transform: translateY(-50%);
 }
 span.pw {
-    color: black !important;
+    color: black;
     font-family: "Montserrat", sans-serif !important;
     font-weight: 400;
     font-size: 16px;
 }
 span.nhsf {
-    color: #035299 !important;
+    color: #035299;
     font-family: "Montserrat", sans-serif !important;
     font-weight: 400;
     font-size: 16px;
