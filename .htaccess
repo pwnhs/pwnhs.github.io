@@ -9,3 +9,7 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^([a-z0-9\-]+)\.pwnhs\.org$  [NC]
 RewriteCond %1 !^www$ [NC]
 RewriteRule (.*) http://pwnhs.org/%1 [R=301,L,NC]
+
+RewriteCond %{HTTP_HOST} ^[^.]+\.pwnhs\.org$ [NC]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://pwnhs.org%{REQUEST_URI} [L,R=301]
