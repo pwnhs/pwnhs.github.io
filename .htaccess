@@ -2,4 +2,8 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/404\.html$
 RewriteRule ^(.*)$ http://pwnhs.org/404.html [R=307,L]
-RedirectMatch ^/$ /store/
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} pwnhs\.org [NC]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^(.*)$ /store/$1 [L]
