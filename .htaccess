@@ -1,6 +1,2 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-RewriteCond %{HTTP_HOST} !^(.*)pwnhs.org$ [NC]
-RewriteRule ^(.*)$ http://pwnhs.org/404 [L,R=301] 
+RewriteRule ^(.*)$ http://www.mysite.com/404.html [R=301,L]
