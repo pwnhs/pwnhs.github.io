@@ -190,7 +190,7 @@ flagReset:function(){this._flagAdditions&&(this.additions.length=0,this._flagAdd
 //# sourceMappingURL=underscore-min.map
 
 //открывай
-var elem = document.getElementById("background");
+var elem = document.getElementById("bg-container");
 var params = {
   autostart : true,
   width : $(window).width(),
@@ -204,26 +204,26 @@ var colors = [
   "#a0a0a0",
   "#e5e5e5"
 ]
-var shapes = []; //все параметры
+var bgSprite = []; //все параметры
 var particles = [];
 
 //101 жулек
 var two = new Two(params).appendTo(elem);
 
-var objects = $('#shapes object');
+var objects = $('#bgSprites object');
 var count = objects.length;
 objects.each(function(i, el) {
   el.onload = function() {
     var shape = two.interpret($(el).contents().find('svg')[0]);
     shape.visible = false;
-    shapes.push(shape);
-    if (!--count) generateShapes();
+    bgSprite.push(shape);
+    if (!--count) generateSprites();
   }
 });
 
-function generateShapes() {
+function generateSprites() {
   _(50).times(function(n) {
-    var shape = _.sample(shapes).clone();
+    var shape = _.sample(bgSprite).clone();
 
     shape.fill = _.sample(colors);
     shape.scale = _.random(10,20)*.01; //очень большые свг
