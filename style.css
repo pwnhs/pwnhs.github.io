@@ -28,8 +28,8 @@ html, body {
         overflow-x: hidden !important;
     }
 }
-h1,h2,h3,h4,h5,h6,p,label,.btn,a,li,ul{
-	font-family:"proxima-nova", sans-serif!important;
+h1, h2, h3, h4, h5, h6, p, label, .btn, a, li, ul{ /* i mean i could just do ' * { ' but this gives ~somewhat~ more control */
+	font-family:"proxima-nova", sans-serif !important;
 }
 .container{
 	max-width:1170px;
