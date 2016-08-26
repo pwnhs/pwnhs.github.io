@@ -225,20 +225,32 @@ p a{
 /* = Hyperlinks
 -------------------------------------------------------------- */
 
-a.keep, a.keep:link, a.keep:hover, a.keep:visited, a.keep:active {
+a.keep, a.keep:link, a.keep:visited {
     font-family: 'proxima-nova', sans-serif !important;
     font-size: 16px;
     color:rgb(164,146,133);
+    transition: none;
+}
+a.keep:hover, a.keep:active{
+    border-bottom: 1px solid;
 }
 a.move, a.move:link, a.move:hover, a.move:visited, a.move:active {
     font-family: 'proxima-nova', sans-serif !important;
     font-size: 16px;
     color:rgb(136,164,133);
+    transition: none;
+}
+a.move:hover, a.move:active{
+    border-bottom: 1px solid;
 }
 a.prob8, a.prob8:link, a.prob8:visited{
     font-family: 'proxima-nova', sans-serif !important;
     font-size: 16px;
     color:#035299;
+    transition: none;
+}
+a.prob8:hover, a.prob8:active{
+    border-bottom: 1px solid;
 }
 a.chill:hover{
     color:rgba(164,133,136,.6);
@@ -467,6 +479,26 @@ span.nhsf {
 }
 
 /* colorFades */
+@keyframes example { 
+	0%   { color: #8597A4; }
+	50%  { color: #0070c9; }
+	100% { color: #8597A4; }
+}
+@-moz-keyframes example { 
+	0%   { color: #8597A4; }
+	50%  { color: #0070c9; }
+	100% { color: #8597A4; }
+}
+@-webkit-keyframes example { 
+	0%   { color: #8597A4; }
+	50%  { color: #0070c9; }
+	100% { color: #8597A4; }
+}
+.colorFade{
+	animation:         example 2.5s infinite; 
+	-moz-animation:    example 2.5s infinite; 
+	-webkit-animation: example 2.5s infinite; 
+}
 @keyframes e1 { 
 	0%   { color: #8597A4; }
 	50%  { color: #fbbc05; }

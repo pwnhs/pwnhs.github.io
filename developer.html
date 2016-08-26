@@ -50,15 +50,17 @@
                     typeSpeed: 100,
                     showCursor: false,
                 });
-            });
-        </script>
-        <script>
-            $(function(){
                 $(".likola").typed({
                     strings: ["Typos", "Typed^7500"],
                     typeSpeed: 0,
                     loop: true,
                     typeSpeed: 100,
+                });
+                $(".some-class").typed({
+                    strings: ["String_1", "String_2", "String_3"],
+                    loop: true,
+                    typeSpeed: 100,
+                    showCursor: true,
                 });
             });
         </script>
@@ -511,7 +513,7 @@ return " ";
                         
 <pre class="language-css">
 <code>code{
-    font-family: Menlo, Consolas, Monaco, "DejaVu Sans Mono", "Courier New", monospace ;
+    font-family: Menlo, Consolas, Monaco, "DejaVu Sans Mono", "Courier New", monospace;
 }</code></pre>
                         
                             <p>
@@ -524,15 +526,15 @@ return " ";
 <div>
 <pre class="language-css">
 <code>code./*some class*/{
-    font-size: __px;
-    color: #__;
-    padding: __px __px __px;
-    border: __px solid #__;
+    font-size: 14px;
+    color: #ddd;
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     background-clip: padding-box;
-    background-color: #__;
+    background-color: #a0a0a0;
 }</code>
 </pre>
 </div>
@@ -612,7 +614,7 @@ return " ";
                             </p>
                         <h3><span class="likola max"></span></h3>
                             <p>
-                                    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in the header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML.
+                                    <code class="git">Typed</code> is a framework that allows for the typing animations you see at the bottom of PWNHS Docs pages, and in the header above. It is generally used by first describing a Typed class in JS and then calling to it in the HTML:
                             </p>
                         
 <div> 
@@ -627,28 +629,27 @@ return " ";
 });</code></pre>
 </div>
                         
-                                <br>
-                        
 <div>
 <pre class="language-html"><code>&lt;span class="some-class"&gt&lt/span&gt</code></pre>
 </div>
                         
-                                <br>
+                            <p>
+                                    with the following general output:
+                            </p>
+                        
+<div>
+<pre class="language-html"><span class="some-class"></span></pre>
+</div>
+                        
                             <p>
                                     You can directly modify the JS and styling of Typed by editing <code class="language-">./scripts/typed/js/typed-code.js</code> and <code class="language-">./scripts/typed/main.css</code>, or you can play with existing scripts found between the <code class="language-html">&lt;head&gt&lt/head&gt</code> tags in the HTML of the docs pages.
                             </p>
 
                         <h3 class="xolor">colorFades</h3>
                             <p>
-                                    Color animations drive attention to otherwise idle objects - particularly to icons. The way PWNHS describes these animations is pretty simple, as exampled by the following HTML/CSS duo.
+                                    Color animations drive attention to otherwise idle objects - particularly to icons. The way PWNHS describes these animations is pretty simple, as exampled by the following CSS/HTML duo:
                                 <br>
                             </p>
-                        
-<pre class="language-html">
-<code>&lt;span class="colorFade"&gt;&lt;/span&gt;</code>
-</pre>
-                        
-                                <br>
                         
 <div>
 <pre class="language-css">
@@ -678,9 +679,24 @@ return " ";
 </pre>
 </div>
                         
-                                <br>
+<div>                        
+<pre class="language-html">
+<code>&lt;span class="colorFade"&gt;&lt;/span&gt;</code>
+</pre>
+</div>
+                        
                             <p>
-                                    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. While it is possible to automate this process via JavaScript, we have found our current process is less time consuming. If you wish, you may pursue a JS route; the PWNHS officer development team will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
+                                    with the following general output (text is obviously variable):
+                            </p>
+                        
+<div>
+<pre class="language-html"><span class="colorFade">Podddina <span class="fa fa-paragraph"></span> func.P</span></pre>
+</div>
+                        
+                            <p>
+                                    We use <code class="language-" style="color:#f92672">-moz</code> and <code class="language-" style="color:#f92672">-webkit</code> prefixes to allow for optimal performance across all modern browsers. 
+                                <br>
+                                    While it is possible to automate this animation via JavaScript, we have found our current process to be much less time consuming. If you wish, you may pursue a JS route; the PWNHS officer development team will focus on such optimisation when all major features of our <a class="move" href="#bucket">bucket</a> are completed.
                             </p>
                         <h3 class="fadeInDown animDelay1 animated">fadeInDown</h3>
                             <p>
@@ -692,16 +708,8 @@ return " ";
 
                         <h3 class="expansion-h3">Expansion</h3>
                             <p>
-                                    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis on crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is called in the HTML and its <code class="language-css">:hover</code> class is described in the stylesheet.
+                                    Like colorFade, expansion animations improve the aesthetic of the PWNHS site and allow for subtle emphasis on crucial areas of our content when moused over. Also like colorFade, it may be possible to automate this with JavaScript, but that option is of low priority to the NHS core at this time. The animation is described in the stylesheet via the <code class="language-css">:hover</code> class is called in the HTML.
                             </p>
-
-<div>
-<pre class="language-html">
-<code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
-</pre>
-</div>
-    
-                                <br>
                         
 <div>
 <pre class="language-css">
@@ -712,6 +720,12 @@ return " ";
 .expansion:hover {
     -webkit-transform: scale(1.1);
 }</code>
+</pre>
+</div>
+
+<div>
+<pre class="language-html">
+<code>&lt;span class="expansion"&gt;&lt;/span&gt;</code>
 </pre>
 </div>
                         
@@ -752,7 +766,7 @@ return " ";
                         
                         <h2>What's Next?</h2>
                             <p>
-                                    Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. If you would like to explore this problem, make a branch and send a pull request if you find a solution.
+                                    Now, we need to be able to navigate between links in the PWNHS web app without redirection to Safari. The easy way to do this is to manage all redirects with JavaScript. If you would like to make an elegant solution in this way, or if you discover your own, make a <a class="move" href="#start">branch</a> and send a <a class="move" href="#pulls">pull request</a>!
                                 <br>
                                 <br>
                                     This problem does not exist on Android devices.
@@ -788,7 +802,7 @@ import WebKit</code></pre>
     override func loadView() {
         super.loadView() // call parent loadView
         self.webView = WKWebView() // instantiate WKWebView
-        self.view = self.webView! // make it the main view
+        self.view = self.webView! // make WKWebView the main view
     }
 
 }
@@ -796,7 +810,7 @@ import WebKit</code></pre>
 </div>
                         
                             <p>
-                                    and then identify the webpage webView is to load:
+                                    and identify <code class="git">http://pwnhs.org</code> as the webpage webView is to load:
                             </p>
                         
 <div>
@@ -837,7 +851,7 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView() // call parent loadView
         self.webView = WKWebView() // instantiate WKWebView
-        self.view = self.webView! // make it the main view
+        self.view = self.webView! // make WKWebView the main view
     }
 
     override func viewDidLoad() {
@@ -851,9 +865,12 @@ class ViewController: UIViewController {
 }</code></pre>
 </div>
             
-                        <h2>iOS + Android - Objective-C</h2>
+                        <h2>iOS + Android - Objective-C + Java (Port)</h2>
                             <p>
-                                    Cross-platform development with Objective-C is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. Of course, you can just make a Java-based webView app for Android, but here we'll just outline the basic premise for the construction of a webView in Objective-C, as it can be relayed to Android through the NDK and to iOS independently.
+                                    Cross-platform development with Objective-C and Java is a bit tricky. Though most of the code can be the same, you will have to create a interface wrap for each platform individually to avoid interfering UIs. This also means that if you write your application in Objective-C it will have to be ported to Java, and vice-versa. 
+                                <br>
+                                <br>
+                                    Here we'll outline the basic premise for the construction of a webView in Objective-C, which can be ported to Java relatively simply and relayed to Android via the NDK. A Java tutorial will also be avaliable in the future.
                                 <br>
                                 <br>
                                     First, import UIKit and set up UIWebView in <code class="language-ObjectiveC">ViewController.h</code>:
@@ -868,7 +885,7 @@ class ViewController: UIViewController {
 @end</code></pre>
                         
                             <p>
-                                    call <code class="language-ObjectiveC">ViewController.h</code> in <code class="language-ObjectiveC">ViewController.m</code> and identify <code class="git">http://pwnhs.org</code> as the URL to load:
+                                    call <code class="language-ObjectiveC">ViewController.h</code> in <code class="language-ObjectiveC">ViewController.m</code> and identify <code class="git">http://pwnhs.org</code> as the webpage to load:
                             </p>
                         
 <div>
