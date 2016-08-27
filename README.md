@@ -1,4 +1,4 @@
-# pwnhs.github.io ~ pwnhs.org [![image](https://i.imgsafe.org/192050c54f.png)](http://officer.pwnhs.org#hax)
+# pwnhs.github.io ~ pwnhs.org [<img src="https://i.imgsafe.org/192050c54f.png" width="auto" height="30">](http://officer.pwnhs.org#hax)
 
 Plano West NHS Site
 
