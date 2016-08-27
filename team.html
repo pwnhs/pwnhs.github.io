@@ -38,6 +38,18 @@
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/molekule.js"></script>
         <script src="./js/formHandler.js"></script>
+        <script>
+            function piccycle(){
+                document.getElementById("cycler").setAttribute('src', "./img/youngyaz.jpg");
+                document.getElementById("cycler").setAttribute('onClick', "piccycleback();");
+                document.getElementById("cycler").setAttribute('id', "cycleback");
+            }
+            function piccycleback(){
+                document.getElementById("cycleback").setAttribute('src', "./img/junioryaz.jpg");
+                document.getElementById("cycleback").setAttribute('onClick', "piccycle();");
+                document.getElementById("cycleback").setAttribute('id', "cycler");
+            }
+        </script>
 
         <!-- favicons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
@@ -147,7 +159,7 @@
                             <span class="fa fa-cogs pull-left icon-sm"></span>
                         </div>
                         <div class="col-sm-2">
-                            <img src="img/placeholder-user.png" class="img-responsive img-circle" />
+                            <img src="img/claire.jpg" class="img-responsive img-circle" />
                         </div>
                         <div class="col-sm-4">
                             <h3 class="mg-clear">
@@ -168,7 +180,7 @@
                     </div>
                     <div class="row voffset-lg">
                         <div class="col-sm-2">
-                            <img src="img/ayaz.png" class="img-responsive img-circle" />
+                            <img id="cycler" onClick="piccycle();" src="img/junioryaz.jpg" class="img-responsive img-circle" style="cursor:crosshair;" />
                         </div>
                         <div class="col-sm-4">
                             <h3 class="mg-clear">
@@ -208,7 +220,7 @@
                     </div>
                     <div class="row voffset-lg voffset">
                         <div class="col-sm-2">
-                            <img src="img/placeholder-user.png" class="img-responsive img-circle" />
+                            <img src="img/emily.png" class="img-responsive img-circle" />
                         </div>
                         <div class="col-sm-4">
                             <h3 class="mg-clear">
@@ -267,7 +279,7 @@
                             <span class="fa fa-bolt pull-left icon-sm"></span>
                         </div>
                         <div class="col-sm-2">
-                            <img src="img/placeholder-user.png" class="img-responsive img-circle" />
+                            <img src="img/zo%C3%AB.jpg" class="img-responsive img-circle" />
                         </div>
                         <div class="col-sm-4">
                             <h3 class="mg-clear">
