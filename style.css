@@ -353,7 +353,7 @@ nav .caret{
 
 .navbar-fixed {
     top: 0;
-    z-index: 100;
+    z-index: 1;
     position: fixed;
     width: 100%;
 }
@@ -848,6 +848,14 @@ a.nhsf, a.nhsf:link, a.nhsf:hover, a.nhsf:visited, a.nhsf:active {
     font-weight: 400;
     font-size: 13px;
 }
+a.prob8, a.prob8:link, a.prob8:visited{
+    font-family: 'proxima-nova', sans-serif !important;
+    color:#035299;
+    transition: none;
+}
+a.prob8:hover, a.prob8:active{
+    border-bottom: 1px solid;
+}
 
 /* = Code
 -------------------------------------------------------------- */
@@ -899,6 +907,9 @@ code {
 .bg-west{
 	background-image:url("img/west.png");
 }
+.bg-westr{
+	background-image:url("img/west.png");
+}
 .bg-r_creek{
 	background-image:url('img/r_creek.jpeg');
 }
@@ -935,7 +946,28 @@ code {
     }
     .page-container, #atom-unit{
         overflow-x: hidden;position: relative; /* Prevent unwanted side scroll on mobile */ 
+    }
+    .bg-r_creek{
+        background: linear-gradient(135deg, #23A899, #0070c9);
     }  
+    .bg-westr{
+        background: linear-gradient(135deg, #605DB3, #fa575d);
+    }  
+    .titl{
+        font-size: 10vw;
+        color: rgba(240, 255, 255, 0.8) !important;
+    }
+    .titl-icon{
+        font-size: 5vw;
+    }
+    .desc{
+        font-size: 16px;
+    }
+    .desc-icon{
+        font-size: 16px;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
 }
 @media (max-width: 767px){
     .page-container{

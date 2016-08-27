@@ -4,8 +4,7 @@ $(document).ready(function()
 {
 	$('body').append('<div id="page-loading-units-notifaction"></div>'); // Add page loading UI
 	$('.unit-fill-screen').css('height', $(window).height()*2+'px'); // Set initial unit height
-	$('#scroll-atom').click(function(event)
-	{
+	$('#scroll-atom').click(function(event){
 		event.preventDefault();
 		$('html,body').animate({scrollTop: $('#scroll-atom').closest('.unit').height()}, 'slow');
 	});
@@ -13,7 +12,7 @@ $(document).ready(function()
     $(function () {
         $(window).scroll(function () {
             var top_offset = $(window).scrollTop();
-            if (top_offset == 0) {
+            if (top_offset <= 0) {
                 $('#prenav').removeClass('navbar-border');
             } else {
                 $('#prenav').addClass('navbar-border');
