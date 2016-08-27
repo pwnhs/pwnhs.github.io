@@ -499,6 +499,26 @@ span.nhsf {
 	-moz-animation:    example 2.5s infinite; 
 	-webkit-animation: example 2.5s infinite; 
 }
+@keyframes cofa {
+	0%   { fill: #8597A4; }
+	50%  { fill: #0070c9; }
+	100% { fill: #8597A4; }
+}
+@-moz-keyframes cofa {
+	0%   { fill: #8597A4; }
+	50%  { fill: #0070c9; }
+	100% { fill: #8597A4; }
+}
+@-webkit-keyframes cofa {
+	0%   { fill: #8597A4; }
+	50%  { fill: #0070c9; }
+	100% { fill: #8597A4; }
+}
+g.coFade{
+	animation:         cofa 2.5s infinite; 
+	-moz-animation:    cofa 2.5s infinite; 
+	-webkit-animation: cofa 2.5s infinite; 
+}
 @keyframes e1 { 
 	0%   { color: #8597A4; }
 	50%  { color: #fbbc05; }
