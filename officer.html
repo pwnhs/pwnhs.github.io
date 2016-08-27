@@ -1,5 +1,13 @@
 <head>
-<link rel="stylesheet" href="http://pwnhs.org/style.css" media="all">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./documentation/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/c/774e41/1w;proxima-nova,2,2clzCK:W:n1,2clzC9:W:n3,2clzCF:W:n4,2clzCH:W:n6,2clzC5:W:n7/d" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css" media="all">
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style>
+    <title>This is not the West Side - PWNHS</title>
+
 </head>
 <!-- 
     To our esteemed web developers:
@@ -9,18 +17,38 @@
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt("Prove You're an Officer:",'');
-while (testV < 3) {
-if (pass1.toLowerCase() == "no more parties in la") {
-location.href = "./scripts/typed/typed";
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('Access Denied, Please Try Again.','');
+    while (!pass1){
+        var pass1 = prompt("Prove You're an Officer:", "");
+        if (pass1 == null || pass1 == false) { 
+        openLoad();
+        }
+        while (testV < 3) {
+        if (pass1.toLowerCase() == "no more parties in la") {
+        location.href = "./scripts/typed/typed";
+        break;
+        } 
+        testV+=1;
+        var pass1 = 
+        prompt('Access Denied, Please Try Again.','');
+        }
+        if (pass1.toLowerCase()!="password" & testV ==3){
+        openLoad();
+        } 
 }
-if (pass1.toLowerCase()!="password" & testV ==3)
-return " ";
-} 
+}
 </script>
-<body onLoad="passWord()" style="background:#181b1e;"></body>
+<body onLoad="passWord();" style="background:#181b1e;">
+        
+    <div id="centerDisplay" class="hidden" style="text-align: center;text-align: -webkit-center;">
+            <span style="font-size:60px">Nah, Fam.</span>
+        <br>
+            <span style="margin-left:3.5px;">Trust me, the Officers don't do much that's interesting anyway.</span>
+        <br>
+            <a class="nope" style="font-size: 16px;" href="//pwnhs.org"> <span class="pw">PW</span><span class="nhsf">NHS</span></a><span style="margin-right:20px"></span><a class="prob8 nope" href="//docs.pwnhs.org"><span class="pw">PW</span><span class="nhsf">NHS</span><span style="color:#a0a0a0;font-family:Montserrat">DOCS</span></a>
+    </div>
+
+        <script src="./js/jquery-2.1.0.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/404_masscompile.js"></script>
+
+    </body>
