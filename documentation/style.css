@@ -431,6 +431,7 @@ span.nhsf {
 }
 .swal2-confirm, .styled, input:focus{
     box-shadow: none !important;
+    outline: none !important;
 }
 
 /* = Icons
