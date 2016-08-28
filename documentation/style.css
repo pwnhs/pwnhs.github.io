@@ -252,6 +252,11 @@ a.prob8, a.prob8:link, a.prob8:visited{
 a.prob8:hover, a.prob8:active{
     border-bottom: 1px solid;
 }
+a.prob8r{
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 16px;
+    color:#035299;
+}
 a.chill:hover{
     color:rgba(164,133,136,.6);
 }

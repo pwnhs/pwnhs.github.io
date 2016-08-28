@@ -96,9 +96,3 @@ two.bind('update', function() {
     child.step();
   });
 });
-
-//poka
-function openLoad(){
-    var openload = document.getElementById("centerDisplay");
-    openload.classList.remove("hidden");
-}
