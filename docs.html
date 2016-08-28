@@ -30,12 +30,15 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <style type="text/css">.btn,a,body,h1,h2,h3,h4,p{font-family:"proxima-nova",sans-serif;}</style>
         <link href="./fonts/dejavusansmono/stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/4.2.1/sweetalert2.min.css">
 
         <!-- js -->
         <script src="js/jquery-2.1.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="./documentation/molekule_docs.js"></script>
         <script src="./js/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/sweetalert2/4.2.1/sweetalert2.min.js"></script>
+        <script src="./documentation/membership.js"></script>
 
         <!-- typed -->
         <script src="./scripts/typed/js/typed.js"></script>
@@ -131,6 +134,8 @@
                             <p>
                                     The National Honor Society offers many benefits, both for your social and academic experience at West. Some of these benefits may be found <a class="keep" href="//pwnhs.org#montana">here</a>. Plus, it never hurts to say you were part of the nation's premier high school organization!
                             </p>
+                                <br>
+                        <h2 class="text-center"><a class="prob8 input-type-text" style="font-size:24px;cursor:pointer;">Check your standing in NHS</a></h2>
                     </div>
 
                     <div id="general" class="docs-section">
@@ -480,5 +485,61 @@
         </div>
         <!-- Main container END -->
 
+        
+        <!-- Status Checker -->
+        <script>
+            $('.input-type-text').on('click', function() {
+                swal({
+                  title: 'Your ID, please:',
+                  input: 'text',
+                  background: '#181b1e',
+                  inputPlaceholder: '234510',
+                  customClass: 'modProx',
+                  confirmButtonText: 'Verify',
+                  showCancelButton: true,
+                  inputValidator: function(value) {
+                    return new Promise(function(resolve, reject) {
+                      if (value.length == "6") {
+                        resolve();
+                      } else {
+                        reject('IDs should be six digits long');
+                      }
+                    });
+                  },
+                  inputAttributes: {
+                    'minlength': 6,
+                    'maxlength': 6,
+                    'onkeypress': "return isNumber(event)",
+                  }
+                }).then(function(result) {
+                  if (sgood.indexOf(result) > -1){
+                      swal({
+                        type: 'success',
+                        html: "You're all good!"
+                    });
+                  }
+                  else if (slow.indexOf(result) > -1){
+                      swal({
+                        type: 'error',
+                        html: "Looks like you have some penalty hours! Please contact one of the NHS officers or visit Mrs. Robinson in A2013."
+                    });
+                  }
+                  else{
+                      swal({
+                        type: 'question',
+                        html: "You're not a member of the PWNHS!"
+                    });
+                  }
+                })
+            });
+            function isNumber(evt) {
+                evt = (evt) ? evt : window.event;
+                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                    return false;
+                }
+                return true;
+            }
+        </script>
     </body>
 </html>
