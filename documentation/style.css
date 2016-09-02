@@ -399,6 +399,9 @@ span.nhsf {
     font-weight: 400;
     font-size: 16px;
 }
+.disc {
+    font-size: 8px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -739,6 +742,9 @@ g.coFade{
     }
     .col1 {
         float:left;
+    }
+    .disc {
+        font-size: 4px;
     }
 }
 @media (max-width: 991px){
