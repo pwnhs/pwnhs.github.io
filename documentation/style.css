@@ -10,7 +10,7 @@
 body{
 	margin:0;
 	padding:0;
-    background:#181b1e;
+    background:rgba(0, 0, 0, 0.95);
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
     color:#8597A4;
