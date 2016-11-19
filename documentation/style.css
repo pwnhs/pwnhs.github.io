@@ -21,7 +21,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     color:#FFF;
     display:inline-block; 
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: Montserrat, sans-serif !important;
 }
 h1{
     font-size:24px; 
@@ -39,7 +39,7 @@ h3{
 /* a tags */
 
 a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, sans-serif;
     color:#8597A4;
     font-size:14px;
     text-decoration: none !important;
@@ -229,7 +229,7 @@ p a{
 -------------------------------------------------------------- */
 
 a.keep, a.keep:link, a.keep:visited {
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
     font-size: 16px;
     color:rgb(164,146,133);
     transition: none;
@@ -238,7 +238,7 @@ a.keep:hover, a.keep:active{
     border-bottom: 1px solid;
 }
 a.move, a.move:link, a.move:hover, a.move:visited, a.move:active {
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
     font-size: 16px;
     color:rgb(136,164,133);
     transition: none;
@@ -247,7 +247,7 @@ a.move:hover, a.move:active{
     border-bottom: 1px solid;
 }
 a.prob8, a.prob8:link, a.prob8:visited{
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
     font-size: 16px;
     color:#035299;
     transition: none;
@@ -256,7 +256,7 @@ a.prob8:hover, a.prob8:active{
     border-bottom: 1px solid;
 }
 a.prob8r{
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
     font-size: 16px;
     color:#035299;
 }
@@ -308,7 +308,7 @@ pre code {
     white-space: pre;
 }
 code.codel {
-    font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace; !important;
+    font-family: Monaco, DejaVu Sans Mono, Courier New, monospace; !important;
     font-size: 12px !important;
     -webkit-border-radius: 3px !important;
     -moz-border-radius: 3px!important;
@@ -321,7 +321,7 @@ code.codel {
 }
 
 code.max {
-    font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace ;
+    font-family: Monaco, DejaVu Sans Mono, Courier New, monospace ;
     padding: 0px 2px !important;
     font-size: 80% !important;
     color: #000;
@@ -343,7 +343,7 @@ code.velvet{
 }
 
 code.git {
-    font-family: Monaco, 'DejaVu Sans Mono', 'Courier New', monospace;
+    font-family: Monaco, DejaVu Sans Mono, Courier New, monospace;
     font-size: 13px;
     color: #666;
     padding: 0 5px 1px;
@@ -392,13 +392,13 @@ code.git {
 }
 span.pw {
     color: black;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: Montserrat, sans-serif !important;
     font-weight: 400;
     font-size: 16px;
 }
 span.nhsf {
     color: #035299;
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: Montserrat, sans-serif !important;
     font-weight: 400;
     font-size: 16px;
 }
@@ -777,11 +777,11 @@ g.coFade{
     width:100%;
 }
 .modProx, div.show-swal2{
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: Montserrat, sans-serif !important;
     font-weight: 300 !important;
 }
 div.swal2-modal h2, div.swal2-modal button{
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: proxima-nova, sans-serif !important;
     font-weight: 300 !important;
 }
 div.swal2-content{
