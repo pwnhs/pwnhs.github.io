@@ -2,12 +2,12 @@
 	"name": "PWNHS",
 	"icons": [
 		{
-			"src": "http:\/\/pwnhs.org\/app\/icons\/android-chrome-192x192.png",
+			"src": "http:\/\/pwnhs.org\/appResources\/icons\/android-chrome-192x192.png",
 			"sizes": "192x192",
 			"type": "image\/png"
 		},
 		{
-			"src": "http:\/\/pwnhs.org\/app\/icons\/android-chrome-512x512.png",
+			"src": "http:\/\/pwnhs.org\/appResources\/icons\/android-chrome-512x512.png",
 			"sizes": "512x512",
 			"type": "image\/png"
 		}
